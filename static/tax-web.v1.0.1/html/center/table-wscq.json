@@ -1,0 +1,101 @@
+{
+	"code": 0,
+	"msg": "",
+	"count": 31,
+	"limit":10,
+	"data": [
+		{
+			"id": "1",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "2",
+			"sxmc": "增值税一般纳税人资格登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "3",
+			"sxmc": "扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-blue'>未签收</span>",
+			"cz": "<button class='layui-btn layui-btn-xs'>签收</button>" 
+		}
+		,{
+			"id": "4",
+			"sxmc": "变更登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-blue'>未签收</span>",
+			"cz": "<button class='layui-btn layui-btn-xs'>签收</button>" 
+		}
+		,{
+			"id": "5",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "6",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "7",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "8",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "9",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		,{
+			"id": "10",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "《注销缴税款登记申请表》",
+			"wszzrq": "2018-03-01",
+			"swjg": "佛山南海区国家税务局",
+			"qsbz": "<span class='font-medium'>已签收</span>",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs'>查看</button>" 
+		}
+		
+		
+		
+	]
+}

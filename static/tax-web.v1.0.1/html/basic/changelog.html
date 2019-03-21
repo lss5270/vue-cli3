@@ -1,0 +1,1086 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">	
+<link rel="stylesheet" href="../../ui-css/ui-css.css">	
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>	
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>
+</head>
+	
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->                    
+<div class="layui-container">
+  <blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote> 
+   
+
+<div class="site-content">
+    <h1 class="site-h1">更新日志</h1>
+    <ul class="layui-timeline marginT20">
+      <li class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis"></i>
+        <div class="layui-timeline-content layui-text">
+          <ul>
+			  <li class="marginB30">
+            
+              <h3>[模块优化] 修改定制流程模块 <span class="layui-badge-rim">2019-02-25</span></h3>
+              <ul>
+	 
+				<li>step-style.css样式表更新  \tax-module\step\step-style.css </li>
+				<li>step-set.js脚本          \tax-module\step\step-set.js </li>  
+				<li>business-set.js脚本      \tax-module\business\business-set.js </li> 
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化模块] 流程设置Css修改 <span class="layui-badge-rim">2019-01-28</span></h3>
+              <ul>
+	 
+				<li>step-style.css样式表更新  tax-module\step\step-style.css </li>
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化模块] 流程设置 <span class="layui-badge-rim">2019-01-25</span></h3>
+              <ul>
+	 
+				<li>文件夹更新  tax-module\step </li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化] form.js select组件优化 <span class="layui-badge-rim">2018-12-25</span></h3>
+              <ul>
+	 
+				<li>form.js 修改 \layui\lay\modules\form.js</li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] PNG图标 <span class="layui-badge-rim">2018-12-25</span></h3>
+              <ul>
+ 
+              <li>[新增] 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html">[查看效果]</a> </li>
+			  <li>[新增] 丢失、被盗税控专用设备备案、  房产交易申报、  纳税人授权申请、 非税收入通用申报表、  个人所得税证明和清单查验、 限售股转让所得个人所得税清算申报表 </li> 
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] layui.css select组件disabled禁用后问题修改 <span class="layui-badge-rim">2018-12-21</span></h3>
+              <ul>
+ 
+			   <li>[优化] layui.css  \layui\css\layui.css  </li>
+               </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化] form.js select组件IE8优化 <span class="layui-badge-rim">2018-12-21</span></h3>
+              <ul>
+	 
+				<li>form.js 修改 \layui\lay\modules\form.js</li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化] Table IE8参数无效修改 <span class="layui-badge-rim">2018-12-17</span></h3>
+              <ul>
+	 
+				<li>Table.js 修改 \layui\lay\modules\table.js</li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 整站图片压缩更新 <span class="layui-badge-rim">2018-12-17</span></h3>
+              <ul>
+ 
+               <li>[图片压缩] tax-images  \tax-images   </li>
+			 
+               </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 input中placeholder在IE8、IE9的兼容问题 <span class="layui-badge-rim">2018-12-07</span></h3>
+              <ul>
+ 
+               <li>[优化] layui.js  \layui\layui.js   </li>
+			   <li>[优化] layui.css  \layui\css\layui.css  </li>
+               </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 <span class="layui-badge-rim">2018-12-06</span></h3>
+              <ul>
+ 
+               <li>[优化] Table.css  \tax-module\taxReturns\table.css   </li>
+			   <li>[优化] layui.css  \layui\css\layui.css  </li>
+			   <li>[优化] common.css \tax-css\common.css  </li>
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化] table 合并修改 <span class="layui-badge-rim">2018-11-27</span></h3>
+              <ul>
+	 
+				<li>table.css 合并修改 \tax-module\taxReturns\table.css</li>
+			 
+
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化] table IE8兼容问题优化 <span class="layui-badge-rim">2018-11-27</span></h3>
+              <ul>
+	 
+				<li>table.css IE8兼容问题优化 \tax-module\taxReturns\table.css</li>
+			 
+
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化] 整合table.css <span class="layui-badge-rim">2018-11-27</span></h3>
+              <ul>
+	 
+				<li>table.css 整合 \tax-module\taxReturns\table.css</li>
+			 
+
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[增加参考页] 404页面 <span class="layui-badge-rim">2018-11-26</span></h3>
+              <ul>
+	            
+				<li>404页面  <a href="../../html/module/errorMessage/index.html" class="link-strong font-s14" >[查看效果]</a></li>  
+                <li>文件路径：\tax-module\errorMessage\所有文件</li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Layui.css 优化 <span class="layui-badge-rim">2018-11-26</span></h3>
+              <ul>
+		  
+			    <li>layui.css 优化按钮间距6px 更新 \layui\css\layui.css </li>
+		 
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[增加参考页] 表单参考页面 <span class="layui-badge-rim">2018-11-23</span></h3>
+              <ul>
+	            
+				<li>表单参考页面  <a href="../../html/center/edit_form.html" class="link-strong font-s14" >[查看效果]</a></li>  
+
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化组件] 登录 用户名自动截取宽度 <span class="layui-badge-rim">2018-11-23</span></h3>
+              <ul>
+	            <li>index.css 更新 \tax-css\index.css </li>
+			   <li>common.js 修改脚本 \tax-js\common.js</li>
+				<li>改动HTML页面 ：\demo\index02.html  <a href="../../demo/index02.html" target="_blank" class="link-strong font-s14" >[查看效果]</a></li>  
+
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[优化组件] 组件优化 <span class="layui-badge-rim">2018-11-23</span></h3>
+              <ul>
+	 
+				<li>table.css 更新 \tax-module\taxReturns\table.css</li>
+				<li>table-step.js 更新 \tax-module\table_step\table-step.js</li>
+				<li>table-step.css 更新 \tax-module\table_step\table-step.css</li>   
+				<li>common.css 更新 \tax-css\common.css </li>
+				<li>laydate.css 更新 \layui\css\modules\laydate\default\laydate.css </li>  
+
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[DEMO增加] 税务检查证查验 <span class="layui-badge-rim">2018-11-23</span></h3>
+              <ul>
+	 
+				<li>新增demo页面  \demo\bsfw\lm_check.html <a href="../../demo/bsfw/lm_check.html" target="_blank" class="link-strong font-s14" >[查看效果]</a></li>  
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[DEMO优化] 登录后 <span class="layui-badge-rim">2018-11-23</span></h3>
+              <ul>
+	 
+				<li>index.css 更新 \tax-css\index.css </li>
+				<li>common.css 更新 \tax-css\common.css </li>
+                <li>common.js 增加用户切换脚本 \tax-js\common.js</li>
+				<li>改动HTML页面 ：\demo\index02.html  <a href="../../demo/index02.html" target="_blank" class="link-strong font-s14" > [查看效果]</a></li>  
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[DEMO优化] DEMO优化 登录前、登录后 <span class="layui-badge-rim">2018-11-22</span></h3>
+              <ul>
+		  
+			    <li>layui.css 改动表格样式 更新 \layui\css\layui.css </li>
+				<li>index.css 更新 \tax-css\index.css </li>
+				<li>common.css 更新 \tax-css\common.css </li>
+				<li>图片修改 更新 \tax-images\login（所有图片） </li> 
+				 <li>图片修改 更新 \tax-images\common（所有图片） </li> 
+				<li>改动HTML页面 ：<br>\demo\index.html  <br>\demo\index02.html  <br>\demo\index03.html <br>\demo\login.html  </li>  
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化select2 <span class="layui-badge-rim">2018-11-22</span></h3>
+              <ul>
+		  
+			   <li>[优化控件] select2解决与laydate事件冲突问题 tax-module\select2\select2.js </li>	  
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化  layui.css <span class="layui-badge-rim">2018-11-21</span></h3>
+              <ul>
+ 
+			   <li>[优化] 优化 layui.css 微调色值  \layui\css\layui.css  </li>
+			   
+                
+              </ul>
+             </li>
+			  
+			
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 样式 图片  <span class="layui-badge-rim">2018-11-20</span></h3>
+              <ul>
+ 
+			   <li>[优化] 优化 layui.css 微调色值  \layui\css\layui.css  </li>
+			   <li>[优化] 日期组件图片修改  更新图片 \layui\css\modules\laydate\default\所有图片  </li>
+			   <li>[优化] 登录前图片  更新图片 \tax-images\login\所有图片  </li>
+			   <li>[优化]	登录前样式优化  \tax-css\index.css （单个文件）</li>  
+			   <li>[优化] Logo 更新优化图片 \tax-images\logo\所有图片  </li>
+			   <li>[新增] PNG 图标增加 “政策速递”  图片路径\tax-images\png_icon\zcsd.png  <a class="link-strong font-s14" href="../../html/basic/png.html"> [查看效果]</a> </li>	  
+                
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[Demo修改] Demo 主页、登录页  <span class="layui-badge-rim">2018-11-19</span></h3>
+              <ul>
+ 
+			   <li>[Demo修改]  主页 修改背景图、样式、html    \demo\index.html  <a href="../../demo/index.html"  class="link-strong font-s14" target="_blank">[查看效果]</a> </li>
+               <li>[Demo修改]  登录页 修改背景图、样式、html  \demo\login.html <a href="../../demo/login.html"  class="link-strong font-s14" target="_blank">[查看效果]</a> </li>
+			   <li>
+				   需要更新以下文件<br>
+				   样式： \tax-css\index.css （单个文件）<br>
+				   图片：\tax-images\login （所有文件）<br>
+				  
+				</li>	  
+              </ul>
+             </li>
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui.css 调整table新版中隐藏文字Bug <span class="layui-badge-rim">2018-11-19</span></h3>
+              <ul>
+ 
+			   <li>[优化] 主线优化 layui.css 输入框细微调整  \layui\css\layui.css  </li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[Demo修改] Demo 主页、登录页 <span class="layui-badge-rim">2018-11-16</span></h3>
+              <ul>
+ 
+			   <li>[Demo修改]  主页 修改背景图、样式、html    \demo\index.html  <a href="../../demo/index.html"  class="link-strong font-s14" target="_blank">[查看效果]</a> </li>
+               <li>[Demo修改]  登录页 修改背景图、样式、html  \demo\login.html <a href="../../demo/login.html"  class="link-strong font-s14" target="_blank">[查看效果]</a> </li>
+			   <li>
+				   需要更新以下文件<br>
+				   样式： \tax-css\index.css （单个文件）<br>
+				   图片：\tax-images\login （所有文件）<br>
+				  
+				</li>	  
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui.css Table样式优化 <span class="layui-badge-rim">2018-11-16</span></h3>
+              <ul>
+ 
+			   <li>[优化] 主线优化 layui.css Table样式优化  \layui\css\layui.css  </li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] PNG图标  <span class="layui-badge-rim">2018-11-15</span></h3>
+              <ul>
+				  
+			  <li>[新增] 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html"> [查看效果]</a> </li>
+			  <li>[新增] 电子文书查验、一键申报、社保费申报作废、社保费申报查询及打印、灵活就业人员缴费基数确认、灵活就业个人社保费申报、金财金融、登记信息查询、单位社保费申报、城乡居民虚拟户申报、城乡居民社保费申报、 </li> 
+	 
+              </ul>
+             </li>
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui.css 输入框细微调整 <span class="layui-badge-rim">2018-11-15</span></h3>
+              <ul>
+ 
+			   <li>[优化] 主线优化 layui.css 输入框细微调整  \layui\css\layui.css  </li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[模块组件新增] KindEditor富文本编辑   <span class="layui-badge-rim">2018-11-15</span> <a href="../../html/module/kindeditor/index.html"  class="link-strong font-s14" > [查看效果]</a></h3>
+              <ul>
+ 
+			   <li>[模块组件新增]  KindEditor富文本编辑  \tax-module\kindeditor</li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui.css layui-table 表头渲染不完整 <span class="layui-badge-rim">2018-11-14</span></h3>
+              <ul>
+ 
+			   <li>[优化] 主线优化 layui.css layui-table 表头渲染不完整   \layui\css\layui.css  </li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui.css 去除表格加载loading <span class="layui-badge-rim">2018-11-13</span></h3>
+              <ul>
+ 
+			   <li>[优化] layui.css 去除表格加载loading  \layui\css\layui.css  </li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui table.js-v2.4.5 更新 <span class="layui-badge-rim">2018-11-09</span></h3>
+              <ul>
+ 
+			   <li>[优化] table.js  \layui\lay\modules\table.js  </li>
+			   <li>
+				   radio（单选框列，layui 2.4.0 新增）<br>
+				   是否初始隐藏列，默认：false。layui 2.4.0 新增<br>
+				   是否开启该列的自动合计功能，默认：false。layui 2.4.0 新增<br>
+				   用于显示自定义的合计文本。layui 2.4.0 新增<br>
+			   </li>	  
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] multiselect下拉控件 <span class="layui-badge-rim">2018-11-08</span></h3>
+              <ul>
+                <li>[增加] 原产品multiselect控件 修改样式及图片路径\tax-module\multiselect <a href="../../html/basic/select.html"  class="link-strong font-s14" >[查看效果]</a> </li>
+                
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 layui.css <span class="layui-badge-rim">2018-11-08</span></h3>
+              <ul>
+ 
+			   <li>[优化] layui.css  \layui\css\layui.css  </li>
+
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 主线优化 <span class="layui-badge-rim">2018-11-07</span></h3>
+              <ul>
+ 
+               <li>[优化] Table.css  \tax-module\taxReturns\table.css   </li>
+			   <li>[优化] layui.css  \layui\css\layui.css  </li>
+			   <li>[优化] common.css \tax-css\common.css  </li>
+			   <li>[优化] select2.css tax-module\select2\select2.css </li>
+			   <li>[优化图片] select2 tax-module\select2\ </li>	  
+			   <li>[优化] selectPage.css tax-module\selectPage\selectPage.css </li>	  
+	           <li>[PNG图标] PNG图标颜色统一优化 全部替换 \tax-images\png_icon </li>	
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Table.css <span class="layui-badge-rim">2018-11-06</span></h3>
+              <ul>
+ 
+               <li>[优化] Table.css  \tax-module\taxReturns\table.css  2018-11-06 </li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Layui.css <span class="layui-badge-rim">2018-11-06</span></h3>
+              <ul>
+ 
+               <li>[优化] 优化layui-disabled只读样式与规范统一 layui\css\layui.css  2018-11-06 </li>
+				  
+			   
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 办理环节 <span class="layui-badge-rim">2018-11-05</span></h3>
+              <ul>
+ 
+               <li>[优化] 办理环节 tax-module\table_step\table-step.css  2018-11-05 </li>
+				  
+			   <li>[优化] 消息提醒 Table.css CSS  2018-11-05 </li>	  
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Table.css <span class="layui-badge-rim">2018-11-05</span></h3>
+              <ul>
+ 
+               <li>[优化] Table.css CSS 2018-11-05 </li>
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线新增] eleTree树组件  <span class="layui-badge-rim">2018-11-02</span></h3>
+              <ul>
+ 
+               <li>[新增] eleTree树组件   <a href="../../html/module/eleTree/eleTree.html"  class="link-strong font-s14" >[查看效果]</a></li>
+		        <li>[新增] eleTree树组件js、css文件位置  \layui\lay\modules\eleTree\eleTree.js | \layui\css\modules\eleTree\eleTree.css</li>
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[模块修复] 调查问卷Json数据前台显示 <span class="layui-badge-rim">2018-11-01</span></h3>
+              <ul>
+ 
+               <li>[修复] 优化脚本ie渲染失败bug   <a href="../../demo/bsfw/questionnaire_page.html"  class="link-strong font-s14" target="_blank">[查看效果]</a></li>
+		 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 办理进度 配色 <span class="layui-badge-rim">2018-11-01</span></h3>
+              <ul>
+              <li>[优化] 办理进度 样式、脚本、图片路径\tax-module\table_step  <a class="link-strong font-s14" href="../../html/returns/step.html">[查看效果]</a> </li>
+			    
+              </ul>
+             </li>
+			  
+			   <li class="marginB30">
+            
+              <h3>[主线增加] PNG图标 <span class="layui-badge-rim">2018-11-01</span></h3>
+              <ul>
+ 
+              <li>[新增] 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html">[查看效果]</a> </li>
+			  <li>[新增] 实名制信息查看 </li> 
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线扩展] 弹窗 按钮定时 <span class="layui-badge-rim">2018-11-01</span></h3>
+              <ul>
+              <li>[主线扩展] 弹窗 按钮定时 layui\css\modules\layer\default\layer.css  <a href="../../html/basic/layer.html"  class="link-strong font-s14" >[查看效果]</a></li>
+			  <li>[主线扩展] common.css  \tax-css\common.css   </li> 	  
+			 	  
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[模块新增] 调查问卷Json数据前台显示 <span class="layui-badge-rim">2018-10-31</span></h3>
+              <ul>
+ 
+               <li>[新增] 调查问卷Json数据前台显示   <a href="../../demo/bsfw/questionnaire_page.html"  class="link-strong font-s14" target="_blank">[查看效果]</a></li>
+		 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线新增] logo图片 <span class="layui-badge-rim">2018-10-31</span></h3>
+              <ul>
+                <li>[新增] logo 头部logo图片\tax-images\logo </li>
+			    <li>[新增] 国家税务总局上海市电子税务局  </li>
+              </ul>
+            </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 数字提醒 <span class="layui-badge-rim">2018-10-30</span></h3>
+              <ul>
+ 
+              <li>[修改] 数字提醒 方块改为圆底  修改样式\layui\css\layui.css  <a class="link-strong font-s14" href="../../demo/index02.html" target="_blank">[查看效果]</a> </li>
+	          <li>[增加] 数字提醒背景图片 \layui\images\badge.png   </li>
+	          
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 修改DEMO <span class="layui-badge-rim">2018-10-29</span></h3>
+              <ul>
+ 
+              <li>[修改] 登录后首页图片列表 修改html代码以及\tax-css\index.css样式表 <a class="link-strong font-s14" href="../../demo/index02.html" target="_blank">[查看效果]</a> </li>
+			  <li>[修改] 菜单标题返回主页 修改html代码以及\tax-css\common.css样式表 <a class="link-strong font-s14" href="../../demo/sbjs/lm_sxbl.html" target="_blank">[查看效果]</a></li> 
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] PNG图标 <span class="layui-badge-rim">2018-10-29</span></h3>
+              <ul>
+ 
+              <li>[新增] 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html">[查看效果]</a> </li>
+			  <li>[新增] 社保申报、其他查询、费款缴纳、登记信息、查询打印 </li> 
+	 
+              </ul>
+             </li>
+			   <li class="marginB30">
+            
+              <h3>[主线增加] PNG图标 <span class="layui-badge-rim">2018-10-29</span></h3>
+              <ul>
+ 
+              <li>[新增] 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html">[查看效果]</a> </li>
+			  <li>[新增] 功能收藏管理 </li> 
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Table.css <span class="layui-badge-rim">2018-10-26</span></h3>
+              <ul>
+ 
+               <li>[优化] Table.css 优化IE8下表单中input文字垂直居中问题 CSS 2018-10-26    </li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] PNG图标 <span class="layui-badge-rim">2018-10-26</span></h3>
+              <ul>
+ 
+              <li>[新增] 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html">[查看效果]</a> </li>
+			  <li>[新增] 税务代保管资金收取、权益保护、账户信息、纳税人授权申请、个人授权管理、企业信息、其它服务事项 </li> 
+	 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Table.css <span class="layui-badge-rim">2018-10-26</span></h3>
+              <ul>
+ 
+               <li>[优化] Table.css 优化表单中select2的边距问题 版本时间 CSS 2018-10-26 </li>
+	 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[模块修改] 调查问卷 <span class="layui-badge-rim">2018-10-26</span></h3>
+              <ul>
+ 
+               <li>[修改] 新增加定制选项无法拖动修复   <a href="../../html/module/questionnaire/questionnaire.html"  class="link-strong font-s14">[查看效果]</a></li>
+		       <li>[修改] 修改\tax-module\questionnaire\questionnaire.js   </li>
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 主管税务机关选择 <span class="layui-badge-rim">2018-10-25</span></h3>
+              <ul>
+ 
+               <li>[修改] radio控件表格居中问题   修改样式\layui\css\layui.css  </li>
+		       <li>[修改] 主管税务机关选择代码调整   <a href="../../html/basic/layer.html"  class="link-strong font-s14">[查看效果]</a></li>
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] common.css <span class="layui-badge-rim">2018-10-25</span></h3>
+              <ul>
+ 
+               <li>[修改] common.css优化纵向Tab换行问题 修改样式\tax-css\common.css  <a href="../../demo/sxbl/lm_sxbl.html" target="_blank" class="link-strong font-s14">[查看效果]</a></li>
+		
+              </ul>
+             </li>
+			  
+			  
+			   <li class="marginB30">
+            
+              <h3>[主线新增] Breadcrumb-面包屑 <span class="layui-badge-rim">2018-10-25</span></h3>
+              <ul>
+
+		       <li>[修改] CSS字体图标  \tax-font-icon  <a href="../../demo/bsfw/news_page.html" target="_blank" class="link-strong font-s14">[查看效果]</a> </li>
+               <li>[修改] common.css 修改样式\tax-css\common.css  </li>
+		
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 新闻正文页 <span class="layui-badge-rim">2018-10-24</span></h3>
+              <ul>
+
+		       <li>[修改] 新闻正文页 增加浮动二维码  <a href="../../demo/bsfw/news_page.html" target="_blank" class="link-strong font-s14">[查看效果]</a> </li>
+               <li>[修改] 新闻正文页 修改样式文件\tax-module\taxNewsPage\tax-news-page.css </li>
+			   <li>[增加] 新闻正文页 临时文件增加\tax-images\temp\png01.png </li>  
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 日期控件 <span class="layui-badge-rim">2018-10-24</span></h3>
+              <ul>
+
+		       <li>[修改] 日期控件 强制文字大小12px 修改样式\layui\css\modules\laydate\default\laydate.css </li>
+   
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 返回首页 <span class="layui-badge-rim">2018-10-24</span></h3>
+              <ul>
+
+		       <li>[修改] 返回首页 修改样式\tax-css\common.css <a href="../../demo/sbjs/lm_sxbl.html" target="_blank" class="link-strong font-s14">[查看效果]</a></li>
+			   <li>[修改] 返回首页 图片\tax-images\common\head_btn_home.png </li>
+			   <li>[修改] 返回首页 CSS字体图标  \tax-font-icon </li>	  
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] common <span class="layui-badge-rim">2018-10-24</span></h3>
+              <ul>
+              <li>[修改] 区块标题 文字加粗  修改样式\tax-css\common.css  <a class="link-strong font-s14" href="../../html/basic/txt.html">[查看效果]</a> </li> 
+              </ul>
+             </li>
+			  
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线新增] PNG图标 <span class="layui-badge-rim">2018-10-23</span></h3>
+              <ul>
+			  	  
+              <li>[新增] 重点专题 图片路径\tax-images\png_icon  <a class="link-strong font-s14" href="../../html/basic/png.html">[查看效果]</a> </li>
+			  <li>[优化] 更正申报、申报作废（个税）、申报作废 </li> 
+			   
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线扩展] 日期控件 <span class="layui-badge-rim">2018-10-22</span></h3>
+              <ul>
+			  	  
+              <li>[扩展] 日期控件 周六日文字红色  <a class="link-strong font-s14" href="../../html/basic/date.html">[查看效果]</a> </li>
+			  <li>[修改文件] 日期控件 修改文件路径 \layui\css\modules\laydate\default\laydate.css  </li> 
+			  <li>[修改文件] 日期控件 修改文件路径 \tax-js\common.js </li>	  
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线新增] 办理进度 <span class="layui-badge-rim">2018-10-19</span></h3>
+              <ul>
+              <li>[新增] 办理进度 样式、脚本、图片路径\tax-module\table_step  <a class="link-strong font-s14" href="../../html/returns/step.html">[查看效果]</a> </li>
+			    
+              </ul>
+             </li>
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 下拉控件 <span class="layui-badge-rim">2018-10-18</span></h3>
+              <ul>
+              <li>[优化] 原产品select2控件 input输入框压线问题 select2.css </li>
+			    
+              </ul>
+             </li>
+			  
+			  
+			   <li class="marginB30">
+            
+              <h3>[主线优化] 日期控件 CSS <span class="layui-badge-rim">2018-10-18</span></h3>
+              <ul>
+                <li>[优化] 日期控件 CSS  修改样式及图片路径\layui\css\modules\laydate <a class="link-strong font-s14" href="../../html/basic/date.html" >[查看效果]</a></li>
+ 
+              </ul>
+             </li>
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 弹窗样式修改 <span class="layui-badge-rim">2018-10-18</span></h3>
+              <ul>
+              <li>[优化] layui\css\modules\layer\default\layer.css  </li>
+			 	  
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] 下拉控件 <span class="layui-badge-rim">2018-10-17</span></h3>
+              <ul>
+              <li>[优化] 原产品select2控件 背景颜色修改 select2.css </li>
+			  <li>[优化] 原产品selectpage控件 背景颜色修改 selectpage.css </li>
+			  <li>[优化] select layui控件 背景颜色修改 layui.css </li>	  
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改增加] table.css  <span class="layui-badge-rim">2018-10-16</span></h3>
+              <ul>
+              <li>[修改增加] table.css  增加按钮样式</li>
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] table.css 表单样式优化 <span class="layui-badge-rim">2018-10-12</span></h3>
+              <ul>
+              <li>[修改] table.css 表单样式优化 优化下拉、日期、翻页   <a class="link-strong font-s14" href="../../html/returns/iframe_table.html" >[查看应用案例]</a></li>
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] select2下拉控件 <span class="layui-badge-rim">2018-10-12</span></h3>
+              <ul>
+              <li>[优化] 原产品select2控件 样式修改换行问题 \tax-module\select2 查看效果[UI库\基本元素\下拉控件（独立）] </li>
+              </ul>
+             </li>
+			  
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] select2下拉控件 <span class="layui-badge-rim">2018-10-10</span></h3>
+              <ul>
+              <li>[优化] 原产品select2控件 样式修改换行问题 \tax-module\select2 查看效果[UI库\基本元素\下拉控件（独立）] </li>
+              <li>[优化] 原产品selectpage控件 下拉间距问题 \tax-module\selectpage 查看效果[UI库\基本元素\下拉控件（独立）] </li>
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] select下拉控件 <span class="layui-badge-rim">2018-09-30</span></h3>
+              <ul>
+                <li>[增加] 原产品select2控件 修改样式及图片路径\tax-module\select2 查看效果[UI库\基本元素\下拉控件（独立）] </li>
+                <li>[增加] 原产品selectpage控件 修改样式及图片路径\tax-module\selectpage 查看效果[UI库\基本元素\下拉控件（独立）] </li>
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 日期控件 <span class="layui-badge-rim">2018-09-30</span></h3>
+              <ul>
+                <li>[修改] 日期控件修改IE8兼容问题。 修改样式及图片路径\layui\css\modules\laydate 查看效果[UI库\日期控件] </li>
+ 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] 新闻正文页   <span class="layui-badge-rim">2018-09-30</span></h3>
+              <ul>
+                <li>[增加] 新闻正文页 模块样式脚本路径\tax-module\taxNewsPage <a class="link-strong font-s14" href="../../demo/bsfw/news_page.html" target="_blank">[查看应用案例]</a></li>
+ 
+              </ul>
+             </li> 
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改] 日期控件 <span class="layui-badge-rim">2018-09-29</span></h3>
+              <ul>
+                <li>[修改] 日期控件样式修改，改为圆形底图。 修改样式及图片路径\layui\css\modules\laydate 查看效果[UI库\日期控件] </li>
+ 
+              </ul>
+             </li>
+			  
+			  <!--<li class="marginB30">
+            
+              <h3>[增加] 绑定数据下拉 <span class="layui-badge-rim">2018-09-29</span></h3>
+              <ul>
+                <li>[增加] 绑定数据下拉   样式、脚本\tax-module\taxInputSelect 查看效果[UI库\表单\绑定数据下拉]      </li>
+ 
+              </ul>
+             </li>-->
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线兼容调整] 办税日历 <span class="layui-badge-rim">2018-09-26</span></h3>
+              <ul>
+                <li>[兼容调整] 办税日历 IE红点居中调整 修改样式\tax-module\taxDate\taxDate.css</li>
+ 
+              </ul>
+             </li>
+			  
+			   
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线修改Css] 申报表消息提醒   <span class="layui-badge-rim">2018-09-26</span></h3>
+              <ul>
+                <li>[修改Css] 申报表消息提醒 模块样式\tax-module\taxReturns\table.css  查看效果[UI库\申报表页面\消息提醒]</li>
+ 
+              </ul>
+             </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线增加] 事项进度跟踪静态页面   <span class="layui-badge-rim">2018-09-21</span></h3>
+              <ul>
+                <li>[增加] 事项进度跟踪 模块样式脚本路径\tax-module\stepver 查看效果[UI库\参考页面\事项跟踪]</li>
+ 
+              </ul>
+             </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] IconFont图标  <span class="layui-badge-rim">2018-09-21</span></h3>
+              <ul>
+                <li>[优化] IconFont图标 统一图标线条粗细。改动文件\tax-font-icon\下的所有文件</li>
+               </ul>
+            </li>
+			 <li class="marginB30">
+            
+              <h3>[主线增加] select菜单   <span class="layui-badge-rim">2018-09-21</span></h3>
+              <ul>
+                <li>[增加] select菜单  查看效果[UI库\表单\]</li>
+ 
+              </ul>
+            </li> 
+			 <li class="marginB30">
+            
+              <h3>[主线增加] 模糊搜索功能   <span class="layui-badge-rim">2018-09-21</span></h3>
+              <ul>
+                <li>[增加] 模糊搜索 模块样式脚本路径\tax-module\taxSearchSelect 查看效果[UI库\表单\]</li>
+ 
+              </ul>
+            </li>
+			  
+			 <li class="marginB30">
+            
+              <h3>[主线增加] 办税地图   <span class="layui-badge-rim">2018-09-21</span></h3>
+              <ul>
+                <li>[增加] 办税地图 模块样式脚本路径\tax-module\taxMap <a class="link-strong font-s14" href="../../demo/bsfw/iframe_map.html" target="_blank">[查看应用案例]</a></li>
+ 
+              </ul>
+            </li> 
+			 <li class="marginB30">
+            
+              <h3>[主线增加] 办税日历   <span class="layui-badge-rim">2018-09-21</span></h3>
+              <ul>
+                <li>[增加] 办税日历 模块样式脚本路径\tax-module\taxDate <a class="link-strong font-s14" href="../../demo/bsfw/lm_bsfw.html" target="_blank">[查看应用案例]</a></li>
+ 
+              </ul>
+            </li>
+			  
+			<li class="marginB30">
+            
+              <h3>[主线优化] Table 翻页优化 <span class="layui-badge-rim">2018-09-18</span></h3>
+              <ul>
+                <li>[优化] Table 组件翻页更多"..."居中问题。改动文件\layui\css\layui.css 版本v1.0.1 2018.09.18</li>
+ 
+              </ul>
+            </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] IconFont图标  <span class="layui-badge-rim">2018-09-17</span></h3>
+              <ul>
+                <li>[优化] IconFont图标 统一图标线条粗细。改动文件\tax-font-icon\下的所有文件</li>
+				<li>[增加表单刷新按钮] 改动文件\common.css 版本v1.0.1 2018.09.17</li>  
+              </ul>
+            </li>
+			  
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Table  <span class="layui-badge-rim">2018-09-17</span></h3>
+              <ul>
+                <li>[优化] Table 表格TH文字去除加粗。改动文件\layui\css\layui.css 版本v1.0.1 2018.09.17</li>
+              </ul>
+            </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] Table 2次优化 <span class="layui-badge-rim">2018-09-14</span></h3>
+              <ul>
+                <li>[优化] Table 表格线在IE8、IE9 下TH、TD右边线不显示进行优化。改动文件\layui\css\layui.css 版本v1.0.1 2018.09.14</li>
+              </ul>
+            </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] IconFont图标  <span class="layui-badge-rim">2018-09-14</span></h3>
+              <ul>
+                <li>[优化] IconFont图标 统一图标线条粗细。改动文件\tax-font-icon\下的所有文件</li>
+              </ul>
+            </li>
+			  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] layer  <span class="layui-badge-rim">2018-09-14</span></h3>
+              <ul>
+                <li>[优化] layer 弹出层在iframe中遮挡问题优化。改动文件\tax-js\common.js 版本v1.0.1 2018.09.14 移除ParentLayer()方法</li>
+              </ul>
+            </li> 
+			<li class="marginB30">
+            
+              <h3>[主线优化] Table  <span class="layui-badge-rim">2018-09-14</span></h3>
+              <ul>
+                <li>[优化] Table 表格线在IE8下TH右边线不显示进行优化。改动文件\layui\css\layui.css 版本v1.0.1 2018.09.14</li>
+              </ul>
+            </li>
+			<li>
+            
+              <h3>[主线优化] layer  <span class="layui-badge-rim">2018-09-13</span></h3>
+              <ul>
+                <li>[优化] layer 弹出层在iframe中遮挡问题优化。改动文件\tax-js\common.js 版本v1.0.1 2018.09.13</li>
+              </ul>
+            </li>  
+			  <li class="marginB30">
+            
+              <h3>[主线优化] load  <span class="layui-badge-rim">2018-09-13</span></h3>
+              <ul>
+                <li>[优化] load 加载动画在iframe中遮挡问题优化。改动文件\tax-js\common.js 版本v1.0.1 2018.09.13</li>
+              </ul>
+            </li>
+            <li class="marginB30">
+            
+              <h3>主线v1.0.1 <span class="layui-badge-rim">2018-09-12</span></h3>
+              <ul>
+                <li>[优化] table 组件中td文字过多时点击文字弹出详细信息框不消失问题。改动文件\tax-js\common.js</li>
+                <li>[优化] table 组件checkbox选中行TR背景色浅蓝色，修改页面js代码table.on('checkbox(test)', function(obj){优化代码});</li>
+                <li>[新增] Tab 组件文字后面添加数字，修改页面html代码</li>	  
+              </ul>
+            </li>
+			
+			<li class="marginB30">
+            
+              <h3>[主线新增] 申报表模块 <span class="layui-badge-rim">2018-09-12</span></h3>
+              <ul>
+                <li>[新增] 申报表模块 该模块只适用申报表填报，模块样式脚本路径\tax-module\taxReturns </li>
+              </ul>
+            </li>
+			  
+			  
+			 <li class="marginB30">
+            
+              <h3>[主线新增] logo图片 <span class="layui-badge-rim">2018-09-12</span></h3>
+              <ul>
+                <li>[新增] logo 新增其它省市头部logo图片\tax-images\logo </li>
+              </ul>
+            </li>
+ 
+          </ul>
+
+
+        </div>
+      </li>
+    
+
+    </ul>
+
+</div>
+	
+ 
+</div>
+<script src="../../layui/layui.js" charset="utf-8"></script>
+	
+</body>
+</html>

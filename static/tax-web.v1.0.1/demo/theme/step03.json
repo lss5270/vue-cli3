@@ -1,0 +1,157 @@
+{
+	"item": [{
+		"type": "node",
+		"t": "30",
+		"l": "33",
+		"w": "56",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-shenbaochaxunjidayin",
+		"iconId": "10",
+		"name": "票种核定",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/demo/bsfw/lm_bsfw.html",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "30",
+		"l": "303",
+		"w": "110",
+		"h": "98",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-jiaokuanchaxunjidayin",
+		"iconId": "11",
+		"name": "发票验旧",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/demo/sxbl/lm_sxbl.html",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "30",
+		"l": "453",
+		"w": "110",
+		"h": "98",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-xinjian",
+		"iconId": "24",
+		"name": "发票申领",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "30",
+		"l": "604",
+		"w": "98",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-fapiaodaikai",
+		"iconId": "17",
+		"name": "发票开具",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "30",
+		"l": "166",
+		"w": "84",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-wenjian",
+		"iconId": "23",
+		"name": "税控盘发行",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/demo/bsfw/lm_xxxx.html",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "30",
+		"l": "770",
+		"w": "56",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-btn-tracking",
+		"iconId": "30",
+		"name": "发票作废",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "155",
+		"l": "626",
+		"w": "56",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-fapiaolingyong",
+		"iconId": "15",
+		"name": "发票红冲",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "point",
+		"t": "46",
+		"l": "93",
+		"w": "80",
+		"h": "36",
+		"style": "item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"
+	}, {
+		"type": "point",
+		"t": "47",
+		"l": "242",
+		"w": "80",
+		"h": "36",
+		"style": "item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"
+	}, {
+		"type": "point",
+		"t": "45",
+		"l": "395",
+		"w": "80",
+		"h": "36",
+		"style": "item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"
+	}, {
+		"type": "point",
+		"t": "45",
+		"l": "541",
+		"w": "80",
+		"h": "36",
+		"style": "item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"
+	}, {
+		"type": "point",
+		"t": "47",
+		"l": "684",
+		"w": "80",
+		"h": "36",
+		"style": "item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"
+	}, {
+		"type": "point",
+		"t": "129",
+		"l": "635",
+		"w": "36",
+		"h": "21",
+		"style": "item-ul arrow-down pointY ui-draggable ui-draggable-handle ui-resizable"
+	}],
+	"box": [{
+		"height": 225
+	}],
+	"business": [{
+		"icon": "iconfont fsicon-shenpi_faqishenpi",
+		"iconId": "3",
+		"name": "发票代开",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"icon": "iconfont fsicon-gongzhongchaxun",
+		"iconId": "13",
+		"name": "发票认证",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"icon": "iconfont fsicon-shenbaoqingkuangchaxun",
+		"iconId": "9",
+		"name": "丢失被盗发票查验",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"icon": "iconfont fsicon-gerensuodeshuidaikoudaijiaoshenbao",
+		"iconId": "20",
+		"name": "发票查验",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}]
+}

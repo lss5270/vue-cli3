@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 搜索下拉菜单*/
+
+.tax-input-select{box-shadow: 0px 2px 12px rgba(0,0,0,0.45); position: absolute; background-color: #fff;border: 1px solid #e4e4e4}
+.tax-input-select ul{ max-height: 210px; overflow: hidden; overflow-y: auto;}
+.tax-input-select ul li{ padding: 5px 10px; cursor: pointer;}
+.tax-input-select ul li:hover{ background-color: #f2f2f2;}
+.tax-input-select ul li .iconfont{ margin-right: 5px; color: #aaa}
+.tax-select-inline .select-edge{ position: absolute;right:0px;background-color: #fff; margin-top: 1px ;margin-right: 1px; text-align: center;font-size: 12px;font-weight: bold;}
+.tax-select-inline{ display: inline-block;position: relative; }
+.zindex-100{z-index: 100;}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS orange */
+
+.admin-header{ background-color: #1eb5ad !important;}
+.admin-header .admin-header-right .admin-header-select .layui-input{background-color: #14c3ba;!important;}
+.layui-input:focus, .layui-textarea:focus {	border-color: #1eb5ad!important; box-shadow: 1px 1px 1px 1px rgba(15,120,120,0.5)!important;
+}
+.win-box .box-style-right a{ color: #1eb5ad!important;}
+.layui-form-select dl dd.layui-this {background-color: #1eb5ad!important;	}
+.layui-btn{ background-color:#1eb5ad!important}
+
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+
+	border-color:#1eb5ad !important;
+}

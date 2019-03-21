@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.tax-step-box { position: relative; padding:30px; height: 200px; border: 1px solid #ebebeb }
+.tax-step-box .item-ul{ position: relative; padding-top: 20px;}
+.tax-step-box .item-step{  cursor: pointer; position: absolute;   }
+.tax-step-box .item-step .step-icon{background-image: url(../../tax-module/step/icon_bg.png); width: 52px; margin: auto; height: 52px; line-height: 52px;  display: block;text-align: center;}
+.tax-step-box .item-step .step-icon .iconfont{font-size: 32px;color: #53acf3;transition: 2s; display: block;}
+.tax-step-box .item-step .optional{ background-image:url(../../tax-module/step/optional_bg.png);}
+.tax-step-box .item-step .finish{background-image:url(../../tax-module/step/icon_finish.png);}
+.tax-step-box .item-step .finish .iconfont{ color: #bbbbbb;}
+.tax-step-box .item-step .error{background-image:url(../../tax-module/step/icon_error.png);}
+.tax-step-box .item-step .error .iconfont{ color: #ff0000;}
+.tax-step-box .item-step .step-name{text-align: center; line-height: 18px; padding: 5px 0;display: block; max-width:110px;}
+.tax-step-box .item-step .step-name:hover{ color: #0994dc}
+.tax-step-box .item-step .step-notice{ background-color: #eaf4ff; border: 1px solid #d2e7fb; font-size: 12px; padding: 6px 8px; position: absolute; width: 100%; display: none;}
+.tax-step-box .item-step .step-menu{border-radius:3px; padding: 5px 16px; position: absolute; background-color: #53acf3; top:0px; color: #fff; opacity: 0;transition: 1s;}
+.tax-step-box .item-step .step-menu p{font-size:14px; font-weight: bold; line-height: 32px; height: 32px;}
+.tax-step-box .item-step .step-menu a{display: block; line-height: 24px; height: 24px; white-space:nowrap;color: #fff; opacity: 0.8;}
+.tax-step-box .item-step .step-menu a:hover{color: #fff;opacity: 1;}
+.tax-step-box .item-step .step-div:hover .step-menu{display: block; opacity:1;}
+
+.tax-step-box .item-step .step-div:hover .step-icon .iconfont{
+transform:rotateY(360deg);
+-ms-transform:rotateY(360deg); /* Internet Explorer */
+-moz-transform:rotateY(360deg); /* Firefox */
+-webkit-transform:rotateY(360deg); /* Safari 和 Chrome */
+-o-transform:rotateY(360deg); /* Opera */
+	
+}
+
+.tax-step-box .tax-step-arrow-x { position: absolute; background-image: url(../../tax-module/step/arrow.png); width: 65px; height: 15px; top:20px; left:100px;}
+.tax-step-box .tax-step-arrow-y { position: absolute; background-image: url(../../tax-module/step/arrow_y.png); width: 15px; height: 65px; top:80px; left:56px;}
+.tax-step-box .arrow-left,.tax-step-box .arrow-right,.tax-step-box .arrow-up,.tax-step-box .arrow-down,.tax-step-box .line-x,.tax-step-box .line-y{ position: absolute;}
+
+.tax-step-box .arrow-left{background-image: url(../../tax-module/step/line_bg.png); background-position: center; background-repeat: repeat-x;text-align: left; width: 80px; height: 36px;position: absolute;}
+.tax-step-box .arrow-left p{display: inline-block; background-image: url(../../tax-module/step/arrow_left.png); width: 7px; height: 16px; background-position: center; background-repeat: no-repeat;}
+
+.tax-step-box .arrow-right{background-image: url(../../tax-module/step/line_bg.png); background-position: center; background-repeat: repeat-x;text-align: right; width: 80px; height: 36px; position: absolute;}
+.tax-step-box .arrow-right p{display: inline-block; background-image: url(../../tax-module/step/arrow_right.png); width: 7px; height: 16px;background-position: center; background-repeat: no-repeat;}
+
+.tax-step-box .arrow-up{background-image: url(../../tax-module/step/line_bg.png); background-position: center; background-repeat: repeat-y;text-align: center; width:36px; height: 80px;padding-top:0px;position: absolute;}
+.tax-step-box .arrow-up p{display: inline-block; background-image: url(../../tax-module/step/arrow_up.png); width: 36px; height: 7px; background-position: center;background-repeat: no-repeat;top:0px; left: 0px; position: absolute; }
+
+.tax-step-box .arrow-down{background-image: url(../../tax-module/step/line_bg.png); background-position: center; background-repeat: repeat-y;text-align: center; position: relative;width:36px; height: 80px;position: absolute;}
+.tax-step-box .arrow-down p{display: inline-block; background-image: url(../../tax-module/step/arrow_down.png); width: 36px; height: 7px; bottom: 0px; position: absolute;left: 0px;background-repeat: no-repeat;background-position: center; }
+
+.tax-step-box .line-x{background-image: url(../../tax-module/step/line_bg.png); width: 60px; height: 36px;background-repeat: repeat-x;background-position: center;position: absolute;}
+.tax-step-box .line-y{background-image: url(../../tax-module/step/line_bg.png); width: 36px; height: 60px;background-repeat: repeat-y;background-position: center;position: absolute;}
+
+ 
+.set-empty{ margin-top: 80px; text-align: center;  position: absolute; width: 100%;left:0px;}
+.tax-step-menu { margin-top: 20px}
+
+.tax-step-box .item-but {top:0px; text-align: center; position: absolute;right:0px; }
+.tax-step-box .item-but .iconfont{ color: #fff; background-color: #53acf3; font-size: 12px;border-radius: 2px; margin: 0 2px; padding: 2px; opacity: 0.5; cursor: pointer;}
+.tax-step-box .item-but .iconfont:hover{ opacity:1;}
+.step-icon-item .iconfont{ font-size: 28px; padding: 5px;border: 2px solid #fff;display: block;border-radius: 50%; transition: 0.5s; cursor: pointer; width: 32px; height: 32px; line-height: 32px;text-align: center;}
+.step-icon-item span{ display: inline-block;}
+.step-icon-item .iconfont:hover{border: 2px solid #53acf3; color: #53acf3;}
+.step-icon-item .icon-this .iconfont{border: 2px solid #53acf3; color: #53acf3;}
+.tax-step-box .description{display: none;}
+.tax-step-box .step-coordinates{ position: absolute; top:8px; lef:0px;font-size: 12px; color: #aaa}
+.tax-step-box .notice{ position: absolute; background-color: #fff; border: 1px solid #ededed; padding: 5px 16px; line-height: 20px; font-size: 12px; width: 110px; color: #aaaaaa;}
+
+
+.tax-business-box{ padding: 20px; overflow: hidden;border: 1px solid #ebebeb}
+.tax-business-box ul{ margin: 10px; float: left;}
+.tax-business-box .add-btn{display: inline-block; cursor: pointer;color: #999;padding-top: 10px; width: 110px; height: 90px;}
+.tax-business-box .add-btn i{ background-image: url(../../tax-module/business/icon_gray.png);width: 52px; height: 52px;display: block; line-height: 52px; text-align: center; margin: auto;}
+.tax-business-box .add-btn .iconfont{ font-size: 32px; }
+.tax-business-box .add-btn p{ line-height: 32px;text-align: center;}
+.tax-business-box .add-btn:hover{ color: #0994dc;}
+.tax-business-box .add-btn:hover i{ background-image: url(../../tax-module/business/icon_bg.png);}
+.tax-business-box .item-ul{ cursor: pointer;color: #999; padding-top: 10px; height: 90px; position: relative;}
+.tax-business-box .item-ul i{ background-image: url(../../tax-module/business/icon_blue.png);width: 52px; height: 52px;display: block; line-height: 52px; text-align: center; margin: auto;}
+.tax-business-box .item-ul .iconfont{ font-size: 32px; color: #fff; }
+.tax-business-box .item-ul a{ text-align: center; line-height: 18px; padding: 5px 0;display: block; width:110px;}
+.tax-business-box .item-ul a:hover{ color: #0994dc}
+
+
+.tax-business-box .item-ul:hover{ }
+.tax-business-box .item-ul:hover i{ }
+.tax-business-box .description{display: none;}
+.tax-business-box .notice{ position: absolute; background-color: #fff; border: 1px solid #ededed; padding: 5px 16px; line-height: 20px; font-size: 12px; width: 110px; color: #aaaaaa;}
+.tax-business-box .item-ul .item-but {top:0px; text-align: center; position: absolute;right:0px;  }
+.tax-business-box .item-ul .item-but .iconfont{ color: #fff; background-color: #53acf3; font-size: 12px;border-radius: 2px; margin: 0 2px; padding: 2px; opacity: 0.5;display: inline-block; width: 12px; height: 12px;font-size: 12px; line-height: 12px;}
+.tax-business-box .item-ul .item-but .iconfont:hover{ opacity:1;}
+
+

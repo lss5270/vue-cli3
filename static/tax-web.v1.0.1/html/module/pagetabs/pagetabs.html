@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>标签页</title>
+<script src="../../../tax-js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../../tax-module/pagetabs/pagetabs.js" type="text/javascript"></script>
+<link href="../../../tax-module/pagetabs/pagetabs.css" type="text/css" rel="stylesheet">
+<link href="../../../tax-font-icon/iconfont.css" rel="stylesheet">
+<link href="../../../ui-css/ui-css.css" rel="stylesheet">
+<link href="../../../tax-css/common.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="ui-left-menu"> 
+	<a tab-href="page_index.html" tab-text="桌面" class="link-strong">桌面</a> 
+	<a tab-href="page_01.html" tab-text="栏目一" class="link-strong">栏目一</a> 
+	<a tab-href="page_02.html" tab-text="栏目二" class="link-strong">栏目二</a> 
+	<a tab-href="page_03.html" tab-text="栏目三" class="link-strong">栏目三</a> 
+	<a tab-href="page_04.html" tab-text="栏目四" class="link-strong">栏目四</a>
+</div>
+<div style="margin-left: 120px;">
+  <div class="tax-pagetabs" id="tax_app_tabs" >
+    <div id="leftPage"><i class="iconfont fsicon-tabs-left"></i></div>
+    <div id="tax_tab">
+      <ul class="tax-tab-title">
+        <li tab-id="page_index.html" class="tab-this"><i class="iconfont fsicon-zhuye"></i><span>桌面</span></li>
+      </ul>
+    </div>
+    <div id="rightPage"><i class="iconfont fsicon-tabs-right"></i></div>
+    <div id="tab-menu">
+      <ul>
+        <i class="iconfont fsicon-xiangxia"></i>
+        <dl>
+          <dd id="closeOtherTabs">关闭其它标签</dd>
+          <dd id="closeAllTabs">关闭所有标签</dd>
+        </dl>
+      </ul>
+    </div>
+  </div>
+  <div class="tax-pagetabs-body" id="tax_app_body">
+    <div class="tax-tabsbody-item tax-show">
+      <iframe src="page_index.html" frameborder="0" class="pagestabs-iframe" style="height: 500px;"></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>

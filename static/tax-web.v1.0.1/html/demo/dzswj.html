@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>	
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">	
+<link rel="stylesheet" href="../../ui-css/ui-css.css">
+<link rel="stylesheet" href="../../ui-font/iconfont.css">
+<link rel="stylesheet" href="../../tax-css/common.css">	
+</head>
+	
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->                    
+<div class="layui-container">
+  <blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote> 
+
+  <div class="ui-demo">
+      <ul>
+	      <li>
+			  <h4>登录前主页</h4>
+			  <img src="../../ui-images/demo/dzswj/index.png">
+		      <p><a href="../../demo/index.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>登录</h4>
+			  <img src="../../ui-images/demo/dzswj/login.png">
+		      <p><a href="../../demo/login.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>登录后主页</h4>
+			  <img src="../../ui-images/demo/dzswj/index02.png">
+		      <p><a href="../../demo/index02.html#" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>查询列表</h4>
+			  <img src="../../ui-images/demo/dzswj/cx01.png">
+		      <p><a href="../../demo/sbjs/lm_sxbl.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>查询列表无数据</h4>
+			  <img src="../../ui-images/demo/dzswj/cx02.png">
+		      <p><a href="../../demo/sbjs/lm_sxbl02.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>办税日历</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_bsfw.png">
+		      <p><a href="../../demo/bsfw/lm_bsfw.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>办税地图</h4>
+			  <img src="../../ui-images/demo/dzswj/map.png">
+		      <p><a href="../../demo/bsfw/lm_map.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>检查证查验</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_check.png">
+		      <p><a href="../../demo/bsfw/lm_check.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>事项办理</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_sxbl.png">
+		      <p><a href="../../demo/sxbl/lm_sxbl.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>步骤显示</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_sxtc.png">
+		      <p><a href="../../demo/bsfw/lm_sxtc.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>流程配置</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_theme.png">
+		      <p><a href="../../demo/theme/lm_theme.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>表单提交</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_xbqytc.png">
+		      <p><a href="../../demo/bsfw/lm_xbqytc.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>详细信息表格组合</h4>
+			  <img src="../../ui-images/demo/dzswj/lm_xxxx.png">
+		      <p><a href="../../demo/bsfw/lm_xxxx.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>申报表填写</h4>
+			  <img src="../../ui-images/demo/dzswj/table.png">
+		      <p><a href="../../demo/taxReturns/iframe_index.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>职工个人缴费工资调整</h4>
+			  <img src="../../ui-images/demo/dzswj/table_zggrjfgztz.png">
+		      <p><a href="../../demo/taxReturns/zggrjfgztz/iframe_WageAdjustment.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>调查问卷前端</h4>
+			  <img src="../../ui-images/demo/dzswj/questionnaire_page.png">
+		      <p><a href="../../demo/bsfw/questionnaire_page.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>正文页</h4>
+			  <img src="../../ui-images/demo/dzswj/news_page.png">
+		      <p><a href="../../demo/bsfw/news_page.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>404报错页面</h4>
+			  <img src="../../ui-images/demo/dzswj/404.png">
+		      <p><a href="../../demo/errorMessage/index_error.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+		  <li>
+			  <h4>清税注销税（费）申报及缴纳套餐</h4>
+			  <img src="../../ui-images/demo/dzswj/qszxsfsb.gif">
+		      <p><a href="../../demo/taxReturns/qszxsfsb/index.html" target="_blank" class="layui-btn">查看DEMO</a></p>
+		  </li>
+ 
+		  
+	  </ul>	
+  </div>	
+	
+</div>
+	
+
+	
+</body>
+</html>

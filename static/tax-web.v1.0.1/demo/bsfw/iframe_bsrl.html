@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" http-equiv="nocache" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../tax-js/common.js"></script>
+<script src="../../tax-module/taxDate/taxDate.js"></script>		
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 --> 
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+<link rel="stylesheet" href="../../tax-module/taxDate/taxDate.css">		
+</head>
+ 
+	<body >
+	<div class="tax-center-box">
+ 
+	<h1 class="tax-page-title"><img src="../../tax-images/png_icon/bsrl.png" class="tax-page-icon">办税日历</h1> 	
+     <form class="layui-form marginT20">
+		 
+        
+      
+         <div class="year-box" style="width: 120px;">
+            <select name="modules" id="year" lay-verify="required" lay-search=""  >
+              <option value="2018" selected>2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+            </select>
+          </div>
+        <div>
+		 
+
+		 </div>
+        
+        <div class="month-box">
+             <div class="month-item layui-row">
+			     <li data="1" class="layui-col-xs1" >1月</li>
+				 <li data="2" class="layui-col-xs1">2月</li>
+				 <li data="3" class="layui-col-xs1">3月</li>
+				 <li data="4" class="layui-col-xs1">4月</li>
+				 <li data="5" class="layui-col-xs1">5月</li>
+				 <li data="6" class="layui-col-xs1">6月</li>
+				 <li data="7" class="layui-col-xs1">7月</li>
+				 <li data="8" class="layui-col-xs1">8月</li>
+				 <li data="9" class="layui-col-xs1">9月</li>
+				 <li data="10" class="layui-col-xs1">10月</li>
+				 <li data="11" class="layui-col-xs1">11月</li>
+				 <li data="12" class="layui-col-xs1">12月</li>
+			 </div>
+        </div>
+     
+    </form>
+ 
+   	<div class="date-main marginT32">
+    <div class="date-box">
+       <div class="tax-title"><i class="dot"></i><span class="year"></span>年<span class="month"></span>月</div>
+	   <div class="date-item marginT16">
+		  <ul class="week"><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li><li>日</li></ul>
+		  <ul class="date"></ul> 
+	  </div>	
+    </div>
+		
+    <div class="date-explain">
+	  <div class="tax-title"><i class="dot"></i>征期说明</div>	
+      <div class="taxDate-title marginT20"></div>
+	  <div class="tabDate-table marginT16">
+		  <table class="layui-table">
+    <colgroup>
+      <col width="50%">
+	  <col width="35%">
+	  <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>税种</th>
+        <th>税费明细</th>
+        <th>备注</th>
+        </tr> 
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">废弃点起电子产品处理基金</td>
+        <td align="center">9月1日 至 9月17日</td>
+        <td rowspan="5">2018年9月25日（周二）~2018年9月30日（周日）请假6天，与国庆节衔接，拼16天小长假</td>
+        </tr>
+      <tr>
+        <td align="left">个人所得税</td>
+        <td align="center">9月1日 至 9月17日</td>
+        </tr>
+      <tr>
+        <td align="left">文化事业建设费</td>
+        <td align="center">9月1日 至 9月17日</td>
+        </tr>
+      <tr>
+        <td align="left">消费税</td>
+        <td align="center">9月1日 至 9月17日</td>
+        </tr>
+      <tr>
+        <td align="left">增值税</td>
+        <td align="center">9月1日 至 9月17日</td>
+        </tr>
+    </tbody>
+  </table>
+	  </div>	
+    </div>
+  </div>	
+		
+		
+  </div>
+
+		
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+ 
+ 
+	
+	
+layui.use('form', function(){
+	
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+	
+ 
+});	
+	
+	
+ 
+
+
+ 
+	
+ setTimeout("window.parent.setHeight()",20);	
+	
+</script>		
+		
+
+		
+	</body>
+
+</html>

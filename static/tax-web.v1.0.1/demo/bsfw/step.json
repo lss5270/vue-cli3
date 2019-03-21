@@ -1,0 +1,16 @@
+{
+ "item":[
+      {"type":"node","t":"50","l":"41","w":"56","h":"80","bg":"step-icon ","icon":"iconfont fsicon-shenpi_faqishenpi","iconId":"3","name":"事项报告","href":"#","description":""}
+	 ,{"type":"point","t":"68","l":"101","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"point","t":"68","l":"244","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"50","l":"302","w":"110","h":"98","bg":"step-icon","icon":"iconfont fsicon-fapiaodaikai","iconId":"17","name":"报验登记","href":"###","description":""}
+	 ,{"type":"point","t":"68","l":"388","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"50","l":"445","w":"110","h":"98","bg":"step-icon","icon":"iconfont fsicon-fapiaolingyong","iconId":"15","name":"预缴申报","href":"###","description":""}
+	 ,{"type":"node","t":"50","l":"595","w":"98","h":"80","bg":"step-icon","icon":"iconfont fsicon-btn-tracking","iconId":"31","name":"证明开具","href":"###","description":""}
+	 ,{"type":"point","t":"68","l":"531","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"50","l":"170","w":"84","h":"80","bg":"step-icon","icon":"iconfont fsicon-shenbaoqingkuangchaxun","iconId":"9","name":"信息反馈","href":"###","description":""}
+ 
+
+],
+"box":[{"height":"120"}]
+}

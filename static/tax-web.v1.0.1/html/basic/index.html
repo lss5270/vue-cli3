@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">	
+<link rel="stylesheet" href="../../ui-css/ui-css.css">	
+</head>
+	
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->                    
+<div class="layui-container">
+  <blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote> 
+ 
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  
+  <legend>电子税务局目录结构</legend>
+  </fieldset>	
+<!--演示代码-->
+<pre class="layui-code" lay-height="450px">
+├─站点
+  │─layui//layui框架库电子税务局专用
+  │  ├─css //css目录
+  │  │ │─modules //模块css目录（一般如果模块相对较大，我们会单独提取，比如下面三个：）
+  │  │ │  ├─laydate
+  │  │ │  ├─layer
+  │  │ │  └─layim
+  │  │ └─layui.css //核心样式文件
+  │  ├─font  //字体图标目录
+  │  ├─images //图片资源目录（目前只有layim和编辑器用到的GIF表情）
+  │  │─lay //模块核心目录
+  │  │─layui.js //基础核心库
+  │  └─layui.all.js //包含layui.js和所有模块的合并文件  
+  │─tax-css//电子税务局专用样式
+  │    └─ common.css
+  │─tax-font-icon//字体图标库
+  │    └─ iconfont.css
+  │─tax-images//电子税务局专用图库
+  │─tax-module//电子税务局非layui内置组件
+  │─tax-js//电子税务局专用脚本库
+  │─tax-module//独立模块
+ 
+</pre>   
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>电子税务局总局UI</legend>
+  </fieldset>	
+<!--演示代码-->
+<pre class="layui-code" lay-height="350px">
+ <!--jquery-1.9.1.min.js支持ie8-->	
+<script src="相对路径/tax-js/jquery-1.9.1.min.js"></script>
+<!--common.js公共页面脚本-->
+<script src="相对路径/tax-js/common.js"></script>	
+<!--layui.css定制后样式表-->	
+<link rel="stylesheet" href="相对路径/layui/css/layui.css">
+<!--新增公共组件样式表-->		
+<link rel="stylesheet" href="相对路径/tax-css/common.css">
+<!--自定制公共字体图标库-->	
+<link href="相对路径/tax-font-icon/iconfont.css" rel="stylesheet" type="text/css">
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="相对路径/tax-js/ie8/html5.min.js"></script>
+  <script src="相对路径/tax-js/ie8/respond.min.js"></script>
+<![endif]-->	
+</pre>   
+</div>
+<script src="../../layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use('code', function(){
+  
+  layui.code({
+	   title: '演示代码'
+	  ,encode: true //是否转义html标签。
+	  ,about: false
+  }); 
+	
+});
+</script>
+	
+</body>
+</html>

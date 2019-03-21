@@ -1,0 +1,166 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE">
+<title>网上税务局</title>
+<link rel="stylesheet" type="text/css" href="../../tax-module/taxReturns/main.css">
+<link rel="stylesheet" type="text/css" href="../../tax-module/taxReturns/message_solid.css">
+<link rel="stylesheet" type="text/css" href="../../tax-module/taxReturns/Message.css">
+<link rel="stylesheet" type="text/css" href="../../tax-module/taxReturns/table.css">
+<link rel="stylesheet" type="text/css" href="../../tax-module/taxReturns/common.css">	
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../layui/layui.js"></script>
+<link rel="stylesheet" href="../../layui/css/layui.css" id="layui_layer_skinlayercss" style="">
+<script src="/sbzs-cjpt-web/abacus/_res_/js/pxsp.js"></script>
+<script src="/sbzs-cjpt-web/abacus/_res_/js/ywbm.js"></script>
+<style type="text/css">
+* {margin: 0px; padding: 0px; font-family: "微软雅黑"; list-style-type: none;}
+body {margin: 0px; padding: 0px;}
+table {border-spacing: 0px;}
+iframe {margin: 0px; padding: 0px; border-spacing: 0px; border:0px;}
+</style>
+
+
+<link rel="stylesheet" href="http://10.10.0.88:48080/sbzs-cjpt-web/abacus/_res_/js/layer-v2.2/layer/skin/layer.ext.css" id="layui_layer_skinlayerextcss" style=""></head>
+<body onresize="resizeFrame()" onload="initFrame()" style="height: 946px;">
+ 
+	
+	<div class="winbox cjpageEdit" style="width: 1000px; height: 500px; overflow: auto; margin-left: -500px; z-index: 203;">
+<h1 style="margin-top: 0%;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td> 宗地总体信息维护（修改）</td>
+    <td align="right"><span><img src="../../../../sbzs_res/common/img/win03.png" alt=""></span></td>
+  </tr>
+</tbody></table>
+</h1>
+<div style="width:96%; margin:auto;" id="sbcxstdsyxxcjbvo">
+<div class="boxmain">
+
+<div class="linkpagebox" style="border:1px solid #fff; margin-bottom:5px;">
+<div class="table">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" ng-jprefix="editZdztxx">
+    <tbody><tr>
+      <td width="100">土地编号：</td>
+      <td class="EditInput03"><input ng-model="editZdztxx.tdsybh" type="text" class="inputReadonly ng-pristine ng-valid" style="width:150px;" value="" readonly="" ng-blur="fsBlur($event)" jpath="editZdztxx.tdsybh"></td>
+      <td align="right">&nbsp;</td>
+      </tr>
+  </tbody></table>
+</div>
+</div>
+
+<div class="linkpagebox">
+<div class="titleText">土地使用证信息</div>
+<div class="divhide">
+<div class="NewTableMain" style="padding-top:30px;padding-bottom:20px;">
+	<table id="editZdztxx" width="100%" border="0" cellpadding="0" cellspacing="0" ng-jprefix="editZdztxx">
+    <tbody><tr>
+      <td width="120"><span class="font-color01">*</span>纳税人类型：</td>
+      <td>
+        <select style="border: 1px solid #c6c6c6;width:150px;" ng-change="externalMethods('nsrlxChange',editZdztxx.nsrlx)" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.nsrlx" ng-selected="key==editZdztxx.nsrlx" ng-options="key as key+' | '+value for (key,value) in CT.nsrlxCT" jpath="editZdztxx.nsrlx"><option value="" class=""></option><option value="1" label="1 | 权属所有人">1 | 权属所有人</option><option value="2" label="2 | 集体土地使用人">2 | 集体土地使用人</option><option value="3" label="3 | 无偿使用人">3 | 无偿使用人</option><option value="4" label="4 | 代管人">4 | 代管人</option><option value="5" label="5 | 实际使用人">5 | 实际使用人</option></select>
+      </td>
+      <td width="150">土地使用权人识别号：</td>
+      <td><input id="tdsyqrnsrsbh" ng-model="editZdztxx.tdsyqrnsrsbh" class="inputText02 ng-pristine ng-valid" type="text" style="width: 150px; background-color: rgb(247, 247, 247);" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.tdsyqrnsrsbh" disabled="disabled" readonly="true"></td>
+      <td width="140">土地使用权人名称：</td>
+      <td><input id="tdsyqrmc" ng-model="editZdztxx.tdsyqrmc" class="inputText02 ng-pristine ng-valid" type="text" style="width: 150px; background-color: rgb(247, 247, 247);" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.tdsyqrmc" disabled="disabled" readonly="true"></td>
+    </tr>
+    <tr>
+      <td>土地使用权证号：</td>
+      <td><input type="text" ng-model="editZdztxx.tdsyzbh" class="inputText02 ng-pristine ng-valid" style="width:150px;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.tdsyzbh"></td>
+      <td>地 号：</td>
+      <td><input type="text" ng-model="editZdztxx.dh1" class="inputText02 ng-pristine ng-valid" style="width:150px;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.dh1"></td>
+      <td>土 地 名 称 ：</td>
+      <td><input type="text" ng-model="editZdztxx.tdmc1" class="inputText02 ng-pristine ng-valid" style="width:150px;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.tdmc1"></td>
+    </tr>
+    <tr>
+      <td><span class="font-color01">*</span>土地取得时间：</td>
+      <td><input class="inputDate01 ng-pristine ng-valid" type="text" ng-model="editZdztxx.csqdsj" ng-laydate="{}" id="textfieldq" style="width:150px;" ng-blur="fsBlur($event)" jpath="editZdztxx.csqdsj"></td>
+      <td><span class="font-color01">*</span>土地取得方式：</td>
+      <td>
+        <select style="border: 1px solid #c6c6c6;width:150px;" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.tdqdfsDm" ng-selected="key==editZdztxx.tdqdfsDm" ng-options="key as key+' | '+value for (key,value) in CT.tdqdfsCT" jpath="editZdztxx.tdqdfsDm"><option value="" class=""></option><option value="01" label="01 | 划拨">01 | 划拨</option><option value="02" label="02 | 出让">02 | 出让</option><option value="03" label="03 | 租赁">03 | 租赁</option><option value="04" label="04 | 其他">04 | 其他</option><option value="05" label="05 | 转让">05 | 转让</option></select>
+      </td>
+      <td><span class="font-color01">*</span>占用土地面积(m²)：</td>
+      <td><input type="text" ng-model="editZdztxx.zytdmj1" ng-datatype="number{2}" class="inputText02 ng-pristine ng-valid" style="width:150px;text-align:right;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.zytdmj1"></td>
+    </tr>
+    <tr>
+      <td><span class="font-color01">*</span>土 地 性 质：</td>
+      <td>
+        <select style="border: 1px solid #c6c6c6;width:150px;" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.tdxzDm" ng-selected="key==editZdztxx.tdxzDm" ng-options="key as key+' | '+value for (key,value) in CT.tdxzCT" jpath="editZdztxx.tdxzDm"><option value="" class=""></option><option value="01" label="01 | 国有">01 | 国有</option><option value="02" label="02 | 集体">02 | 集体</option></select>
+      </td>
+      <td><span class="font-color01">*</span>土 地 用 途：</td>
+      <td>
+        <select style="border: 1px solid #c6c6c6;width:150px;" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.tdytDm" ng-selected="key==editZdztxx.tdytDm" ng-options="key as key+' | '+value for (key,value) in CT.tdytCT" jpath="editZdztxx.tdytDm"><option value="" class=""></option><option value="1" label="1 | 商业用地">1 | 商业用地</option><option value="2" label="2 | 综合用地">2 | 综合用地</option><option value="3" label="3 | 住宅用地">3 | 住宅用地</option><option value="4" label="4 | 工业用地">4 | 工业用地</option><option value="5" label="5 | 房地产开发企业的开发用地">5 | 房地产开发企业的开发用地</option><option value="9" label="9 | 其他用地">9 | 其他用地</option></select>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+    </div>
+  </div>
+</div>
+<div class="linkpagebox">
+<div class="titleText">地价信息</div>
+<div class="table">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" ng-jprefix="editZdztxx">
+    <tbody><tr>
+      <td width="120">地 价(元)：<span class="font-color01"> </span></td>
+      <td class="ReadInput01"><input ng-model="editZdztxx.tddj" ng-datatype="number{2}" class="inputReadonly ng-pristine ng-valid" type="text" style="width:150px;text-align:right;" jpath="editZdztxx.tddj" value="" readonly="" ng-blur="fsBlur($event)"></td>
+      <td width="150">其中取得土地使用权<br>支付金额(元)：</td>
+      <td class="EditInput01"><input type="text" ng-model="editZdztxx.qzqdtdsyqzfje" ng-datatype="number{2}" class="inputText02 ng-pristine ng-valid" style="width:150px;text-align:right;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.qzqdtdsyqzfje"></td>
+      <td width="140">其中土地开发成本(元)：</td>
+      <td class="EditInput01"><input type="text" ng-model="editZdztxx.qztdkfcb" ng-datatype="number{2}" class="inputText02 ng-pristine ng-valid" style="width:150px;text-align:right;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.qztdkfcb"></td>
+    </tr>
+  </tbody></table>
+</div>
+</div>
+
+<div class="linkpagebox">
+<div class="titleText">地址坐落信息</div>
+<div class="divhide">
+<div class="NewTableMain" style="padding-top:30px;padding-bottom:20px;">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" ng-jprefix="editZdztxx">
+    <tbody><tr>
+      <td width="120"><span class="font-color01">*</span>土地坐落地址<br>（行政区划）：</td>
+      <td>
+        <select style="border: 1px solid #c6c6c6;width:150px;" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.xzqhszDm" ng-selected="key==editZdztxx.xzqhszDm" ng-options="key as key+' | '+value for (key,value) in CT.xzqhCT" jpath="editZdztxx.xzqhszDm"><option value="" class=""></option><option value="441723" label="441723 | 阳东县 ">441723 | 阳东县 </option></select>
+      </td>
+      <td width="150"><span class="font-color01">*</span>土地坐落地址<br>(所处街道)：</td>
+      <td>
+        <select ng-show-select="selectShow3" style="border: 1px solid #c6c6c6;width:150px;" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.jdxzDm" ng-selected="key==editZdztxx.jdxzDm" ng-options="key as key+' | '+value for (key,value) in CT.jdxzCT[editZdztxx.xzqhszDm]" jpath="editZdztxx.jdxzDm"><option value="" class=""></option></select>
+        <input id="selectShow3" ng-value="CT.jdxzCT[editZdztxx.xzqhszDm][editZdztxx.jdxzDm]" type="hidden">
+      </td>
+      <td width="140"><span class="font-color01">*</span>土地坐落详细地址：</td>
+      <td><input ng-show-content="12px" type="text" ng-model="editZdztxx.tdzldz" class="inputText02 ng-pristine ng-valid" style="width:150px;" value="" ng-blur="fsBlur($event)" jpath="editZdztxx.tdzldz"></td>
+    </tr>
+    <tr>
+      <td><span class="font-color01">*</span>所属主管税务所<br>（科、分局）：</td>
+      <td>
+        <select ng-show-select="selectShow4" style="border: 1px solid #c6c6c6;width:150px;" class="select01 ng-pristine ng-valid" ng-model="editZdztxx.zgswskfjDm" ng-selected="key==editZdztxx.zgswskfjDm" ng-options="key as value for (key,value) in CT.cjpageSwjgCT" jpath="editZdztxx.zgswskfjDm"><option value="" class=""></option><option value="24417230100" label="阳江市阳东县地方税务局东城税务分局 ">阳江市阳东县地方税务局东城税务分局 </option><option value="24417230200" label="阳江市阳东县地方税务局东平税务分局 ">阳江市阳东县地方税务局东平税务分局 </option><option value="24417230300" label="阳江市阳东县地方税务局塘坪税务分局 ">阳江市阳东县地方税务局塘坪税务分局 </option><option value="24417230400" label="阳江市阳东县地方税务局雅韶税务分局 ">阳江市阳东县地方税务局雅韶税务分局 </option><option value="24417230500" label="阳江市阳东县地方税务局合山税务分局 ">阳江市阳东县地方税务局合山税务分局 </option><option value="24417230600" label="阳江市阳东县地方税务局北惯税务分局 ">阳江市阳东县地方税务局北惯税务分局 </option><option value="24417230700" label="阳江市阳东县地方税务局新洲税务分局 ">阳江市阳东县地方税务局新洲税务分局 </option><option value="24417230800" label="待定机构 ">待定机构 </option></select>
+        <input id="selectShow4" ng-value="CT.cjpageSwjgCT[editZdztxx.zgswskfjDm]" type="hidden">
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+</div>
+
+<div class="sbtnbox" style="margin-top:-20px;margin-bottom: 20px;">
+	<a class="btn sbtnw sbtn04 save" id="saveZdztxxEdit" ng-click="externalMethods('saveZdztxx','edit')" href="#" style="color: #FFFFFF">保存</a>
+	<a class="btn sbtnw sbtn04 close" href="#" style="color: #FFFFFF">关闭</a>
+</div>
+
+</div> 
+</div>
+
+</div>
+	
+	
+	
+	<script src="/sbzs-cjpt-web/abacus/_res_/js/autotest.js"></script>
+	<script src="/sbzs-cjpt-web/abacus/_res_/js/layer-v2.2/layer/layer.js"></script>
+	<script src="/sbzs-cjpt-web/abacus/_res_/js/layer-v2.2/layer/extend/layer.ext.js"></script>
+
+</body></html>

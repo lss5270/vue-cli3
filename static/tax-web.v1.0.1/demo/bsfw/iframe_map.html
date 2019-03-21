@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" http-equiv="nocache" content="no-cache">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../tax-js/common.js"></script>
+<script src="../../tax-module/taxMap/taxmap.js"></script>
+<script src="../../tax-module/taxSearchSelect/search-select.js"></script>		
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 --> 
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+<link rel="stylesheet" href="../../tax-module/taxMap/taxmap.css">
+<link rel="stylesheet" href="../../tax-module/taxSearchSelect/search.css">		
+</head>
+ 
+<body >
+ 
+ 
+	<div class="map-win-center" id="winmain" style="display: none">
+	    <div class="text-item">
+		    <li><span>地址：</span><p>广州市越秀区东风路152号</p></li>
+			<li><span>电话：</span><p>12366</p></li>
+			<li><span>办公时间：</span><p>每月22日下午（遇节假日顺延）为业务学习时间，不对外办公。 2．每月第一个工作日上午为发票盘点时间，停止办理发票业务（代开票业务正常对外办公）。</p> </li>
+			<li><span>附近建筑：</span><p>市少年宫对面，嘉和苑正门东面121米 </p></li>
+			<li><span>交通指引：</span><p>公交：市少年宫站、广医站 </p></li>
+		</div>
+		<div class="pic-item layui-row">
+		    <li class="layui-col-xs3"><img src="../../tax-module/taxMap/pic01.jpg"></li>
+			<li class="layui-col-xs3"><img src="../../tax-module/taxMap/pic02.jpg"></li>
+			<li class="layui-col-xs3"><img src="../../tax-module/taxMap/pic03.jpg"></li>
+			<li class="layui-col-xs3"><img src="../../tax-module/taxMap/pic04.jpg"></li>
+		</div>
+		
+		<div class="map-tab-box marginT16">
+		   <div class="tax-tab tax-tab-multiple">
+<ul class="tax-tab-title layui-row">
+<li class="tax-this layui-col-xs4"><i class="iconfont fsicon-chaxun font-blue"></i> 在附近找</li>
+<li class="layui-col-xs4"><i class="iconfont fsicon-Coordinate font-red"></i> 到这里去</li>
+<li class="layui-col-xs4"><i class="iconfont fsicon-Coordinate font-blue"></i> 从这里出发</li>
+</ul>
+<div class="tax-tab-content">
+	
+<div class="tax-tab-item tax-show">
+   
+	<div class="search-box">
+	    
+		<div class="layui-inline">
+			
+			<input  type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入搜索条件" class="layui-input input-search-select" Obj-data="searchData" style="width: 293px;" >
+	
+		
+		</div>
+		<div class="layui-inline"><button type="button" class="layui-btn layui-btn-primary">搜索</button></div>
+		
+	</div>
+	
+</div>
+<div class="tax-tab-item">
+
+	<div class="search-box">
+	    
+		<div class="layui-inline">
+			
+			<input  type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入搜索条件" class="layui-input input-search-select" style="width: 293px;" >
+	
+		
+		</div>
+		<div class="layui-inline"><button type="button" class="layui-btn layui-btn-primary">搜索</button></div>
+		
+	</div>
+	
+</div>
+<div class="tax-tab-item">
+<div class="search-box">
+	    
+		<div class="layui-inline">
+			
+			<input  type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入搜索条件" class="layui-input input-search-select" style="width: 293px;" >
+	
+		
+		</div>
+		<div class="layui-inline"><button type="button" class="layui-btn layui-btn-primary">搜索</button></div>
+		
+	</div>	
+	
+</div>
+ 
+</div>
+</div>
+		
+		</div>
+		
+		<p class="bottom-dot"><i class="iconfont fsicon-xiajiantou"></i></p>
+		
+	</div>
+	
+  
+<div class="map_bg"></div>
+<div class="mapLeftMenu">
+	<div class="map-left-menu-box">
+		<div class="left-title"><i class="iconfont fsicon-map"></i><span>办税地图</span></div>
+		 <div class="left-menu">
+			 <ul>
+				 <li>
+					<a href="###">广州市</a>
+					 <dl class="left-menu-child">
+						 <dd><a href="###" >越秀区</a>
+						     <div class="office">
+							     <a href="###" onClick="mapWin(40,0,'广州市越秀区东风西路办税服务厅')">东风西路办税服务厅</a>
+								 <a href="###">五羊新城办税服务厅</a>
+								 <a href="###">交易广场办税服务厅</a>
+							 </div>
+						 </dd>
+						 <dd>
+							 
+							 <a href="###" >海珠区 </a>
+							 <div class="office">
+							     <a href="###">东风西路办税服务厅</a>
+								 <a href="###">五羊新城办税服务厅</a>
+								 <a href="###">交易广场办税服务厅</a>
+							 </div>
+						 
+						 </dd>
+						 <dd><a href="###" >荔湾区</a></dd>
+						 <dd><a href="###" >天河区</a></dd>
+						 <dd><a href="###" >白云区</a></dd>
+						 <dd><a href="###" >黄浦区</a></dd>
+						 <dd><a href="###" >番禺区</a></dd>
+						 <dd><a href="###" >花都区</a></dd>
+						 <dd><a href="###" >增城区</a></dd>
+						 <dd><a href="###" >从化区</a></dd>
+						 <dd><a  href="###" >南沙开发区</a></dd>
+						 <dd><a href="###" >开发区</a></dd>
+ 
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">中山市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">惠州市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">东莞市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">揭阳市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">佛山市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">清远市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+				 <li>
+					
+					 <a href="###">珠海市</a>
+					 <dl class="left-menu-child">						 
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+						 <dd><a href="###" >税务局办税服务厅</a></dd>
+					 </dl>
+				 </li>
+			  
+			 </ul>
+		
+		</div>
+		 
+		
+	</div>	
+		
+</div>		
+		
+ 	
+		
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+ 
+ 
+	
+	
+layui.use('form', function(){
+	
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+	
+ 
+});	
+	
+
+ setTimeout("window.parent.setHeight()");	
+	
+</script>		
+		
+
+		
+	</body>
+
+</html>

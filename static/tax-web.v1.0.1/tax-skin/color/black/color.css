@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS black */
+
+.admin-header{ background-color: #424658 !important;}
+.admin-header .admin-header-right .admin-header-select .layui-input{background-color: #595c6c;!important;}
+.layui-input:focus, .layui-textarea:focus {	border-color: #323540!important; box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}

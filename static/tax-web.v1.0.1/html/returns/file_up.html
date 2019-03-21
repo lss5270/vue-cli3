@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0282)http://vpn.taxcp.com/zlpz-cjpt-web/attachment/getDzbdFlzlList.do?ysqxxid=f1288d611c7954f8a9dfc81197480263ff69ecb41c93ec95c8cd7b8264dd5e49109c52093db99b62eccdce1319e24319f9b490b1a8b1055b&swsxDm=SXA011002002&lcswsxDm=undefined&gdslxDm=1&nsrsbh=&djxh=&secondLoadTag=A&ywbm=bgswdj&test= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+  
+  	
+	<meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE">
+    <title>附列资料</title>
+	<link rel="stylesheet" type="text/css" href="../../tax-module/taxReturns/table.css">
+	<link rel="stylesheet" type="text/css" href="../../tax-font-icon/iconfont.css">
+   	<link rel="stylesheet" type="text/css" href="./附列资料_files/comon0.css">
+  	<link rel="stylesheet" type="text/css" href="./附列资料_files/attachment.css">
+  	<script type="text/javascript" src="./附列资料_files/jquery.min.js.下载"></script>
+    <script type="text/javascript" src="./附列资料_files/qrcode.min.js.下载"></script>
+    <script type="text/javascript" src="./附列资料_files/layui.js.下载"></script>
+	<script type="text/javascript" src="./附列资料_files/jquery.ui.widget.js.下载"></script>
+	<script type="text/javascript" src="./附列资料_files/jquery.iframe-transport.js.下载"></script>
+	<script type="text/javascript" src="./附列资料_files/jquery.fileupload.js.下载"></script>
+	<script type="text/javascript" src="./附列资料_files/jquery.fileupload-process.js.下载"></script>
+	<script type="text/javascript" src="./附列资料_files/jquery.fileupload-validate.js.下载"></script>
+    <!-- 进度条资源  -->
+	<link rel="stylesheet" type="text/css" href="./附列资料_files/styles.css">
+ 	 <style type="text/css">
+	 	 .uploadify{
+	    		margin: 10px 19px;
+	    }
+
+		body .layui-layer-page .layui-layer-content {
+			position: relative;
+			padding:0px; 
+			min-height:50px;
+			overflow: hidden
+		}
+    	table{table-layout: fixed;}td{word-break: break-all; word-wrap:break-word;}
+    </style>
+    <script type="text/javascript">
+    
+    var layer;
+    layui.use('layer', function() { //独立版的layer无需执行这一句
+        layer = layui.layer;
+    });
+ 		// 判断我的资料库是否被禁用
+ 		var isWdzlk = true;
+	    $(function() {
+	    	var url = window.location.protocol+"//"+window.location.host+"/xxmh/menuDataValidController/getMenuData.do";
+	    	$.ajax({
+	    		type: "post",
+	    		url: url,
+	    		data: {
+	    			cdId:"39",// 我的资料库的菜单ID
+	    			yzm:"foresee20160702"
+	    		},
+	    		success: function(data) {
+	    			if (data.flag=='ok') {}
+	    			else {
+	    				$(".wdzlk").hide();
+	    				// 兼容IE8页面排版，通过调节此列大小
+	    				$("#adjustSize").attr("width","25%");
+	    				isWdzlk = false;
+	    			}
+	    		}
+	    	});
+	    });
+    </script>
+  <link id="layuicss-layer" rel="stylesheet" href="./附列资料_files/layer.css" media="all"></head>  
+  <body>
+  
+	<div style="width:96%; margin:auto;" id="viewCtrlId">
+	  
+		<!-- 剩余必报份数 -->
+	  <input type="hidden" id="sybbfs" name="sybbfs" value="">
+		<!-- 剩余条件必报份数 -->  
+	  <input type="hidden" id="sytjbbfs" name="sytjbbfs" value="">
+	  <input type="hidden" id="contextPath" value="/zlpz-cjpt-web">
+	  
+	  <input type="hidden" id="size" value="5">
+	  <input type="hidden" id="multiFiles" value="Y">
+	  <input type="hidden" id="gdslxDm" value="1">
+	  <input type="hidden" id="jybz" value="Y">
+	  	  <input type="hidden" id="fileSizeLimit" name="fileSizeLimit" value="10M"><!-- 允许上传的文件大小上限，单位MB -->
+	  <!-- 判断是否轮询 -->
+	  <input type="hidden" id="pollState" value="N">
+	  <table>
+	  	<tbody><tr>
+	  		<td>
+	  			<div class="wdzlk">
+					
+				<button id="btn-save" class="layui-btn layui-btn-sm"><i class="iconfont fsicon-btn-save"></i>保存到我的资料库</button>	
+				<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="iconfont fsicon-btn-del"></i>批量删除</button>	
+					
+		  	 
+		    	</div>
+	  		 </td>
+	  	</tr>
+	  </tbody></table>
+	  
+	  <div class="textRM">备注：<br>
+	  	1、当前可以支持上传的附件类型包括：jpg、bmp、png、pdf、xlsx、xls、doc、docx、zip、rar，单项附送资料可<span class="redtext" style="color: red;">支持最大上传值为10M。</span><br>
+	  	2、"附送资料"按钮上的红底数字是指“必报”资料数目，白底数字是指上传资料后剩下的“条件报送”资料数目。 <br>
+		3、点击右上角“×”按钮会自动上传您所选择的资料文件并关闭当前页面，如您要取消上传，请点击对应资料名称后的“取消”按钮。<br>
+	  </div>
+	  
+	  <div class="NewTableMain" style="width: 100%;">
+		<table class="attachTable" width="100%" border="0" cellspacing="1" cellpadding="0" >
+			<tbody><tr>
+				<td class="title01 wdzlk" align="center" width="3%">
+					<strong><input type="checkbox" name="boxId" onclick="checkall()"></strong>
+				</td>
+				<td class="title01" align="center" width="4%"><strong>序号</strong></td>
+				<td class="title01" align="center" width="23%"><strong>附送资料名称</strong></td>
+				<td class="title01" align="center" width="8%"><strong>是否必报</strong></td>
+				<td id="adjustSize" class="title01" align="center" width="23%"><strong>当前文件及大小</strong></td>
+				<td class="title01" align="center" width="5%"><strong>已传份数</strong></td>
+				<td class="title01" align="center" width="5%"><strong>最多报送份数</strong></td>
+				<td class="title01" align="center" width="6%"><strong>状态</strong></td>
+				<td class="title01" align="center" width="130"><strong>操作</strong></td>
+			</tr>
+			
+			   
+	 		
+			 
+			<input type="hidden" id="zbBz2" value="" name="size0">
+			<tr>
+				<td align="center" class="wdzlk"><input name="box" id="box1" type="checkbox">
+				</td><td align="center" class="001307">1</td>
+				<td class="EditInput01" align="left"><span id="flzlmc1">经办人身份证明</span> <span id="flzldm1" style="display: none;">001307</span></td>
+				<td class="EditInput01" align="left">
+					<input type="hidden" id="flzlbslxDm1" name="flzlbslxDm1" value="1">
+					
+				    	&nbsp;必报
+				    	
+				    
+				</td>
+				<td align="left" id="queue1">
+					<div class="filebox">
+						
+							<div class="upload-file" title="Lighthouse.jpg"><ul><p class="progress" style="width: 100%;"></p><span>Lighthouse.jpg</span></ul></div>
+						
+					</div>
+				</td><!-- 文件上传进度条 -->		
+				<td align="center">
+					<span id="fs1">1</span>
+					<div id="fjdx1" style="display: none;"></div>
+					<div id="bcwjm1" style="display: none;">201808201707265696C5FBFFFFFFA026780A78F039A996SXA011002002.jpg</div>
+				</td>
+				<td align="center">
+					
+				    	
+				    	<span id="bsfs1">1</span>
+				    
+					
+				</td>
+				<td align="center">
+					<span id="sczt1">已上传</span>
+				</td>
+				<td align="center">
+					 <button class="layui-btn layui-btn-xs">选择文件</button>
+			         <button class="layui-btn layui-btn-primary layui-btn-xs">取消</button>
+					 <button class="layui-btn layui-btn-primary layui-btn-xs">查看</button>
+					
+				</td>
+	 		</tr>
+	 		   
+	 		
+			 
+			<input type="hidden" id="zbBz3" value="" name="size1">
+			<tr>
+				<td align="center" class="wdzlk"><input name="box" id="box2" type="checkbox">
+				</td><td align="center" class="000074">2</td>
+				<td class="EditInput01" align="left"><span id="flzlmc2">纳税人变更登记内容的决议及有关证明文件复印件</span> <span id="flzldm2" style="display: none;">000074</span></td>
+				<td class="EditInput01" align="left">
+					<input type="hidden" id="flzlbslxDm2" name="flzlbslxDm2" value="2">
+					
+				    	
+				    	&nbsp;条件报送
+				    
+				</td>
+				<td align="left" id="queue2">
+					<div class="filebox">
+						
+							<div class="upload-file" title="mongodb-zlpzSxVO-pzzlDm.png"><ul><p class="progress" style="width: 100%;"></p><span>mongodb-zlpzSxVO-pzzlDm.png</span></ul></div>
+						
+					</div>
+				</td><!-- 文件上传进度条 -->		
+				<td align="center">
+					<span id="fs2">1</span>
+					<div id="fjdx2" style="display: none;"></div>
+					<div id="bcwjm2" style="display: none;">201809281019391DF97421FFFFFFA01DC2F409209616FESXA011002002.png</div>
+				</td>
+				<td align="center">
+					
+				    	
+				    	<span id="bsfs2">3</span>
+				    
+					
+				</td>
+				<td align="center">
+					<span id="sczt2">已上传</span>
+				</td>
+				<td align="center"><button class="layui-btn layui-btn-xs">选择文件</button>
+				  <button class="layui-btn layui-btn-primary layui-btn-xs">取消</button>
+				  <button class="layui-btn layui-btn-primary layui-btn-xs">查看</button></td>
+			</tr>
+	 		   
+	 		
+			 
+			<input type="hidden" id="zbBz4" value="" name="size2">
+			<tr>
+				<td align="center" class="wdzlk"><input name="box" id="box3" type="checkbox" disabled="disabled">
+				</td><td align="center" class="000721">3</td>
+				<td class="EditInput01" align="left"><span id="flzlmc3">工商变更登记表及工商营业执照复印件</span> <span id="flzldm3" style="display: none;">000721</span></td>
+				<td class="EditInput01" align="left">
+					<input type="hidden" id="flzlbslxDm3" name="flzlbslxDm3" value="2">
+					
+				    	
+				    	&nbsp;条件报送
+				    
+				</td>
+				<td align="left" id="queue3">
+					<div class="filebox">
+						
+					</div>
+				</td><!-- 文件上传进度条 -->		
+				<td align="center">
+					<span id="fs3">0</span>
+					<div id="fjdx3" style="display: none;"></div>
+					<div id="bcwjm3" style="display: none;"></div>
+				</td>
+				<td align="center">
+					
+				    	
+				    	<span id="bsfs3">5</span>
+				    
+					
+				</td>
+				<td align="center">
+					<span id="sczt3">未上传</span>
+				</td>
+				<td align="center"><button class="layui-btn layui-btn-xs">选择文件</button>
+				  <button class="layui-btn layui-btn-primary layui-btn-xs">取消</button>
+				  <button class="layui-btn layui-btn-primary layui-btn-xs">查看</button></td>
+			</tr>
+	 		   
+	 		
+			 
+			<input type="hidden" id="zbBz5" value="" name="size3">
+			<tr>
+				<td align="center" class="wdzlk"><input name="box" id="box4" type="checkbox">
+				</td><td align="center" class="000577">4</td>
+				<td class="EditInput01" align="left"><span id="flzlmc4">税务登记证正本及副本</span> <span id="flzldm4" style="display: none;">000577</span></td>
+				<td class="EditInput01" align="left">
+					<input type="hidden" id="flzlbslxDm4" name="flzlbslxDm4" value="2">
+					
+				    	
+				    	&nbsp;条件报送
+				    
+				</td>
+				<td align="left" id="queue4">
+					<div class="filebox">
+						
+							<div class="upload-file" title="Desert.jpg"><ul><p class="progress" style="width: 100%;"></p><span>Desert.jpg</span></ul></div>
+						
+					</div>
+				</td><!-- 文件上传进度条 -->		
+				<td align="center">
+					<span id="fs4">1</span>
+					<div id="fjdx4" style="display: none;"></div>
+					<div id="bcwjm4" style="display: none;">2018082017074356970A40FFFFFFA026780A7868F9BB7ESXA011002002.jpg</div>
+				</td>
+				<td align="center">
+					
+				    	
+				    	<span id="bsfs4">10</span>
+				    
+					
+				</td>
+				<td align="center">
+					<span id="sczt4">已上传</span>
+				</td>
+				<td align="center"><button class="layui-btn layui-btn-xs">选择文件</button>
+				  <button class="layui-btn layui-btn-primary layui-btn-xs">取消</button>
+				  <button class="layui-btn layui-btn-primary layui-btn-xs">查看</button></td>
+			</tr>
+	 		   
+	 		
+			<tr align="left">
+				<td colspan="9"><span>该事项共有4个附送资料需要上传</span></td>		
+		</tr></tbody></table>
+	  </div>
+	  <div class="textRM">
+		  <br>
+		  <span class="redtext" style="color: red;">温馨提示：</span><br>
+	  	 尊敬的纳税人，请您确保上传附列资料的真实性和合法性。按照《中华人民共和国税收征收管理法实施细则》第九十六条第一款规定：<br>
+         "提供虚假资料，不如实反映情况，或者拒绝提供有关资料的，将依照税收征管法第七十条的规定处罚"。<br>
+	  </div>
+	</div>
+  
+<script type="text/javascript">
+	window.contextPath = $("#contextPath").val();
+	var multiFiles = $("#multiFiles").val();//是否支持多文件上传
+	var gdslxDm = $("#gdslxDm").val(); 
+	var zlpzWebContextPath = "/zlpz-cjpt-web"; 
+	var wdzlkSize = "9";
+	var jsessionid = 'F082DCE7FD06BC3C68F0B236C7990B47'; 
+	var DZSWJ_TGC = 'F082DCE7FD06BC3C68F0B236C7990B47';
+	var mobileUploadUrl = 'http://10.10.0.160';
+	var uploadFileType = 'jpg;bmp;png;pdf;xlsx;xls;doc;docx;zip;rar';
+</script>
+	  	<script type="text/javascript" src="./附列资料_files/attachment.js.下载"></script>
+</body></html>

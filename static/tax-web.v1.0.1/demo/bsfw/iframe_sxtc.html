@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>	
+<script src="../../tax-js/common.js"></script>		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+
+<link rel="stylesheet" href="../../ui-css/ui-css.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+<link rel="stylesheet" href="../../tax-module/step/step-style.css">
+</head>
+
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 --> 
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->
+
+
+ 	
+<div class="tax-center-box">
+  <h1 class="tax-page-title"><img src="../../tax-images/png_icon/fpdk.png" class="tax-page-icon">跨区域涉税事项套餐</h1>
+    
+<div class="layui-form-item marginT16 marginB20 ">
+        
+          <label class="layui-form-label label-left" style="width:172px;">跨区域涉税事项报告编号：</label>
+		  <form class="layui-form">
+          <div class="layui-input-inline" style="width: 280px;">
+            <select name="modules" lay-verify="required" lay-search="" >
+              <option value="1">BG 445099192292ME</option>
+              <option value="2">BG 545099192292ME</option>
+              <option value="3">BG 745099192292ME</option>
+            </select>
+          </div>
+           </form>
+ 
+      </div>
+    
+ 
+
+<div class="tax-step-box" id="showStep" ></div>
+	
+	
+<script>
+
+ $(document).ready(function(){
+	 
+	 
+	
+	 $(".tax-step-box").on("mouseenter",".item-step",function(){
+		 
+		 var notice=$(this).children(".description").text();
+		 if(notice==""){
+			
+		 }else{
+			
+		  $(this).append('<div class="notice">'+notice+'</div>') 
+			 
+		 }
+		 
+	 })
+	 $(".tax-step-box").on("mouseleave",".item-step",function(){
+		 
+		  $(".tax-step-box .notice").remove();
+		 
+	 })
+	 
+
+	 
+	  $.getJSON('step.json',function(data){ 
+        
+		 var itemLength=data.item.length;
+		 $("#showStep").width(data.box[0].width).height(data.box[0].height) 
+		  
+		 for(var i=0; i<itemLength;i++){
+			 var type=data.item[i].type 
+		         var t=data.item[i].t+'px'
+				 var l=data.item[i].l+'px'
+				 var w=data.item[i].w+'px'
+				 var h=data.item[i].h+'px'
+				 var bg=data.item[i].bg
+				 var icon=data.item[i].icon
+				 var iconId=data.item[i].iconId
+				 var name=data.item[i].name
+				 var href=data.item[i].href
+				 var description=data.item[i].description
+			     var style=data.item[i].style
+			 if(type=="node"){
+				
+				 
+                 var html='<ul style="width:'+w+';height:'+h+'; top:'+t+'; left:'+l+';" class="item-ul item-step" step-type="node"><div class="step-div"><p class="'+bg+'" val-open="true"><i icon-id="'+iconId+'" class="'+icon+'"></i></p><a href="'+href+'" class="step-name">'+name+'</a></div><div class="description">'+description+'</div></ul>'
+				 
+                $("#showStep").append(html)
+				 
+			 }else{
+				 
+
+				 var html='<ul step-type="point" class="'+style+'" style="width:'+w+';height:'+h+'; top:'+t+'; left:'+l+';" ><p></p></ul>'
+				 $("#showStep").append(html)
+			 }
+			  
+		 } 
+
+		   
+      })
+
+		
+}) 	
+
+	
+
+	
+</script>
+	
+	
+ 
+</div>  
+ 	
+ 
+	
+	
+	
+  
+	
+
+
+
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+
+layui.use('form',function(){});<!--加载form模块-->
+	
+</script>
+</body>
+</html>

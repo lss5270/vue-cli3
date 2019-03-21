@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{font-size:16px;}
+
+.layui-table td, .layui-table th{ font-size: 16px;}
+.iconfont{ font-size: 18px;}
+
+.layui-tab-title li{font-size: 18px;}
+.fix-box .box-style .title{ font-size: 18px;}
+.box-style02 .title strong{ font-size: 18px;}

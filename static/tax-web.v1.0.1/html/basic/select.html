@@ -1,0 +1,242 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>	
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">	
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">	
+<link rel="stylesheet" href="../../ui-css/ui-css.css">
+	
+</head>
+	
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->                    
+<div class="layui-container">
+  
+	<blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote> 
+ 
+
+<!--演示代码-->
+
+ 
+
+	
+	
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>select2优化（非Layui）</legend>
+</fieldset>	
+
+<blockquote class="layui-elem-quote layui-quote-nm">
+优化产品中已经使用的下拉框select2	
+</blockquote>	
+<div class=" marginT32" style="margin-bottom: 20px; z-index: 9 ;" >
+<script src="../../tax-module/select2/select2.js"></script>
+<link href="../../tax-module/select2/select2.css" rel="stylesheet" />
+
+<div>
+<div class="tax-title marginB16"><i class="dot"></i>select2单选</div>
+<select id="select2" class="select2" style="width: 300px;">  
+	<option value=""></option>
+</select> 
+	
+</div>
+<div style="margin-top: 50px;">
+<div class="tax-title marginB16"><i class="dot"></i>select2多选</div>
+<select id="select2_multiple" class="select2" multiple="true">  
+	<option value=""></option>
+</select> 
+</div> 
+	
+	
+<p style="height: 100px;"></p>	
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>selectpage优化（非Layui）</legend>
+</fieldset>	
+
+<blockquote class="layui-elem-quote layui-quote-nm">
+优化产品中已经使用的下拉框selectpage	
+</blockquote>		
+	
+	
+<div style="width: 318px; margin-top: 30px;">
+	
+	<link href="../../tax-module/selectPage/selectpage.css" rel="stylesheet" />
+	<script src="../../tax-module/selectPage/selectPage.js"></script>
+	<input  id="selectPage"/ > 
+
+	
+</div>
+
+	
+	
+<p style="height: 100px;"></p>	
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>multiselect优化（非Layui）</legend>
+</fieldset>	
+
+<blockquote class="layui-elem-quote layui-quote-nm">
+优化产品中已经使用的下拉框multiselect
+</blockquote>		
+	
+	
+<div style="width: 318px; margin-top: 30px;" class="layui-form">
+
+<script src="../../tax-module/multiselect/jquery-ui.min.js"></script>
+<script src="../../tax-module/multiselect/jquery.multiselect.js"></script>
+	
+<link rel="stylesheet" type="text/css" href="../../tax-module/multiselect/multiselect/css/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="../../tax-module/multiselect/multiselect/jquery-ui.css" />
+	
+	
+ <select id="multiselect">  
+    <option value="">请选择</option>
+</select> 
+<script type="text/javascript">
+
+	var $multiselect = $("#multiselect");
+	var data = {"1":"首选缴税","2":"出口退税","3":"一般退税"}
+
+
+    var muheight=138;
+	var muwidth=318;
+	for (var key in data){
+		$multiselect.append("<option value='"+key+"'>"+data[key]+"</option>");
+	}
+
+	$multiselect.multiselect(
+	{
+        			
+        		    "height":muheight,	
+        			"minWidth":muwidth,
+        			"menuWidth":muwidth
+              		}
+	);
+	$multiselect.multiselect("refresh");
+</script>
+
+	
+</div>
+	
+	
+	
+</div>	
+ 
+<fieldset class="layui-elem-field layui-field-title " style="margin-top: 120px;">
+  <legend>SelectItem（非Layui）</legend>
+</fieldset>	
+ 
+	
+	
+<link href="../../tax-module/SelectItem/SelectItem.css" rel="stylesheet">
+
+	
+<div>
+<input type="text" class="SelectItem" style="width: 400px;" value="" placeholder="请选择报表" filter="test" >
+</div>
+	
+<script>
+var test={
+    "width":"100%",
+    "data": [
+        { "recent":"false", "info":"BDA0610791 | 《印花税纳税申报（报告）表》"},
+        { "recent":"true", "info":"BDA0610792 | 《车船税代收代缴报告表》" },
+        { "recent":"false", "info":"BDA0610793 | 《委托代征税款报告表》" },
+		{ "recent":"false", "info":"BDA0610794 | 《增值税纳税申报表》" },
+		{ "recent":"false", "info":"BDA0610795 | 《发票领用月报表》" },
+		{ "recent":"false", "info":"BDA0610796 | 《增值税普通发票使用明细表》" },
+		{ "recent":"true", "info":"BDA0610797 | 《增值税专用发票抵扣明细表》" },
+		{ "recent":"false", "info":"BDA0610798 | 《增值税运输发票抵扣明细表》" },
+		{ "recent":"false", "info":"BDA0610799 | 《企业所得税申报表》" },
+		{ "recent":"true", "info":"BDA0610790 | 《一般企业收入明细表》" },
+		{ "recent":"true", "info":"BDA0610789 | 《负债清偿损益明细表》" },
+		{ "recent":"false", "info":"BDA0610788 | 《城镇土地使用税减免税明细申报表》" }
+    ]
+}
+	
+</script>	
+	
+<pre class="layui-code" lay-height="450px">
+<link href="../../tax-module/SelectItem/SelectItem.css" rel="stylesheet">
+<script src="../../tax-module/SelectItem/SelectItem.js"></script>
+
+<script>
+var test={
+    "width":"100%",
+    "data": [
+        { "recent":"false", "info":"BDA0610791 | 《印花税纳税申报（报告）表》"},
+        { "recent":"true", "info":"BDA0610792 | 《车船税代收代缴报告表》" },
+        { "recent":"false", "info":"BDA0610793 | 《委托代征税款报告表》" },
+		{ "recent":"false", "info":"BDA0610794 | 《增值税纳税申报表》" },
+		{ "recent":"false", "info":"BDA0610795 | 《发票领用月报表》" },
+		{ "recent":"false", "info":"BDA0610796 | 《增值税普通发票使用明细表》" },
+		{ "recent":"true", "info":"BDA0610797 | 《增值税专用发票抵扣明细表》" },
+		{ "recent":"false", "info":"BDA0610798 | 《增值税运输发票抵扣明细表》" },
+		{ "recent":"false", "info":"BDA0610799 | 《企业所得税申报表》" },
+		{ "recent":"true", "info":"BDA0610790 | 《一般企业收入明细表》" },
+		{ "recent":"true", "info":"BDA0610789 | 《负债清偿损益明细表》" },
+		{ "recent":"false", "info":"BDA0610788 | 《城镇土地使用税减免税明细申报表》" }
+    ]
+}
+	
+</script>	
+	
+</pre> 	
+	
+<p style="height: 500px;"></p>	
+<script type="text/javascript">
+		var data = [
+		            {id:0,name:'北京'},
+		            {id:1,name:'上海'},
+		            {id:2,name:'广州'},
+		            {id:3,name:'深圳'},
+		            {id:4,name:'武汉'}
+					];
+		
+		for (var i = 0; i < 300; i++) {
+			var tmp = {};
+			tmp.id = i + 5;
+			tmp.name = "珠海" + i;
+			
+			data.push(tmp);
+		}
+		
+		for(var i = 0; i < data.length; i++){
+		    var tmp = data[i];
+			$(".select2").append("<option value='" + tmp.id + "'>" + tmp.name + "</option>");
+		}
+		
+		$(".select2").select2({
+			placeholder: "请选择",
+			allowClear: true
+		});
+		
+		$("#selectPage").selectPage({data:data,showField:'name',keyField:'id'}); 
+</script>	
+</div>
+ 
+<script src="../../layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use('code', function(){
+  
+  layui.code({
+	   title: '演示代码'
+	  ,encode: true //是否转义html标签。
+	  ,about: false
+  }); 
+	
+});
+</script>
+</body>
+</html>

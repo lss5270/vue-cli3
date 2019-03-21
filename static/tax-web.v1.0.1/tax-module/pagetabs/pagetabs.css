@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding: 0px; margin: 0px; list-style: none;}
+.tax-pagetabs{ position: relative;height: 39px;border-bottom: 1px solid #dcdee2;}
+.tax-pagetabs #leftPage,.tax-pagetabs #rightPage,.tax-pagetabs #tab-menu{ height: 39px; position: absolute;top:0px; }
+.tax-pagetabs #leftPage i,.tax-pagetabs #rightPage i,.tax-pagetabs #tab-menu ul{ line-height: 39px;height: 39px; width: 40px; display:block;text-align: center; border-right: 1px solid #dcdee2;font-size: 20px;box-sizing: border-box;overflow: hidden;}
+.tax-pagetabs #leftPage i:hover,.tax-pagetabs #rightPage i:hover,.tax-pagetabs #tab-menu ul:hover{ background-color: #F6F6F6;}
+.tax-pagetabs #tax-tab{ margin-left: 40px; margin-right: 80px;border-right: 1px solid #dcdee2;line-height: 39px; height: 39px; position: relative; overflow: hidden;}
+.tax-pagetabs #rightPage{ right: 40px;}
+.tax-pagetabs #tax-tab ul{position: absolute;}
+.tax-pagetabs #tax-tab .tax-tab-title {font-size: 0; white-space: nowrap;}
+.tax-pagetabs #tax-tab .tax-tab-title li{ padding: 0 10px; display: inline-block;cursor: pointer; position: relative; font-size: 14px; height: 39px;overflow: hidden;border-right: 1px solid #dcdee2; box-sizing: border-box;}
+.tax-pagetabs #tax-tab .tax-tab-title li .fsicon-zhuye{ font-size: 16px; height: 39px; margin-right: 5px;}
+.tax-pagetabs #tax-tab .tax-tab-title .tab-this{background-color: #F6F6F6;}
+.tax-pagetabs #tax-tab .tax-tab-title li:hover{background-color: #F6F6F6;}
+.tax-pagetabs #tax-tab .tax-tab-title li .tabClose{font-size: 12px; margin-left: 5px;    }
+.tax-pagetabs #tax-tab .tax-tab-title li .tabClose:hover{ color: #E81418}
+.tax-pagetabs-body .tax-tabsbody-item{ display: none;}
+.tax-pagetabs-body .tax-show{ display: block;}
+.tax-pagetabs-body .tax-tabsbody-item .pagestabs-iframe{ width: 100%; height: 100%;}
+.tax-pagetabs #tab-menu{right:0px;}
+.tax-pagetabs #tab-menu dl{position: absolute; right:0px; background-color: #fff; border: 1px solid #EBEBEB; padding: 8px 16px;box-shadow:0 1px 2px 0 rgba(0,0,0,.2);display: none;top:39px;}
+.tax-pagetabs #tab-menu dl dd{ white-space:nowrap; line-height: 28px; cursor: pointer; font-size: 14px;}
+.tax-pagetabs #tab-menu dl dd:hover{ color: #E81418;}

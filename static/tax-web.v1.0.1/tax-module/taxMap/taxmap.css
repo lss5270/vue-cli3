@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* 办税地图 2018-09-08 */
+
+.map_bg{ background-image: url(map_bg.png); background-position: center; background-repeat: no-repeat; height: 100%;}
+
+.mapLeftMenu{ background-color: #fff;position: absolute;  width:180px;top:0px;box-shadow: 0px 2px 12px rgba(0,0,0,0.45);z-index: 2;}
+
+.map-css-left-menu{ position: absolute; width: 180px; color: #fff; background-color: #fff; background-image: url(../ui-images/left_bg.gif);background-repeat:repeat-y;border-right: 1px solid #e1e1e1; overflow: hidden; overflow-y: auto;}
+.map-css-right-main{ margin-left: 200px;  }
+
+.map-left-menu-box .left-title{ font-size: 16px; height: 48px; line-height: 48px; padding-left: 10px; border-bottom: 1px solid #ebebeb;}
+.map-left-menu-box .left-title .iconfont{ font-size: 22px; margin-right: 10px;}
+.map-left-menu-box .left-menu { overflow: hidden; overflow-y: auto;}
+.map-left-menu-box .left-menu ul li{position: relative;}
+.map-left-menu-box .left-menu ul li dl{display: none; }
+.map-left-menu-box .left-menu ul li a{ display: block;color: #333333;  padding: 8px 0; padding-left: 10px;font-size: 14px;border-left: 3px solid #fff; }
+.map-left-menu-box .left-menu ul li a:hover{color: #1579ce;}
+.map-left-menu-box .left-menu ul li .iconfont{ font-size: 14px; position: absolute;right:10px;}
+.map-left-menu-box .left-menu ul li .fsicon-tree-dot{ position:absolute;left:5px; color: #fff; padding-top: 20px; width: 30px;}
+
+.map-left-menu-box .left-menu ul .left-menu-active .left-menu-child{ display: block;}
+.map-left-menu-box .left-menu ul li dl dd a{ padding-left: 20px; font-weight: normal;font-size: 12px;border-left: 3px solid #fff; }
+.map-left-menu-box .left-menu ul .left-menu-this {  color: #1579ce;border-left: 3px solid #53acf3; background-color: #ebf4ff; }
+.map-left-menu-box .left-menu ul li .office{ background-color: #f8f8f8; border-top:1px solid #ededed;border-bottom:1px solid #ededed;display: none;}
+.map-left-menu-box .left-menu ul li .office a{ color: #999 ;border-left: 3px solid #f8f8f8;}
+.map-left-menu-box .left-menu ul li .office a:hover{border-left: 3px solid #53acf3;}
+.map-left-menu-box .left-menu ul li .office .left-menu-this{color: #1579ce;border-left: 3px solid #53acf3; background-color: #ebf4ff;}
+.map-left-menu-box .left-title{ color: #74b1ee;}
+.mapWin{ position: absolute; width: 500px;  height:300px; top:50px; box-shadow: 0px 2px 12px rgba(0,0,0,0.45); background-color: #fff;z-index: 1; left:50%; margin-left: -250px;border-radius: 3px;}
+.mapWin .win-title{	padding: 0 80px 0 20px;	height: 40px;line-height: 40px;border-bottom: 1px solid #eee;font-size: 14px;color: #333;overflow: hidden;border-radius: 2px 2px 0 0; position: relative;}
+.mapWin .win-title .iconfont{ position: absolute; right:20px; cursor: pointer;}
+.mapWin .win-title .iconfont:hover{ color: #868686}
+
+.map-win-center .text-item li{ padding: 5px 0; position:relative; font-size: 12px;}
+.map-win-center .text-item li span{ position: absolute; color: #000 }
+.map-win-center .text-item li p{ color: #666; margin-left: 70px;}
+.map-win-center .pic-item{ margin-top: 16px;}
+.map-win-center .pic-item li{ text-align: center;}
+.map-win-center .pic-item li img{ width: 90%; }
+.map-tab-box{ z-index: 2}
+.map-tab-box .tax-tab-multiple .tax-tab-title li{ padding: 4px 18px; text-align: center; margin-bottom: 0px;}
+.map-tab-box .tax-tab-multiple .tax-tab-title .tax-this{ color: #333; border-color: #0994dc; background-color: #fff;margin-right:1px; border-color: #ebebeb; border-bottom-color: #fff;}
+.map-tab-box .tax-tab-content{ border-left: 1px solid #ebebeb;border-right: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb; margin-right: 2px;}
+.map-tab-box .tax-tab-content .tax-tab-item{ padding: 16px;}
+
+.map-win-center .bottom-dot { position: relative;z-index: -1}
+.map-win-center .bottom-dot .iconfont{ color: #fff; position: absolute; top:12px; font-size: 42px;text-shadow: 0px 6px 12px rgba(0,0,0,0.45);}

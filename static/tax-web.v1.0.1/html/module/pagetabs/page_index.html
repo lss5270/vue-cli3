@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<link href="../../../ui-css/ui-css.css" rel="stylesheet">
+<link rel="stylesheet" href="../../../layui/css/layui.css">
+<link href="../../../tax-css/common.css" rel="stylesheet">	
+<body style="padding: 20px;">
+     
+
+<h3 class="marginT16">添加 / 跳转 方法：</h3>
+<p class="marginT16">1. 直接在 a 标签上加上相关属性</p>
+	
+<blockquote class="layui-elem-quote layui-quote-nm">
+
+&lt;a tab-href="url" tab-text="标题" >文本&lt;/a&gt;
+
+</blockquote>
+	
+<p class="marginT16">2. 直接用addPageTabs()</p>
+	
+<blockquote class="layui-elem-quote layui-quote-nm">
+
+addPageTabs("url", "标题") //这里要注意要在父级调用方法 window.parent.addPageTabs("url", "标题")
+
+</blockquote>
+
+<h3 class="marginT16">关闭方法：</h3>
+<p class="marginT16">1. 直接用delPageTabs("url"),关闭当前用delPageTabs("tab-this")</p>
+	
+<blockquote class="layui-elem-quote layui-quote-nm">
+
+	delPageTabs("url")关闭指定路径，或者关闭当前页window.parent.delPageTabs("tab-this") </br> //这里要注意要在父级调用方法 window.parent.delPageTabs("url")
+
+</blockquote>
+	
+ 	
+</body>
+</html>

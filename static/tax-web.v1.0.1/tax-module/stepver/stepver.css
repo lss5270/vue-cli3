@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.text-stepver-over { color: #3e9be5; }
+
+.iconfont { font-size: 22px;position: absolute;left: -8px;top: -1px;z-index: 10;width: 22px;height: 22px;line-height: 22px;background-color: #fff;border-radius: 50%;text-align: center; border: 2px solid #FFF;}
+
+.fsicon-icon-active {color: #3e9be5;}
+/* 步骤1-9样式 */
+.fsicon-icon-over {color: #190;}
+
+
+
+

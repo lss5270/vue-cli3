@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" href="../layui/css/layui.css">
+		<link rel="stylesheet" href="../tax-css/index.css">
+		<script src="../tax-js/jquery-1.9.1.min.js"></script>
+		<SCRIPT src="../tax-js/ie8/html5.min.js"></SCRIPT>
+		<SCRIPT src="../tax-js/ie8/respond.min.js"></SCRIPT>			
+	</head>
+<style>
+	.login-radio .layui-form-radio{ margin-right: 0px; }
+	.login-radio .layui-form-radio .layui-icon{margin-right: 0px;}
+	 body{ overflow: hidden;}
+</style>
+	
+	<script>
+	   
+		$(document).ready(function(){
+			
+			
+			$(".login-radio label").on("click",function(){
+			
+			  var val=$(this).children("input").attr("value");
+				 
+				$("#user").attr("placeholder",val)
+			
+		    })
+			
+			 
+			
+$(window).resize(function() {
+ setIe()
+});
+	
+	
+function setIe(){
+	 
+	var ieWidth=$(window).width()
+	
+	var ieHeight=$(window).height()
+    var topH,footB;
+
+	var i=ieHeight-700;
+	
+	if(i<0){i=0;}
+	
+
+    topH= ieHeight/100*16  
+    footB=i/100*60
+	$(".login-box").css({top:topH})
+    $(".footFixed").css({bottom:footB})
+
+ 
+	 $(".topbg img").width(ieWidth)  
+
+	if(ieWidth<1200){
+		$("body").width(1200)
+	}else{
+		$("body").width(ieWidth)
+		
+	}
+}		
+			
+			
+setIe()	;
+			
+			
+		})
+	
+	</script>
+	
+	<body class="index_body">
+		
+		<div class="">
+			<div class="logindiv" >
+				<div class="layui-row">
+					<div class="layui-col-xs7 logo">
+						<img src="../tax-images/logo/logo_bj.png">
+					</div>
+					<div class="layui-col-xs5 rcon">
+						<div class="list">
+							<a href="index.html"><img src="../tax-images/login/top_icon00.png">主页</a>
+							<a href="#"><img src="../tax-images/login/top_icon01.png">环境检测</a>
+							<a href="#"><img src="../tax-images/login/top_icon02.png">下载</a>
+							<a href="#"><img src="../tax-images/login/top_icon03.png">帮助</a>
+							 
+						</div>
+						
+					</div>
+				</div>
+
+<div class="login-box">				
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+  <ul class="layui-tab-title">
+    <li class="layui-this">用户名登录</li>
+    <li>企业CA登录</li>
+  </ul>
+  <div class="layui-tab-content" style="height: 280px;">
+    <div class="layui-tab-item layui-show">
+    <ul>
+     <li>
+		 
+	<form class="layui-form login-radio">
+      <label><input type="radio" name="RadioGroup1" value="用户名"  title="用户名" id="RadioGroup1_0" checked></label>
+      <label><input type="radio" name="RadioGroup1" value="手机号码"  title="手机号码" id="RadioGroup1_1"></label>
+      <label><input type="radio" name="RadioGroup1" value="证件号码"  title="用证件号码户名" id="RadioGroup1_2"></label>
+	</form>	
+     </li>		
+     <li><input type="text" class="txt bg1" id="user"  placeholder="请输入用户名"></li>
+     <li><input type="password" class="txt bg2" placeholder="密码"></li>
+     <li><img src="../tax-images/login/yzm.png" alt="此处放置滑块验证码"></li>
+    </ul>
+    <a href="index02.html" class="tjbtn">登录</a>	  
+	</div>
+    <div class="layui-tab-item">
+    <ul>	
+     <li><input type="text" class="txt bg1"  placeholder="企业账号"></li>
+     <li><input type="password" class="txt bg2" placeholder="密码"></li>
+     <li><img src="../tax-images/login/yzm.png" alt="此处放置滑块验证码"></li>
+    </ul>
+    <a href="index02.html" class="tjbtn">登录</a>	  
+	</div>
+	  
+<ul class="login-link">
+	<li><a href="#none">用户注册</a></li>
+	<li><a href="#none">找回密码</a></li>
+	<li><a href="#none">常见问题</a></li>	
+	<p class="txt-red">推荐使用IE9及以上版本浏览器，最低IE8 <a href="#none">IE检测下载</a></p>
+</ul>		  
+  </div>
+</div> 			
+</div>				
+				
+			
+			</div>
+			
+			<div class="topbg"><img src="../tax-images/login/bg02.jpg"></div>
+			
+			<div class="footbom  footFixed" style="z-index:-1">
+				<img src="../tax-images/login/foot.png">
+				<p>版权所有：国家税务总局广东省税务局<br>ICP备案序号 粤ICP备10025337号-2</p> 
+			</div>
+			</div>
+			<script src="../layui/layui.js"></script>
+			<script src="../layui/transfer.js"></script>
+<script>
+layui.use('element', function(){
+  var $ = layui.jquery
+  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+  
+  //触发事件
+  var active = {
+    tabAdd: function(){
+      //新增一个Tab项
+      element.tabAdd('demo', {
+        title: '新选项'+ (Math.random()*1000|0) //用于演示
+        ,content: '内容'+ (Math.random()*1000|0)
+        ,id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
+      })
+    }
+    ,tabDelete: function(othis){
+      //删除指定Tab项
+      element.tabDelete('demo', '44'); //删除：“商品管理”
+      
+      
+      othis.addClass('layui-btn-disabled');
+    }
+    ,tabChange: function(){
+      //切换到指定Tab项
+      element.tabChange('demo', '22'); //切换到：用户管理
+    }
+  };
+  
+  $('.site-demo-active').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+  
+  //Hash地址的定位
+  var layid = location.hash.replace(/^#test=/, '');
+  element.tabChange('test', layid);
+  
+  element.on('tab(test)', function(elem){
+    location.hash = 'test='+ $(this).attr('lay-id');
+  });
+  
+});
+</script>		
+
+	</body>
+
+</html>

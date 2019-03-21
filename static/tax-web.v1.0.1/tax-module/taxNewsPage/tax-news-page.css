@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* news page */
+
+
+.news-page-box{ background-color: #fff; width: 1200px; margin: auto; border: 1px solid #dadee1;  margin-top:20px; margin-bottom: 20px; position: relative;}
+.news-page-box .news-page-center{padding: 0 100px;}
+.news-page-box .news-title{ color: #dc1013; text-align: center; font-size: 28px; line-height: 42px; padding-top: 40px; padding-bottom: 20px;}
+.news-page-box .news-num{font-size: 16px;text-align: center; line-height: 38px; margin-bottom: 20px;}
+.news-page-box .news-text{font-size: 16px; line-height: 28px;}
+.news-page-box .item-attached{font-size: 16px; position: relative;}
+.news-page-box .item-attached p{ position: absolute;line-height: 32px; }
+.news-page-box .item-attached ul{ margin-left: 60px;}
+.news-page-box .item-attached ul a{ line-height: 32px;display: block;}
+.news-page-box .news-bottom-text{text-align: right;}
+.news-page-box .news-bottom-text li{ line-height: 28px;font-size: 16px;}
+.news-page-box .news-list ul{ padding: 20px 0;}
+.news-page-box .news-list a{line-height: 28px;display: block; font-size: 16px;}
+.news-page-box .news-list a .iconfont{ color: #999999; margin-right: 6px; font-size: 12px;}
+.news-page-code{ position: fixed; padding: 10px; border: 1px solid #ebebeb;background-color: #fff;} 
+.news-page-code img{ width: 80px; height: 80px;}

@@ -1,0 +1,18 @@
+{
+ "item":[
+      {"type":"node","t":"64","l":"41","w":"56","h":"80","bg":"step-icon finish","icon":"iconfont fsicon-shenpi_faqishenpi","iconId":"3","name":"工商登记","href":"###","description":"用于工商信息登记"}
+	 ,{"type":"point","t":"82","l":"101","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"point","t":"82","l":"244","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"64","l":"302","w":"110","h":"98","bg":"step-icon","icon":"iconfont fsicon-fapiaodaikai","iconId":"17","name":"补充税务登记信息","href":"###","description":""}
+	 ,{"type":"point","t":"82","l":"388","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"65","l":"445","w":"110","h":"98","bg":"step-icon","icon":"iconfont fsicon-fapiaolingyong","iconId":"15","name":"实时缴税协议签订","href":"###","description":""}
+	 ,{"type":"node","t":"65","l":"595","w":"98","h":"80","bg":"step-icon","icon":"iconfont fsicon-btn-tracking","iconId":"31","name":"刻制发票专用章","href":"###","description":""}
+	 ,{"type":"point","t":"82","l":"531","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"64","l":"744","w":"98","h":"80","bg":"step-icon","icon":"iconfont fsicon-jiaokuanchaxunjidayin","iconId":"11","name":"增值税发票核定","href":"###","description":""}
+	 ,{"type":"point","t":"82","l":"675","w":"80","h":"36","style":"item-ul arrow-right pointX ui-draggable ui-draggable-handle ui-resizable"}
+	 ,{"type":"node","t":"65","l":"170","w":"84","h":"80","bg":"step-icon optional","icon":"iconfont fsicon-shenbaoqingkuangchaxun","iconId":"9","name":"查询税务信息","href":"###","description":""}
+ 
+
+],
+"box":[{"width":"830","height":"200"}]
+}

@@ -1,0 +1,333 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+<link href="../../tax-module/taxReturns/table.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link href="../../tax-module/select2/select2.css" rel="stylesheet" />
+<link href="../../tax-module/selectPage/selectpage.css" rel="stylesheet" />
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<SCRIPT language=JavaScript src="../../layui/layui.js"></SCRIPT>
+<script src="../../tax-module/selectPage/selectPage.js"></script>
+<script src="../../tax-module/select2/select2.js"></script>
+<SCRIPT language=JavaScript src="../../tax-module/taxReturns/fixed-table.js"></SCRIPT>
+<script src="../../tax-module/taxReturns/alert-table.js"></script>		
+<title>01$酒类应税消费品消费税纳税申报表</title>
+</head>
+<body>
+<link href="../../tax-module/table_step/table-step.css" rel="stylesheet" />
+<SCRIPT language=JavaScript src="../../tax-module/table_step/table-step.js"></SCRIPT>	
+<div class="table-step-box">
+	
+   <div class="table-step-main">
+	   <p class="float-icon">进度</p>
+	   <div class="table-step-center">
+	      
+		   <div class="table-step-item">
+		   
+			    <div class="pro-step finish-step">
+			        <span></span>
+					<i class="pro-line finish-line"></i>
+					<p>初始化</p>
+					
+			    </div>
+			    
+			    <div class="pro-step cur-step">
+			        <span>2</span>
+					<i class="pro-line"></i>
+					<p>填写申请表及上传附送资料</p>
+			    </div>
+			   <div class="pro-step">
+			        <span>3</span>
+				   <i class="pro-line"></i>
+					<p>预览提交</p>
+			    </div>
+			   <div class="pro-step">
+			        <span>4</span>
+					<p>完成</p>
+			    </div>
+		   
+		   </div>
+		   
+	   </div>
+	   
+	
+   </div>	
+   
+	
+	
+</div>		
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsJlsb.xfssb3.sbbhead">
+     <h1>酒类应税消费品消费税纳税申报表</h1>
+     <li class="dateTxt">税款所属期：
+	     <input class="topInput" type="text"  readonly ng-model="sbbhead.skssqq" style="width: 100px;" />
+		  至
+		 <input class="topInput" type="text"  readonly ng-model="sbbhead.skssqz" style="width: 100px;" />
+	 </li>
+</div>
+
+<div class="NewTableTop" ng-jprefix="xfssbSbbdxxVO.xfsJlsb.xfssb3.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：
+    	<input type="text" class="topInput" ng-datatype="string" value="" ng-model="sbbhead.nsrsbh" readonly> </span>
+    </td>
+    <td align="right">纳税人识别号：<input type="text" class="topInput" ng-datatype="string" value="" ng-model="sbbhead.nsrsbh" readonly> </td>
+  </tr>
+  <tr>
+    <td>填表日期：
+	    <span class="dateTxt">
+	    	<input class="topInput" type="text" style="width: 100px;" readonly ng-model="sbbhead.sbrq1" />
+	    </span>
+    </td>
+    <td align="right">金额单位:元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+<table width="100%" border="0" cellspacing="1" cellpadding="0" ng-jprefix="xfssbSbbdxxVO.xfsJlsb.xfssb3.sbsjxxGrid3">
+  <tr fixed="true">
+    <td rowspan="2" align="center" class="title01"><strong>应税消费品名称</strong></td>
+    <td colspan="2" align="center" class="title01"><strong>适用税率</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>销售数量</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>销售额</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>应纳税额</strong></td>
+  </tr>
+  <tr fixed="true">
+    <td align="center" class="title01" >定额税率</td>
+    <td align="center" class="title01">比例税率</td>
+  </tr>
+  <tr>
+    <td class="title01">粮食白酒 </td>
+    <td class="read mid"><input type="text" value="0.5元/斤" readonly></td>
+    <td class="read mid"><input type="text" value="20%" readonly></td>
+    <td class="edit left"><input type="text" class="layui-input layui-date-input" id="test1" placeholder="yyyy-MM-dd"></td>
+    <td class="edit left"><input id="selectPage" placeholder="请选择"></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.jlynse0" type="text" readonly ></td>
+  </tr>
+  <tr>
+    <td class="title01">薯类白酒</td>
+    <td class="read mid"><input type="text" value="0.5元/斤" readonly></td>
+    <td class="read mid"><input type="text" value="20%" readonly></td>
+    <td class="edit right"><select id="select2" class="select2" style="width: 100%;"><option value=""></option></select> </td>
+    <td class="edit left"><select id="select2_multiple" class="select2" style="width: 100%;" multiple="true"><option value=""></option></select></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.jlynsehj1" type="text" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">啤酒（3000元/吨以上）</td>
+    <td class="read mid"><input type="text" value="250元/吨" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[4].xssl" type="text" value="0.00" id="btnAlert1"></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[4].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">啤酒（3000元/吨以下）</td>
+    <td class="read mid"><input type="text" value="220元/吨" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right">
+	  
+<script src="../../tax-module/multiselect/jquery-ui.min.js"></script>
+<script src="../../tax-module/multiselect/jquery.multiselect.js"></script>
+	
+<link rel="stylesheet" type="text/css" href="../../tax-module/multiselect/multiselect/css/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="../../tax-module/multiselect/multiselect/jquery-ui.css" />
+	
+	
+ <select id="multiselect">  
+    <option value="">请选择</option>
+</select> 
+<script type="text/javascript">
+
+	var $multiselect = $("#multiselect");
+	var data = {"1":"首选缴税","2":"出口退税","3":"一般退税"}
+
+
+    var muheight=138;
+	var muwidth=230;
+	for (var key in data){
+		$multiselect.append("<option value='"+key+"'>"+data[key]+"</option>");
+	}
+
+	$multiselect.multiselect(
+	{
+        			
+        		    "height":muheight,	
+        			"minWidth":muwidth,
+        			"menuWidth":muwidth
+              		}
+	);
+	$multiselect.multiselect("refresh");
+</script>
+
+		
+		
+		
+	</td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[5].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">黄酒</td>
+    <td class="read mid"><input type="text" value="240元/吨" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[6].xssl" type="text" value="0.00" ></td>
+    <td  class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[6].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">其他酒</td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="10%" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[7].xse" type="text" value="0.00" ></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[7].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">合计</td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.jlynsehj" type="text" readonly></td>
+    </tr>
+   </table>
+</div>
+
+<!-- 分页 -->
+<div class="pageBox ng-isolate-scope" id="p1" conf="paginationConf">
+    <table ng-show="conf.totalItems > 0" width="100%" border="0" cellspacing="0" cellpadding="0" class="">
+        <tbody>
+        <tr>
+            <td>
+                <div class="page">
+                    <div class="page_box fs-l"><a ng-class="{disabled: conf.currentPage == 1}" ng-click="prevPage()"
+                                                  class="disabled">&lt;</a>
+                        <!-- ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope active">1</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope">2</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope">3</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope">4</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope">5</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope">6</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope separate">...</a>
+                        <!-- end ngRepeat: item in pageList track by $index --><a
+                                ng-repeat="item in pageList track by $index"
+                                ng-class="{active: item == conf.currentPage, separate: item =='...'}"
+                                ng-click="changeCurrentPage(item)" class="ng-binding ng-scope">37</a>
+                        <!-- end ngRepeat: item in pageList track by $index --> <a
+                                ng-class="{disabled: conf.currentPage == conf.numberOfPages}"
+                                ng-click="nextPage()">&gt;</a></div>
+                    <div class="page_box fs-r" ng-show="conf.totalItems > 0"> 每页<select ng-model="conf.itemsPerPage"
+                                                                                        ng-options="option for option in conf.perPageOptions "
+                                                                                        ng-change="changeItemsPerPage()"
+                                                                                        class="ng-pristine ng-valid"
+                                                                                        jpath="undefined.itemsPerPage">
+                        <option value="0" selected="selected" label="10">10</option>
+                        <option value="1" label="20">20</option>
+                        <option value="2" label="30">30</option>
+                        <option value="3" label="50">50</option>
+                    </select> 共<strong class="ng-binding">370</strong>条 跳转至<input type="text" ng-model="jumpPageNum"
+                                                                                  ng-keyup="jumpPageKeyUp($event)"
+                                                                                  class="ng-pristine ng-valid"
+                                                                                  jpath="dJHbsjcxxcjbVO,dJHbsjcxxcjbVO,dJHbsjcxxcjbVO,hjbhsSyxxjumpPageNum">
+                        <input type="button" ng-click="jumpToPage()" value="确定"></div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="NewTableFoot">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr ng-render-finish="">
+    <td align="center">受理人（签章）：  <input class="topInput" type="text"
+					style="text-align:center;width: 100px;" readonly  />  &nbsp; &nbsp;  受理日期： <input type="text" class="topInput"
+					style="text-align:center;width: 40px;" readonly  /> 年  <input type="text" class="topInput"
+					style="text-align:center;width: 20px;" readonly  /> 月<input type="text" class="topInput"
+					style="text-align:center;width: 20px;" readonly  />日       &nbsp; &nbsp;  受理税务机关（章）：<input class="topInput" type="text"
+					style="text-align:center;width: 100px;" readonly  /> </td>
+  </tr>
+</table>
+</div>
+
+</div>
+<script>
+	var data = [
+		{id:0,name:'北京'},
+		{id:1,name:'上海'},
+		{id:2,name:'广州'},
+		{id:3,name:'深圳'},
+		{id:4,name:'武汉'},
+		{id:5,name:'杭州'},
+		{id:6,name:'南京'},
+		{id:7,name:'苏州'},
+		{id:8,name:'成都'},
+		{id:9,name:'重庆'},
+		{id:10,name:'济南'},
+		{id:11,name:'长沙'},
+		{id:12,name:'天津'},
+		{id:13,name:'哈尔滨'},
+		{id:14,name:'沈阳'},
+		{id:15,name:'厦门'}
+	];
+
+	for(var i = 0; i < data.length; i++){
+		var tmp = data[i];
+		$(".select2").append("<option value='" + tmp.id + "'>" + tmp.name + "</option>");
+	}
+	
+	$(".select2").select2({
+		placeholder: "请选择",
+		allowClear: true
+	});
+	
+	$("#selectPage").selectPage({data:data,showField:'name',keyField:'id'});
+		
+		
+	layui.use('laydate', function(){
+	  var laydate = layui.laydate;
+	  
+	  //常规用法
+	  laydate.render({
+		elem: '#test1'
+		 ,ready: function(){
+        taxlaydate()
+    }  
+	  });
+	 });
+	
+$("#btnAlert1").on("mouseleave",function(){
+	
+	$(".alert-box").animate({opacity:0,right:-300},600);
+		 setTimeout(function(){ $(".alert-box").remove();  },600);
+	
+})
+	
+</script>
+</body>
+</html>

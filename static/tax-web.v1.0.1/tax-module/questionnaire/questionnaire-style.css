@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tax-questionnaire-box{ position: relative;}
+.tax-questionnaire-box .box-left{ border: 1px solid #ededed;border-radius: 3px; padding: 10px; position: fixed; box-shadow: 1px 2px 12px rgba(0,0,0,0.45); top:90px;z-index: 2;}
+.tax-questionnaire-box .box-left .title{ text-align: center; line-height: 24px; height: 24px;}
+.tax-questionnaire-box .box-left li{ display: block; margin: 10px;}
+.tax-questionnaire-box .box-right{ min-height: 200px; border: 1px solid #ededed; margin-left: 160px; padding: 20px;}
+.tax-questionnaire-box .drag-item{ position: relative; margin-bottom: 20px; background-color: #fff;}
+.tax-questionnaire-box .drag-item .id{ position: absolute; line-height: 32px; height: 32px;font-size: 16px;font-weight: bold; width: 26px; text-align: center;}
+.tax-questionnaire-box .drag-item .item-main{ margin-left: 40px; position: relative;}
+.tax-questionnaire-box .drag-item .left-btn{ position: absolute;top:40px; background-color: #ebebeb; padding: 5px 5px; border-radius: 3px; }
+.tax-questionnaire-box .drag-item .left-btn .btn-p{ position: relative;  }
+.tax-questionnaire-box .drag-item .left-btn .left-btn-icon{ cursor: pointer;margin: 4px 0; display: block; text-align: center;width: 16px; height: 16px; line-height: 16px; border-radius: 3px; color: #999;font-size: 16px;}
+.tax-questionnaire-box .drag-item .left-btn .left-btn-icon:hover{ color: #0994dc; background-color: #fff;}
+.tax-questionnaire-box .drag-item .item-title{ border-bottom: 1px solid #ebebeb; height: 34px; }
+.tax-questionnaire-box .drag-item .item-main .item-title span{display: block;   padding: 7px 0; line-height: 20px;}
+.tax-questionnaire-box .drag-item .item-title .item-input{ font-size: 14px;font-weight: bold;padding: 5px 0; }
+.tax-questionnaire-box .drag-item .item-input{border: 1px solid #fff; padding: 7px 0; width: 100%;text-indent: 40px;}
+.tax-questionnaire-box .drag-item .item-main .item-topic{ margin: 10px 0; }
+.tax-questionnaire-box .drag-item .item-main .item-topic dt{position: relative; background-color: #fff; padding-right: 120px;  }
+.tax-questionnaire-box .drag-item .item-main .item-topic dt:hover input{ color: #0994dc;}
+.tax-questionnaire-box .drag-item .item-main .item-topic dt:hover .dot-input{ color: #0994dc;}
+.tax-questionnaire-box .drag-item .item-main .item-topic .item-input{text-indent: 0px; margin-left:26px;}
+.tax-questionnaire-box .drag-item .item-main .layui-unselect{ position: absolute; top: 6px;}
+.tax-questionnaire-box .drag-item .item-main .notice .item-input{color: #999; text-indent: 0;}
+.questionnaire-center{ position: relative;min-height: 200px;padding-bottom: 20px;}
+.questionnaire-center>.ui-state-highlight{ background-color: #eaf4ff; height: 200px;border: none;}
+.questionnaire-center>.ui-sortable-helper{ opacity: 0.7;filter:alpha(opacity=70);}
+.questionnaire-center .set-box{width: 260px; border: 1px solid #ededed;  box-shadow: 1px 2px 12px rgba(0,0,0,0.45); background-color: #fff;border-radius: 3px; padding: 10px;position: absolute; z-index: 1;top:-5px;left: 25px; padding-top: 0px;}
+.questionnaire-center .set-box .title{ line-height: 28px; border-bottom: 1px solid #ededed; position:relative;}
+.questionnaire-center .set-box .set-btn-box{ text-align: right;}
+.questionnaire-center .set-box .title .iconfont{ color: #fff; position: absolute;margin-left: -24px;font-size: 22px;}
+.tax-questionnaire-box .drag-item .dt-btn{ position: absolute; top:7px; right:0px; background-color: #53acf3; padding: 3px 6px;border-radius: 3px;opacity: 0.8}
+.tax-questionnaire-box .drag-item .dt-btn .iconfont{ color: #fff; cursor: pointer; }
+.tax-questionnaire-box .drag-item .dt-btn:hover{ opacity: 1;}
+.tax-questionnaire-box .drag-item .dt-ballot{ width: 260px; position: absolute; padding: 10px; z-index: 1; background-color: #fff;right:0px;top:0px;border: 1px solid #ededed;  box-shadow: 1px 2px 12px rgba(0,0,0,0.45);}
+.tax-questionnaire-box .drag-item .dt-ballot .ballot-btn-box{text-align: right;}
+.questionnaire-center .drag-item .item-main dl .ui-state-highlight{ background-color: #eaf4ff; height: 36px;border: none;}
+.questionnaire-center .drag-item .item-main dl .ui-sortable-helper{ opacity: 0.5;filter:alpha(opacity=50);}
+.questionnaire-center .set-box .set-tab{ height: 60px; padding-top: 20px;}
+.questionnaire-center .drag-item  .item-main .item-topic .dot-input{ color: #bbb; position: absolute; top:10px;}
+.tax-questionnaire-box .box-left .sortableL{ position: absolute;left:10px; z-index: 999;opacity:0; overflow: hidden;}
+.tax-questionnaire-box .box-left .sortableL .drag-item{box-shadow: 1px 2px 12px rgba(0,0,0,0.45);}
+.tax-questionnaire-box .box-left .sortableL .drag-item .item-title input{ width: 99%; }
+.tax-questionnaire-box .box-left .sortableL .drag-item .notice input{ width: 99%; }
+.tax-questionnaire-box .box-left .sortableL .item-title{ padding-top: 30px;}
+.tax-questionnaire-box .box-left .layui-btn{ position: relative;}
+.tax-questionnaire-box .box-left .ui-state-highlight{ display: none;}
+
+.drag-item .left-btn .notice{ font-size: 12px; position: absolute; white-space:nowrap; right:20px;top:0; color: #999999; background-color: #fff; border: 1px solid #cccccc; padding: 3px 10px;z-index: 2;border-radius: 3px;display: none;}
+
+#item-number{ color: red; padding: 0 5px;}
+
+
+.questionnaire-item-box{}
+.questionnaire-item-box .item-div{ margin-bottom: 30px;}
+.questionnaire-item-box .item-div .item-title{ font-size: 16px;  padding: 12px 0; margin-top: 10px;}
+.questionnaire-item-box .item-div .item-li{ margin-left: 16px;}
+.questionnaire-item-box .item-div .item-li li{ margin: 8px 0;}
+.questionnaire-btn-box{ margin-top: 32px; margin-left: 16px; margin-bottom: 60px;}
+
+
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../tax-js/common.js"></script>		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">	
+<link rel="stylesheet" href="../../tax-module/taxNewsPage/tax-news-page.css">
+<link rel="stylesheet" href="../../tax-module/questionnaire/questionnaire-style.css">	
+</head>
+<body class="tax-subpage-body">
+		<!--head-->
+		<div class="tax-head-box login-after">
+	 <i class="head-logo"><img src="../../tax-images/logo/logo_bj.png"></i>
+	 <div class="head-main">
+	        
+			<div class="head-right-menu" >
+			  <div class="head-search" ><input type="text" name="text" value="请输入需要搜索的内容" class="search-input"><a href="#">搜索</a></div>
+			  <div class="head-btn">
+				  <a href="#" class="head-btn-home"><span style="margin-left: 0px;">主页</span></a>
+				  <p>|</p>
+				  
+				  <div class="user-item">
+				      
+					  <a href="##" class="user-name">欢迎，方欣科技有限公司乌鲁木齐分公司广西壮族自治区南宁市西城区东塔办事处</a>
+					  <ul>
+						  <p class="top-dot"><i class="iconfont fsicon-dot-up"></i></p>
+						  <dl>
+							 <dd class="user-item-txt">方欣科技有限公司乌鲁木齐分公司广西壮族自治区南宁市西城区东塔办事处</dd>
+							 <dd class="user-item-menu"><a href="#"><i class="iconfont fsicon-qiehuanjiaose"></i>切换身份</a></dd>
+							 <dd class="user-item-menu"><a href="#"><i class="iconfont fsicon-xuanze"></i>选择主管税务机关</a></dd> 
+						  </dl>
+				      </ul>
+				  </div>
+				  
+				  
+				  <p>|</p>
+				  <a href="#" class="head-btn-close"><span>退出</span></a>
+		        </div>
+	        </div> 
+     </div>	
+</div>
+		<!--headend-->
+        <div class="tax-breadcrumb" style="width: 1200px; margin: auto;">
+           <a href="#"><i class="iconfont fsicon-breadcrumb"></i></a>
+           <a href=""> 首页</a><i class="iconfont fsicon-xiangyou"></i>
+           <a href="">办税服务</a><i class="iconfont fsicon-xiangyou"></i>
+           <a href="">问卷调查</a><i class="iconfont fsicon-xiangyou"></i>
+           <span>税务机关对建筑行业营改增期待程度</span>
+        </div>
+        <div class="news-page-box" style="margin-top: 0px;">
+   
+			<div class="news-page-center">
+			<h1 class="news-title">税务机关对建筑行业营改增期待程度问卷调查</h1>
+			<h2 class="news-num">税总发〔2013〕119号</h2>
+            <p class="line-p marginT20"></p>
+			<div class="news-text marginT30 marginB32">
+			 
+　　为深入了解一年多来建筑业营改增政策执行情况,切实反映营改增这一重大税改对建筑业企业的影响，以及现阶段营改增运行中存在的问题，2017年5月，中国建筑业协会会同十一家行业建设协会、部分地方建筑业协会和大型建筑业企业成立联合调研组，历时3个月，分地区分行业对大量建筑业企业开展调研活动。
+			</div>
+		 
+			 
+			<p class="line-p marginT20 marginB30"></p>
+			
+			 <div class="questionnaire-item-box layui-form marginB32">
+			    
+				
+				 
+			
+			 </div>
+			
+			 <div class="questionnaire-btn-box"><button class="layui-btn">确定提交</button></div>
+			
+			</div>
+       </div>
+
+
+<script src="../../layui/layui.js" charset="utf-8"></script>
+<script>
+
+	
+$(document).ready(function(){
+	
+	
+	
+	$.getJSON('questionnaire.json',function(data){ 
+      
+	 
+		var itemBox='<div class="item-div"><div class="item-title">Q<span class="num-json"></span>:<span class="title-json"></span></div><div class="item-li"></div></div>'
+		var itemLength=data.item.length; 
+ 
+	   for(var i=0; i<itemLength;i++){
+		
+				 if(data.item[i].type=="type-radio"){
+
+							$(".questionnaire-item-box").append(itemBox);
+					        $(".questionnaire-item-box .item-div").eq(i).find(".num-json").text(data.item[i].num)
+					        $(".questionnaire-item-box .item-div").eq(i).find(".title-json").text(data.item[i].title)
+					        
+					 
+					            var liH=data.item[i].itemli.length;
+					         
+					            for(var x=0; x<liH; x++){
+	                                var appendItem='<li><input type="radio" name="'+data.item[i].name+'" value="" title="'+data.item[i].itemli[x]+'"></li>'
+								    $(".questionnaire-item-box .item-div").eq(i).find(".item-li").append(appendItem)	 
+		
+								}
+					           
+
+						}else{
+							
+									if(data.item[i].type=="type-select"){
+
+									$(".questionnaire-item-box").append(itemBox);
+									$(".questionnaire-item-box .item-div").eq(i).find(".num-json").text(data.item[i].num)
+									$(".questionnaire-item-box .item-div").eq(i).find(".title-json").text(data.item[i].title)
+
+
+										var liH=data.item[i].itemli.length;
+
+										for(var x=0; x<liH; x++){
+											
+											
+											
+											var appendItem='<li><input type="checkbox" name="'+data.item[i].name+'"  title="'+data.item[i].itemli[x]+'" lay-skin="primary"></li>'
+											$(".questionnaire-item-box .item-div").eq(i).find(".item-li").append(appendItem)	 
+
+										}
+
+
+									}else{
+							
+											if(data.item[i].type=="type-value"){
+
+													$(".questionnaire-item-box").append(itemBox);
+													$(".questionnaire-item-box .item-div").eq(i).find(".num-json").text(data.item[i].num)
+													$(".questionnaire-item-box .item-div").eq(i).find(".title-json").text(data.item[i].title)
+
+													var appendItem='<li><input type="text" name="'+data.item[i].name+'" placeholder="请输入" autocomplete="off" class="layui-input" style="width: 100px;"></li>'
+
+													$(".questionnaire-item-box .item-div").eq(i).find(".item-li").append(appendItem)
+
+													}else{
+							
+														if(data.item[i].type=="type-text"){
+
+																$(".questionnaire-item-box").append(itemBox);
+																$(".questionnaire-item-box .item-div").eq(i).find(".num-json").text(data.item[i].num)
+																$(".questionnaire-item-box .item-div").eq(i).find(".title-json").text(data.item[i].title)
+
+																
+																var appendItem='<textarea name="'+data.item[i].name+'" placeholder="请输入内容" class="layui-textarea"></textarea>'
+                                                                   
+																$(".questionnaire-item-box .item-div").eq(i).find(".item-li").append(appendItem)
+
+																}
+						                               }
+						              }
+							
+							
+							
+							
+							
+						}
+		   
+
+		   
+		 } 
+       
+		
+		//渲染form
+	   layui.use('form', function(){
+        var form = layui.form;
+ 
+      });
+	 
+		   
+      })
+
+	 
+	
+	
+})	
+	
+	
+	
+
+
+	
+</script>
+	</body>
+
+</html>

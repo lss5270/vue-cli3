@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../layui/css/layui.css">
+        <link rel="stylesheet" href="../../tax-css/common.css">
+		<link rel="stylesheet" href="../newcss/addstyle.css">
+		<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>	
+<SCRIPT src="../js/html5.min.js"></SCRIPT>
+<SCRIPT src="../js/respond.min.js"></SCRIPT>			
+	</head>
+<script>
+	
+	$(document).ready(function(){
+		
+		$(".head-user").on("mouseenter",function(){
+					 
+					$(".user-menu").fadeIn()
+				})
+				$(".head-user").on("mouseleave",function(){
+					 
+					$(".user-menu").fadeOut()
+				})
+		
+	})
+	</script>
+	<body class="bodybg-1">
+		<!--head-->
+		<!--新增头部-->
+		
+		<div class="headbox">
+			<div class="logo"></div>
+			<div class="head-right">
+				<div class="head-right-user">欢迎，塔利芬克.乌木斯  纳税人：方欣科技有限公司乌鲁木齐分公司广西壮族自治区南宁市西城区东塔办事处</div>
+				<div class="head-right-menu">
+				    <div class="head-search" style="margin-right: 90px;"><input type="text" name="text" placeholder="请输入关键词" class="search-input"><a href="#">索搜</a></div>
+					<div class="head-right-btn"><a href="#"><img src="../images/common/head_btn_refresh.png"><span>切换身份</span></a></a><a href="#"><img src="../images/common/head_btn_close.png"><span>退出</span></a></a></div>
+				</div>
+			    
+		 
+			</div>
+			
+		</div>
+		
+<!--新增头部结束-->		
+		
+<div class="layui-container pad-top layui-row">
+			<!--side-->
+			<div class="layui-col-xs4 con-side">
+				<div class="title">
+					<h3><img src="../images/login/login_ico1.png">常用功能</h3>
+					<div class="title-r">
+						<a href="#">设置</a>
+					</div>
+				</div>
+				<div class="listcon">
+					<ul>
+						<li>
+							<a href="#">代开增值税专用发票</a>
+						</li>
+						<li>
+							<a href="#">发票领用</a>
+						</li>
+						<li>
+							<a href="#">增值税小规模纳税人申报</a>
+						</li>
+						<li>
+							<a href="#">财务报表转换</a>
+						</li>
+					</ul>
+				</div>
+				<div class="title titnbar">
+					<h3><img src="../images/login/login_ico2.png">套餐业务</h3>
+				</div>
+				<div class="listcon">
+					<ul>
+						<li>
+							<a href="#">新办纳税人业务</a>
+						</li>
+						<li>
+							<a href="#">跨区城税源信息报告业务</a>
+						</li>
+						<li>
+							<a href="#">主附税联合申报纳税业务</a>
+						</li>
+					</ul>
+				</div>
+				<div class="title titnbar">
+					<h3><img src="../images/login/login_ico3.png">特色业务</h3>
+				</div>
+				<div class="listcon">
+					<ul>
+						<li>
+							<a href="#">银税互动</a>
+						</li>
+						<li>
+							<a href="#">票e送</a>
+						</li>
+						<li>
+							<a href="#">一表集成</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--rightcon-->
+			<div class="layui-col-xs8 con-rcon">
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					<ul class="layui-tab-title contit">
+						<li class="layui-this">我的信息</li>
+						<li class="">我要办税</li>
+						<li class="">我要查询</li>
+						<li class="">互动中心</li>
+						<li class="">公众服务</li>
+					</ul>
+					<div class="layui-tab-content">
+						<div class="layui-tab-item layui-show">
+							<div class="conbox">
+								<div class="layui-row tabico">
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img11.png">
+											</div>
+											<h4>纳税人信息</h4>
+										</a>
+									</div>
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img12.png">
+											</div>
+											<h4>电子资料</h4>
+										</a>
+									</div>
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img13.png">
+											</div>
+											<h4>用户管理</h4>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--sbsecond-->
+							<div class="nexttab">
+								<div class="layui-tab layui-tab-brief">
+									<ul class="layui-tab-title contit">
+										<li class="layui-this">我的待办</li>
+										<li>服务提醒</li>
+									</ul>
+									<div class="layui-tab-content secondcon">
+										<div class="layui-tab-item layui-show">
+											<div class="tablecon home-table-01">
+<table class="layui-table" lay-even="" lay-skin="line" lay-size="lg" style="margin-top: -3px;">	
+  <colgroup>
+    <col>
+    <col width="150">
+    <col width="150">
+    <col width="100">  
+  </colgroup>
+  <thead>
+    <tr>
+      <th>事件名称</th>
+      <th>截止日期</th>
+      <th>状态</th>
+      <th>操作</th>		
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>增值税小规模纳税人申报</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>	  
+  </tbody>
+</table>
+											</div>
+										</div>
+										<div class="layui-tab-item">内容2</div>
+										<div class="layui-tab-item">内容3</div>
+										<div class="layui-tab-item">内容4</div>
+										<div class="layui-tab-item">内容5</div>
+									</div>
+								</div>
+							</div>
+							<!--sbsecondend-->
+						</div>
+						<div class="layui-tab-item">
+							<div class="conbox">
+								<div class="layui-row tabico">
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img21.png">
+											</div>
+											<h4>申报缴税</h4>
+										</a>
+									</div>
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img22.png">
+											</div>
+											<h4>事项办理</h4>
+										</a>
+									</div>
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img23.png">
+											</div>
+											<h4>发票管理</h4>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--sbsecond-->
+							<div class="nexttab">
+								<div class="layui-tab layui-tab-brief">
+									<ul class="layui-tab-title contit">
+										<li class="layui-this">我的待办</li>
+										<li>服务提醒</li>
+									</ul>
+									<div class="layui-tab-content secondcon">
+										<div class="layui-tab-item layui-show">
+											<div class="tablecon home-table-01">
+<table class="layui-table" lay-even="" lay-skin="line" lay-size="lg" style="margin-top: -3px;">	
+  <colgroup>
+    <col>
+    <col width="150">
+    <col width="150">
+    <col width="100">  
+  </colgroup>
+  <thead>
+    <tr>
+      <th>事件名称</th>
+      <th>截止日期</th>
+      <th>状态</th>
+      <th>操作</th>		
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>增值税小规模纳税人申报</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>	  
+  </tbody>
+</table>
+											</div>
+										</div>
+										<div class="layui-tab-item">内容2</div>
+										<div class="layui-tab-item">内容3</div>
+										<div class="layui-tab-item">内容4</div>
+										<div class="layui-tab-item">内容5</div>
+									</div>
+								</div>
+							</div>
+							<!--sbsecondend-->
+						</div>
+<div class="layui-tab-item">
+							<div class="conbox">
+								<div class="layui-row tabico">
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img31.png">
+											</div>
+											<h4>一户式查询</h4>
+										</a>
+									</div>
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img32.png">
+											</div>
+											<h4>公众查询</h4>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--sbsecond-->
+							<div class="nexttab">
+								<div class="layui-tab layui-tab-brief">
+									<ul class="layui-tab-title contit">
+										<li class="layui-this">我的待办</li>
+										<li>服务提醒</li>
+									</ul>
+									<div class="layui-tab-content secondcon">
+										<div class="layui-tab-item layui-show">
+											<div class="tablecon home-table-01">
+<table class="layui-table" lay-even="" lay-skin="line" lay-size="lg" style="margin-top: -3px;">	
+  <colgroup>
+    <col>
+    <col width="150">
+    <col width="150">
+    <col width="100">  
+  </colgroup>
+  <thead>
+    <tr>
+      <th>事件名称</th>
+      <th>截止日期</th>
+      <th>状态</th>
+      <th>操作</th>		
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>增值税小规模纳税人申报</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>	  
+  </tbody>
+</table>
+											</div>
+										</div>
+										<div class="layui-tab-item">内容2</div>
+										<div class="layui-tab-item">内容3</div>
+										<div class="layui-tab-item">内容4</div>
+										<div class="layui-tab-item">内容5</div>
+									</div>
+								</div>
+							</div>
+							<!--sbsecondend-->
+						</div>
+<div class="layui-tab-item">
+							<div class="conbox">
+								<div class="layui-row tabico">
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img41.png">
+											</div>
+											<h4>征纳互动</h4>
+										</a>
+									</div>
+									<div class="layui-col-xs2">
+										<a href="#">
+											<div class="imgbox">
+												<img src="../images/login/login_img42.png">
+											</div>
+											<h4>银税互动</h4>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--sbsecond-->
+							<div class="nexttab">
+								<div class="layui-tab layui-tab-brief">
+									<ul class="layui-tab-title contit">
+										<li class="layui-this">我的待办</li>
+										<li>服务提醒</li>
+									</ul>
+									<div class="layui-tab-content secondcon">
+										<div class="layui-tab-item layui-show">
+											<div class="tablecon home-table-01">
+<table class="layui-table" lay-even="" lay-skin="line" lay-size="lg" style="margin-top: -3px;">	
+  <colgroup>
+    <col>
+    <col width="150">
+    <col width="150">
+    <col width="100">  
+  </colgroup>
+  <thead>
+    <tr>
+      <th>事件名称</th>
+      <th>截止日期</th>
+      <th>状态</th>
+      <th>操作</th>		
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>增值税小规模纳税人申报</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>财务报表报送</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>
+    <tr>
+      <td>发票验旧</td>
+      <td>2018-06-15</td>
+      <td class="txt-color-orange">未申报</td>
+      <td><button class="layui-btn layui-btn-sm"> 办理 </button></td>		
+    </tr>	  
+  </tbody>
+</table>
+											</div>
+										</div>
+										<div class="layui-tab-item">内容2</div>
+										<div class="layui-tab-item">内容3</div>
+										<div class="layui-tab-item">内容4</div>
+										<div class="layui-tab-item">内容5</div>
+									</div>
+								</div>
+							</div>
+							<!--sbsecondend-->
+						</div>
+						<div class="layui-tab-item">
+							<div class="layui-row conbox">
+								<div class="layui-col-md6">
+									<div class="gzfwbox">
+										<div class="title">
+											<span class="con-1"><img src="../images/login/gzfw_titico2.png">公众查询</span>
+										</div>
+										<ul class="listcon">
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>发票真伪及流向查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>重大违法案件信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>纳税人信用信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>欠税公告信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>重大违法案件信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>欠税公告信息查询</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="layui-col-md6">
+									<div class="gzfwbox">
+										<div class="title ttbg2">
+											<span class="con-2"><img src="../images/login/gzfw_titico1.png">咨询辅导</span>
+										</div>
+										<ul class="listcon">
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>发票真伪及流向查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>重大违法案件信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>纳税人信用信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>欠税公告信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>重大违法案件信息查询</a></li>
+											<li><a href="#"><i class="layui-icon layui-icon-triangle-r"></i>欠税公告信息查询</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--tongzhigongg-->
+							<div class="nexttab">
+								<div class="layui-tab layui-tab-brief">
+									<ul class="layui-tab-title contit">
+										<li class="layui-this">通知公告</li>
+									</ul>
+									<div class="layui-tab-content newlist">
+										<ul id="listbox">
+											<li><a href="#">国家税务总局关于企业所得税资产损失资料留存备查有关事项的公告</a><span>2018-06-15</span></li>
+											<li><a href="#">国家税务总局关于企业所得税资产损失资料留存备查有关事项的公告</a><span>2018-06-15</span></li>
+											<li><a href="#">国家税务总局关于企业所得税资产损失资料留存备查有关事项的公告</a><span>2018-06-15</span></li>
+											<li><a href="#">国家税务总局关于企业所得税资产损失资料留存备查有关事项的公告</a><span>2018-06-15</span></li>
+											<li><a href="#">国家税务总局关于企业所得税资产损失资料留存备查有关事项的公告</a><span>2018-06-15</span></li>
+											<li><a href="#">国家税务总局关于企业所得税资产损失资料留存备查有关事项的公告</a><span>2018-06-15</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--tongzhigonggend-->
+						</div>
+					</div>
+					<!--rightconend-->
+				</div>
+			</div>
+				<!--headend-->
+</div>
+				<script src="../../layui/layui.js" charset="utf-8"></script> 
+				<script src="../layui/transfer.js"></script>
+				<script>
+					layui.use('element', function() {
+						var element = layui.element;
+					});
+				</script>
+
+				<script>
+					layui.use('table', function() {
+						var table = layui.table;
+						table.render({
+							elem: '#test',
+							skin: 'line',
+							size: 'lg',
+							even: true,
+							url: '../table/table1.json',
+							cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+								,
+							cols: [
+								[{
+									field: 'number',
+									width: 220,
+									title: '事项名称',
+									align: 'left'
+								}, {
+									field: 'yewuyu',
+									minWidth: 120,
+									title: '截至日期'
+								}, {
+									field: 'username',
+									minWidth: 220,
+									title: '状态',
+									templet: '#usernametpl'
+								}, {
+									field: 'operating',
+									title: '操作',
+									width: 160,
+									align: 'center',
+									toolbar: '#barDemo'
+								}]
+							]
+						});
+					});
+				</script>
+<script>
+	layui.use(['jquery', 'layer'], function(){ 
+  var $ = layui.$ //重点处
+  ,layer = layui.layer;
+   
+       $(function(){ 
+            var item = $("#listbox li"); 
+            for(var i=0;i<item.length;i++){ 
+                if(i%2==0){ 
+                    item[i].style.backgroundColor="#f9fafd"; 
+                } 
+            } 
+  
+        });
+});
+</script>
+	</body>
+
+</html>

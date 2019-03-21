@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+		<title></title>
+		<link rel="stylesheet" href="../layui/css/layui.css">
+		<link rel="stylesheet" href="../tax-css/common.css">
+		<link rel="stylesheet" href="../tax-font-icon/iconfont.css">
+	</head>
+
+	<body>
+		
+
+		<div class="site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+ 
+  
+           <button data-method="bsrysfxz" data-type="auto" class="layui-btn layui-btn-normal">办税身份选择</button>
+		   <button data-method="jgxz" data-type="auto" class="layui-btn layui-btn-normal">办税身份选择</button>
+        </div>
+<script src="../layui/layui.js"></script>
+		
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+	
+	
+	
+layui.use('layer', function(){ //独立版的layer无需执行这一句
+  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+  
+  //触发事件
+  var active = {
+    bsrysfxz: function(othis){
+      var type = othis.data('type')
+      ,text = othis.text();
+      
+      layer.open({
+        type: 1
+		,area: ['900px']
+		,title:['办税身份选择']  
+		,scrollbar: false
+        ,bsrysfxz: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+        ,id: 'layerDemo'+type //防止重复弹出
+        ,content: $("#user01")
+      
+        ,btnAlign: 'c' //按钮居中
+        
+        ,yes: function(){
+          layer.closeAll();
+        }
+      });
+		
+ 
+		
+		
+    }
+	  
+	,jgxz: function(othis){
+      var type = othis.data('type')
+      ,text = othis.text();
+      
+      layer.open({
+        type: 1
+		,area: ['900px']
+		,title:['主管税务机关选择']  
+		,scrollbar: false
+        ,jgxz: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+        ,id: 'layerDemo'+type //防止重复弹出
+        ,content: $("#user02")
+        ,btn: ['确定', '关闭']
+        ,btnAlign: 'r' //按钮居中
+        ,yes: function(){
+          layer.closeAll();
+        }
+		,btn2: function(index, layero){
+			//按钮【按钮二】的回调
+
+			//return false 开启该代码可禁止点击该按钮关闭
+		  }
+      });
+		
+    
+		
+    }  
+	  
+	  
+  };
+  
+  $('#layerDemo .layui-btn').on('click', function(){
+	  
+    var othis = $(this), method = othis.data('method');
+    active[method] ? active[method].call(this, othis) : '';
+	  
+
+  });
+  
+});
+
+</script>
+	 
+
+		
+		
+		
+</body>
+	
+	
+	
+<div class="win-center" id="user01" style="display: none;">
+  <div class="sfxz-box">
+    <div class="left-box ">
+      <div class="qybs-item">
+         
+        <div class="sfxz-center">
+		<div class="tax-title marginT20"><i class="dot"></i>企业办税</div>	
+          <div class="sfxz-search">
+            <div class="tax-search">选择企业：
+              <input type="text" name="text" placeholder="请输入关键词" class="search-input" style="width: 300px;">
+              <a href="#">搜索</a></div>
+          </div>
+          <div class="qybs-list-item">
+            <li class="this">吴林（吴林-普通管理员）</li>
+            <li>吴林（吴林-普通管理员）</li>
+            <li>吴林（吴林-普通管理员）</li>
+            <li>吴林（吴林-普通管理员）</li>
+			<li>吴林（吴林-普通管理员）</li>
+            <li>吴林（吴林-普通管理员）</li>
+            <li>吴林（吴林-普通管理员）</li>
+          </div>
+          <div class="qybs-add-btn"><img src="../tax-images/common/icon_add.png"><span>企业绑定</span></div>
+        </div>
+        <div class="btnbox">
+          <button class="layui-btn">企业进入</button>
+        </div>
+      </div>
+    </div>
+    <div class="right-box ">
+      <div class="grbs-item">
+       
+        <div class="sfxz-center">
+			<div class="tax-title marginT20"><i class="dot"></i>个人办税</div>
+          <div class="grbs-list-item" style="display: none;">
+            <li >用户姓名：吴森</li>
+            <li>证件类型：居民身份证</li>
+            <li>证件号码：449494928928293</li>
+            <li>证件有效期：2010-10-01   2030-10-01</li>
+          </div>
+		  <div>
+			  <div class="grbs-notice font-weak">
+			     暂时未实名，请先进行实名制申请
+			  </div>
+		      <div class="qybs-add-btn"><img src="../tax-images/common/icon_add.png"><span>实名制申请</span></div>
+		  </div>	
+			
+        </div>
+        <div class="btnbox">
+          <button class="layui-btn layui-btn-disabled">个人进入</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
+	
+ <div class="win-center" id="user02" style="display: none;">
+  <div class="sfxz-box">
+    <div class="sfxz-search" style=" margin-top: 0px">
+      <div class="tax-search">请选择主管税务机关：
+        <input type="text" name="text" placeholder="请输入关键词" class="search-input">
+        <a href="#">查询</a></div>
+    </div>
+  </div>
+  <div class="sfxz-table">
+    <form class="layui-form">
+      <table class="layui-table" >
+        <thead>
+          <tr>
+            <th style="width: 28px;">选择</th>
+            <th style="width: 185px;">主管税务所（科、分局）名称</th>
+            <th>课征主体登记类型 </th>
+            <th>跨区财产税主体登记标志</th>
+            <th>外出经营活动税收管理证明编号</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="layui-form-item ">
+                <div class="layui-form-item ">
+                  <input type="checkbox" name="like1[write]" lay-skin="primary" checked="">
+                 
+                </div>
+              </div></td>
+            <td>税务总局贵阳经济技术开发区税务局（25201140000）</td>
+            <td>个体经营纳税人税务登记</td>
+            <td>否</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+	
+<script>
+	
+ 	 layui.use('form', function(){var form = layui.form;}); 
+
+</script>	
+</div>
+	
+	
+	
+</html>

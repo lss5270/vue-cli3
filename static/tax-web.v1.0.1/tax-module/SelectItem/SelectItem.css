@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.SelectItem{ display: none;}
+.SelectItemBox{ position: relative; }
+.SelectItem-center{border: 1px solid #e6e6e6;border-radius: 3px; margin-top: -1px;position: absolute;box-sizing: border-box;}
+
+.SelectItem-list01 .item-btn{ padding-top: 14px ; padding-bottom: 18px; text-align: center;}
+.SelectItem-list01 .title{border-bottom: 1px solid #e6e6e6;text-align: center;  margin:0px 10px;}
+.SelectItem-list01 .title li{display: inline-block; height: 1px; position: relative; color: #333; }
+.SelectItem-list01 .title li span{display: block; background-color: #fff; height: 25px; line-height: 25px; position: absolute; white-space: nowrap;top:-8px; padding: 0 10px; margin-left: -38px; color: #bbb}
+.SelectItem-list01 .item-list{  max-height: 250px; overflow: hidden; overflow-y: auto; padding-top:18px; padding-bottom: 8px;}
+.SelectItem-center { z-index: 999; background-color: #fff;}
+.SelectItem-center .item-list li{ line-height: 22px; padding: 6px 6px;margin: 0 10px;}
+.SelectItem-center .item-list li:hover{ background-color: #0994dc; color: #fff; cursor: pointer;}
+.SelectItem-center .item-list p{line-height: 22px; padding: 6px 6px;margin: 0 10px;color: #bbb;text-align: center;}
+.SelectItemBox .SelectItem-input { position: relative;}
+.SelectItemBox .SelectItem-input input{ width: 100%; height: 32px; line-height: 32px;box-sizing:border-box; border:1px solid #e6e6e6;border-radius: 2px;text-indent: 8px;}
+.SelectItemBox .SelectItem-input input::-ms-clear {display: none;}
+.SelectItemBox .SelectItem-input .dot{ background-image: url(select.png); background-position: center; background-repeat: no-repeat;height:24px; width: 30px; display: block; position: absolute;top:5px; background-color: #fff;right:1px;}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 搜索下拉菜单*/
+
+.tax-search-select{box-shadow: 0px 2px 12px rgba(0,0,0,0.45); position: absolute; background-color: #fff;}
+.tax-search-select ul{ max-height: 200px; overflow: hidden; overflow-y: auto;}
+.tax-search-select ul li{ padding: 5px 10px; cursor: pointer;}
+.tax-search-select ul li:hover{ background-color: #f2f2f2;}
+.tax-search-select ul li .iconfont{ margin-right: 5px; color: #aaa}
+

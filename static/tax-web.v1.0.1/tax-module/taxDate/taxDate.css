@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.month-item{ overflow: hidden; padding-left: 1px;}
+.month-item li{border: 1px solid #ebebeb; background-color: #f7f7f7;  padding: 6px 0px; cursor: pointer;  margin-left: -1px; text-align: center; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.month-item li:hover { color: #0994dc;}
+.month-item .tax-this{ color: #0994dc; border-color: #0994dc; background-color: #fff;margin-right:1px; }
+.date-item li{ width: 60px; text-align: center;display: inline-block; line-height: 40px; height: 40px;}
+.date-main{ position: relative;}
+.date-main .date-box{ position: absolute; width:420px; border-right: 1px solid #ebebeb; height: 420px;}
+.date-main .date-explain{ margin-left:440px;}
+.date-item .date { margin-top: 20px;}
+.date-item .date li{ margin: 8px 0;}
+.date-item .date .fsicon-prohibit{ color: #dcdcdc}
+.date-item .date p{ width: 40px; height: 40px; margin: auto; position: relative; border-radius: 50%;  cursor: pointer;}
+.date-item .date p:hover{ color: #fff; background-color: #53acf3;}
+.date-item .date p .iconfont{ color: red; position: absolute; top:-10px;left: 12px;}
+.date-item .date .tax-this{ color: #fff; background-color: #53acf3;}
+.year-box{ position: absolute;}
+.month-box{ margin-left: 130px;} 

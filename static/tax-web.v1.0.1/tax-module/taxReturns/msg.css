@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px; font-family:"微软雅黑"; color:#313131; list-style-type:none;}
+a{ text-decoration:none; color:#008ec9}
+
+.head{ background-color:#ededed; }
+.head h1{height:70px; line-height:70px; font-size:24px; font-weight:normal;}
+.head,.main{padding:0 5%;}
+.main .main-top ul{ background-image:url(msg.png); background-position:top left; background-repeat:no-repeat; height:110px; padding-left:120px; margin-top:30px;}
+.main .main-top li{ font-size:18px; color:#515151; line-height:28px; padding-bottom:20px;}
+.main .main-top a{ background-color:#f2f2f2; border:1px solid #d5d5d5; padding:8px 30px; font-size:16px;}
+.main .main-top a:hover{ background-color:#146baf; border:#1c5fa0; color:#fff;}
+.main .main-list ul{padding-left:120px;}
+.main .main-list li{ font-size:12px; line-height:18px; padding:5px 0;}

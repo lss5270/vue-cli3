@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<link rel="stylesheet" href="../layui/css/layui.css">
+<link rel="stylesheet" href="../ui-css/ui-css.css">	
+<link href="../tax-font-icon/iconfont.css" rel="stylesheet" type="text/css">
+<body>
+<div class="searchTable">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="show-table" ng-jprefix="fwxxGrid.fwxxGridlb">
+    <thead>
+      <tr>
+        <td width="70"><input type="checkbox" id="cjSelectCurr" onclick="cjSelectCurr(this)"></td>
+        <td>房产编号</td>
+        <td>产权证书号</td>
+        <td>房产名称</td>
+        <td>房屋坐落地址</td>
+        <td>所属主管税务所（科、分局）</td>
+        <td>状态</td>
+      </tr>
+    </thead>
+    <tbody id="fwxxTbody">
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx0" value="false" fybhvalue="#fybh0" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120160065301')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh0" class="ng-binding">F52260120160065301</span></td>
+        <td onclick="editFyxx('F52260120160065301')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding">凯里市字第00042676</span></td>
+        <td onclick="editFyxx('F52260120160065301')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding">西门1号仓</span></td>
+        <td onclick="editFyxx('F52260120160065301')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">西门街道</span><span ng-bind="p.fwzldz">凯里市西门街270号</span></td>
+        <td onclick="editFyxx('F52260120160065301')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120160065301')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx1" value="false" fybhvalue="#fybh1" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120160065302')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh1" class="ng-binding">F52260120160065302</span></td>
+        <td onclick="editFyxx('F52260120160065302')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120160065302')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120160065302')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">旁海镇</span><span ng-bind="p.fwzldz">凯里市旁海镇</span></td>
+        <td onclick="editFyxx('F52260120160065302')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120160065302')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx2" value="false" fybhvalue="#fybh2" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120160065300')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh2" class="ng-binding">F52260120160065300</span></td>
+        <td onclick="editFyxx('F52260120160065300')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120160065300')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120160065300')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">炉山镇</span><span ng-bind="p.fwzldz">凯里市炉山镇</span></td>
+        <td onclick="editFyxx('F52260120160065300')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120160065300')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx3" value="false" fybhvalue="#fybh3" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170002799')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh3" class="ng-binding">F52260120170002799</span></td>
+        <td onclick="editFyxx('F52260120170002799')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002799')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002799')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">大十字街道</span><span ng-bind="p.fwzldz">凯里市金井路</span></td>
+        <td onclick="editFyxx('F52260120170002799')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170002799')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx4" value="false" fybhvalue="#fybh4" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170002974')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh4" class="ng-binding">F52260120170002974</span></td>
+        <td onclick="editFyxx('F52260120170002974')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002974')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002974')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">西门街道</span><span ng-bind="p.fwzldz">凯里市西门街270号</span></td>
+        <td onclick="editFyxx('F52260120170002974')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170002974')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx5" value="false" fybhvalue="#fybh5" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170002798')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh5" class="ng-binding">F52260120170002798</span></td>
+        <td onclick="editFyxx('F52260120170002798')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002798')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002798')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">炉山镇</span><span ng-bind="p.fwzldz">凯里市炉山镇</span></td>
+        <td onclick="editFyxx('F52260120170002798')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170002798')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx6" value="false" fybhvalue="#fybh6" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170003211')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh6" class="ng-binding">F52260120170003211</span></td>
+        <td onclick="editFyxx('F52260120170003211')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170003211')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170003211')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">万潮镇</span><span ng-bind="p.fwzldz">凯里市万潮镇</span></td>
+        <td onclick="editFyxx('F52260120170003211')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170003211')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx7" value="false" fybhvalue="#fybh7" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170001033')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh7" class="ng-binding">F52260120170001033</span></td>
+        <td onclick="editFyxx('F52260120170001033')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170001033')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding">北京西路库房</span></td>
+        <td onclick="editFyxx('F52260120170001033')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">城西街道</span><span ng-bind="p.fwzldz">北京西路26号</span></td>
+        <td onclick="editFyxx('F52260120170001033')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170001033')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx8" value="false" fybhvalue="#fybh8" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170002118')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh8" class="ng-binding">F52260120170002118</span></td>
+        <td onclick="editFyxx('F52260120170002118')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002118')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170002118')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">大十字街道</span><span ng-bind="p.fwzldz">凯里市</span></td>
+        <td onclick="editFyxx('F52260120170002118')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170002118')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #FF0000;"></i><span>已终止</span></td>
+      </tr>
+      <tr ng-repeat="p in fwxxGridlb track by $index" ng-repeat-init="fwxxGridlb" class="ng-scope">
+        <td width="70"><input class="fwxxCheckbox" type="checkbox" id="fwxx9" value="false" fybhvalue="#fybh9" onclick="selectFwxxCheckbox(this)" style="cursor: pointer;"></td>
+        <td onclick="editFyxx('F52260120170001412')" style="cursor: pointer;"><span ng-bind="p.fybh" id="fybh9" class="ng-binding">F52260120170001412</span></td>
+        <td onclick="editFyxx('F52260120170001412')" style="cursor: pointer;"><span ng-bind="p.fwcqzsh" class="ng-binding"></span></td>
+        <td onclick="editFyxx('F52260120170001412')" style="cursor: pointer;"><span ng-bind="p.fcmc" class="ng-binding">挂丁粮站</span></td>
+        <td onclick="editFyxx('F52260120170001412')" style="cursor: pointer;"><span ng-bind="p.xzqhszMc" class="ng-binding">凯里市</span><span ng-bind="p.jdxzMc">三棵树镇</span><span ng-bind="p.fwzldz">凯里市三棵树镇挂丁粮站</span></td>
+        <td onclick="editFyxx('F52260120170001412')" style="cursor: pointer;"><span ng-bind="p.zgswskfjMc" class="ng-binding">国家税务总局凯里市税务局第二税务分局</span></td>
+        <td onclick="editFyxx('F52260120170001412')" style="cursor: pointer;"><i class="iconfont fsicon-tree-dot" style="font-size: 28px; vertical-align: -6px; margin-right: -6px; color: #00FF33;"></i><span>未终止</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

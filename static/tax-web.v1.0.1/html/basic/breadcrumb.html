@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>	
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">	
+<link rel="stylesheet" href="../../ui-css/ui-css.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">	
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>	
+</head>
+	
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->                    
+<div class="layui-container">
+  <blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote> 
+ <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>Breadcrumb-面包屑 <a href="../../demo/bsfw/news_page.html" target="_blank" class="link-strong font-s14">查看应用案例</a></legend>  
+ </fieldset>	  
+  <div class="margin20">
+    
+      <div class="tax-breadcrumb" >
+           <a href="#"><i class="iconfont fsicon-breadcrumb"></i></a>
+           <a href=""> 首页</a><i class="iconfont fsicon-xiangyou"></i>
+           <a href="">办税服务</a><i class="iconfont fsicon-xiangyou"></i>
+           <a href="">通知公告</a><i class="iconfont fsicon-xiangyou"></i>
+           <span>税务系统数字证书格式标准</span>
+        </div>
+    
+  </div> 
+  
+ 	
+<!--演示代码-->
+<pre class="layui-code" lay-height="150px">
+<div class="tax-breadcrumb" >
+           <a href="#"><i class="iconfont fsicon-breadcrumb"></i></a>
+           <a href=""> 首页</a><i class="iconfont fsicon-xiangyou"></i>
+           <a href="">办税服务</a><i class="iconfont fsicon-xiangyou"></i>
+           <a href="">通知公告</a><i class="iconfont fsicon-xiangyou"></i>
+           <span>税务系统数字证书格式标准</span>
+ </div>
+</pre>
+
+	
+	
+ 
+	
+ 
+	
+</div>
+	
+
+
+<script src="../../layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use('code', function(){
+  
+  layui.code({
+	   title: '演示代码'
+	  ,encode: true //是否转义html标签。
+	  ,about: false
+  }); 
+
+
+});
+layui.use('layer', function(){
+	var layer = layui.layer;
+
+$("#btn01").on("click",function(){
+      var top="auto"//默认自动
+	  if(window.top==window.self){
+		  //不存在父页面
+	  }else{
+		  
+		  top=window.parent.document.documentElement.scrollTop+200+"px";
+	  }
+   var index = layer.load(2, {
+	   offset:top,
+	   time: 10*500,
+	   shade:0.1});
+})
+	
+
+
+});
+
+	
+	
+	
+</script>	
+</body>
+</html>

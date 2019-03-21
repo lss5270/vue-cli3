@@ -1,0 +1,462 @@
+<!doctype html>
+<html id="ng-app" xmlns:ng="http://angularjs.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+
+		<title>职工个人缴费工资调整</title>
+		<script src="../../../tax-js/jquery-1.9.1.min.js"></script>
+		<script src="../../../tax-js/common.js"></script>
+		<link rel="stylesheet" href="../../../layui/css/layui.css">
+		<link rel="stylesheet" href="../../../tax-css/common.css">
+		<link rel="stylesheet" href="../../../tax-font-icon/iconfont.css">
+	</head>
+
+	<body>
+		<div class="tax-center-box">
+			<form class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label label-left">纳税人名称：</label>
+						<div class="layui-input-inline">
+							<input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label label-left">纳税人识别号：</label>
+						<div class="layui-input-inline">
+							<input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+				</div>
+			</form>
+
+			<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+				<ul class="layui-tab-title">
+					<li class="layui-this" id="table001">调整列表</li>
+					<li id="table002">职工信息查询</li>
+					<li id="table003">调整记录查询</li>
+				</ul>
+				<div class="layui-tab-content marginT20" style="padding:0; min-height: 100px;">
+					<div class="layui-tab-item layui-show">
+						<form class="layui-form marginT20">
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label label-left" style="width:72px;">生效年月：</label>
+
+								<div class="layui-input-inline">
+									<input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+								</div>
+
+							</div>
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label label-left" style="width:72px;">调整方式：</label>
+								<div class="layui-input-inline" style="width: 120px;">
+									<select name="modules" lay-verify="required" lay-search="">
+										<option value="">按调整额</option>
+										<option value="1">按比例</option>
+										<option value="2">按定额</option>
+									</select>
+								</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label">调整比例：</label>
+								<div class="layui-input-inline">
+									<input type="password" name="password" lay-verify="pass" placeholder="0" autocomplete="off" class="layui-input" style="width:42px;">
+								</div>
+								<div class="layui-input-inline layui-word-aux">%</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<button class="layui-btn layui-btn-primary">批量修改</button>
+								<button class="layui-btn">提交申报</button>
+								<button class="layui-btn layui-btn-primary">模版导入</button>
+								<button class="layui-btn layui-btn-primary">移出列表</button>
+							</div>
+
+						</form>
+						<table id="table-wscq" class="layui-hide" lay-filter="wscq"></table>
+					</div>
+					<!--biao2-->
+					<div class="layui-tab-item">
+						<form class="layui-form marginT20">
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label label-left" style="width:122px;">身份证件号码：</label>
+
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+								</div>
+
+							</div>
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label label-left" style="width:72px;">姓名：</label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label">缴费工资：</label>
+								<div class="layui-input-inline" style="width: 100px;">
+									<input type="text" name="price_min" placeholder="￥" autocomplete="off" class="layui-input">
+								</div>
+								<div class="layui-form-mid">-</div>
+								<div class="layui-input-inline" style="width: 100px;">
+									<input type="text" name="price_max" placeholder="￥" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<button class="layui-btn layui-btn-primary">查询</button>
+								<button class="layui-btn">加入列表</button>
+								<button class="layui-btn">导出</button>
+							</div>
+
+						</form>
+						<table id="table-wscq2" class="layui-hide" lay-filter="wscq"></table>
+					</div>
+					<!--biao3-->
+					<div class="layui-tab-item">
+						
+    <div class="layui-row">
+      <div class="layui-col-md10">
+         <span class="font-weakest">流水号340B8FB6FFA8380122838B08B1213B29 明细记录</span>
+      </div>
+      <div class="layui-col-md2" style="text-align: right;">
+        <a href="wageadjustment.html" class="layui-btn layui-btn-primary layui-btn-sm"><i class="iconfont fsicon-xiangzuo"></i>返回</a>
+      </div>
+    </div>
+ 
+
+						<form class="layui-form marginT20">
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label label-left" style="width:122px;">身份证件号码：</label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label label-left" style="width:72px;">姓名：</label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<label class="layui-form-label">缴费工资：</label>
+								<div class="layui-input-inline" style="width: 100px;">
+									<input type="text" name="price_min" placeholder="￥" autocomplete="off" class="layui-input">
+								</div>
+								<div class="layui-form-mid">-</div>
+								<div class="layui-input-inline" style="width: 100px;">
+									<input type="text" name="price_max" placeholder="￥" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline marginB12">
+								<button class="layui-btn layui-btn-primary">查询</button>
+								<button class="layui-btn">导出</button>
+							</div>
+						</form>
+						<table id="table-wscq4" class="layui-hide" lay-filter="wscq"></table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="../../../layui/layui.js" charset="utf-8"></script>
+		<script>
+			layui.use('element', function() {
+				var element = layui.element;
+
+				//…
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#table002").click(function() {
+					biaoge1()
+				});
+			});
+
+			function biaoge1() {
+
+				layui.use('table', function() {
+					var table = layui.table;
+
+					setTimeout(function() {
+						table.render({
+							elem: '#table-wscq2',
+							url: 'table-wscq.json',
+							page: true,
+							cols: [
+								[ //表头
+									{
+										type: 'checkbox',
+										fixed: 'left'
+									}, {
+										field: 'id',
+										title: '序号',
+										width: 60,
+										align: 'center'
+									}, {
+										field: 'sxmc',
+										title: '身份证件类型'
+									}, {
+										field: 'wsmc',
+										title: '身份证件号码'
+									}, {
+										field: 'wszzrq',
+										title: '姓名',
+										align: 'center'
+									}, {
+										field: 'swjg',
+										title: '原缴费工资'
+									}, {
+										field: 'qsbz',
+										title: '新缴费工资',
+										align: 'center',
+										sort: true
+									}, {
+										field: 'sxny',
+										title: '生效年月',
+										align: 'center',
+										sort: true
+									}, {
+										field: 'cz',
+										title: '申报状态',
+										align: 'center',
+										sort: true
+									}
+
+								]
+							],
+							text: {
+								none: '你在地税未做财报备案或本月非报送期，如未做财报备案,<br>请先报“财务会计制度及核算软件备案报告” <a href="#" class="link-strong">现在去备案</a> 若无需财务备案,请点击此处 <a href="#" class="link-strong">立即填报</a>' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+							}
+						});
+					}, 200);
+
+				});
+
+			}
+
+			$(document).ready(function() {
+				$("#table003").click(function() {
+					biaoge3();
+					biaoge4();
+				});
+			});
+
+			function biaoge3() {
+
+				layui.use('table', function() {
+					var table = layui.table;
+
+					setTimeout(function() {
+
+						table.render({
+							elem: '#table-wscq3',
+							url: 'table-wscq3.json',
+							page: true,
+							cols: [
+								[ //表头
+									{
+										field: 'id',
+										title: '序号',
+										width: 60,
+										align: 'center'
+									}, {
+										field: 'sxmc',
+										title: '申报表名称'
+									}, {
+										field: 'wsmc',
+										title: '交易流水号'
+									}, {
+										field: 'sxny',
+										title: '申报日期',
+										align: 'center'
+									}, {
+										field: 'cz',
+										width: 137,
+										title: '操作',
+										align: 'center'
+									}
+
+								]
+							],
+							text: {
+								none: '你在地税未做财报备案或本月非报送期，如未做财报备案,<br>请先报“财务会计制度及核算软件备案报告” <a href="#" class="link-strong">现在去备案</a> 若无需财务备案,请点击此处 <a href="#" class="link-strong">立即填报</a>' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+							}
+						});
+					}, 300);
+
+				});
+
+			}
+
+			function biaoge4() {
+
+				layui.use('table', function() {
+					var table = layui.table;
+					setTimeout(function() {
+						table.render({
+							elem: '#table-wscq4',
+							url: 'table-wscq.json',
+							page: true,
+							cols: [
+								[ //表头
+									{
+										type: 'checkbox',
+										fixed: 'left'
+									}, {
+										field: 'id',
+										title: '序号',
+										width: 60,
+										align: 'center'
+									}, {
+										field: 'sxmc',
+										title: '身份证件类型'
+									}, {
+										field: 'wsmc',
+										title: '身份证件号码'
+									}, {
+										field: 'wszzrq',
+										title: '姓名',
+										align: 'center'
+									}, {
+										field: 'swjg',
+										title: '原缴费工资'
+									}, {
+										field: 'qsbz',
+										title: '新缴费工资',
+										align: 'center',
+										sort: true
+									}, {
+										field: 'sxny',
+										title: '生效年月',
+										align: 'center',
+										sort: true
+									}, {
+										field: 'cz',
+										title: '申报状态',
+										align: 'center',
+										sort: true
+									}
+
+								]
+							],
+							text: {
+								none: '你在地税未做财报备案或本月非报送期，如未做财报备案,<br>请先报“财务会计制度及核算软件备案报告” <a href="#" class="link-strong">现在去备案</a> 若无需财务备案,请点击此处 <a href="#" class="link-strong">立即填报</a>' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+							}
+						});
+
+					}, 200);
+
+				});
+
+			}
+
+			layui.use('table', function() {
+				var table = layui.table;
+
+				table.render({
+					elem: '#table-wscq',
+					url: 'table-wscq.json',
+					page: true,
+					cols: [
+						[ //表头
+							{
+								type: 'checkbox',
+							}, {
+								field: 'id',
+								title: '序号',
+								width: 60,
+								align: 'center'
+							}, {
+								field: 'sxmc',
+								title: '身份证件类型'
+							}, {
+								field: 'wsmc',
+								title: '身份证件号码'
+							}, {
+								field: 'wszzrq',
+								title: '姓名',
+								align: 'center'
+							}, {
+								field: 'swjg',
+								title: '原缴费工资'
+							}, {
+								field: 'qsbz',
+								title: '新缴费工资',
+								align: 'center',
+								sort: true
+							}, {
+								field: 'sxny',
+								title: '生效年月',
+								align: 'center',
+								sort: true
+							}, {
+								field: 'cz',
+								title: '申报状态',
+								align: 'center',
+								sort: true
+							}
+
+						]
+					],
+					text: {
+						none: '你在地税未做财报备案或本月非报送期，如未做财报备案,<br>请先报“财务会计制度及核算软件备案报告” <a href="#" class="link-strong">现在去备案</a> 若无需财务备案,请点击此处 <a href="#" class="link-strong">立即填报</a>' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+					}
+				});
+
+			});
+
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+
+				//日期范围
+				laydate.render({
+					elem: '#date',
+					ready: function() {
+						taxlaydate()
+					},
+					change: function() {
+						taxlaydate()
+					}
+				});
+				laydate.render({
+					elem: '#date1',
+					ready: function() {
+						taxlaydate()
+					},
+					change: function() {
+						taxlaydate()
+					}
+				});
+
+				laydate.render({
+					elem: '#test6',
+					ready: function() {
+						taxlaydate()
+					},
+					change: function() {
+						taxlaydate()
+					}
+
+				});
+				laydate.render({
+					elem: '#test7',
+					ready: function() {
+						taxlaydate()
+					},
+					change: function() {
+						taxlaydate()
+					}
+
+				});
+
+			});
+
+			setTimeout("window.parent.setHeight()", 20);
+		</script>
+
+	</body>
+
+</html>

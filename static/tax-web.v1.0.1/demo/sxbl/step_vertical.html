@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8">	
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../tax-js/common.js"></script>		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+<link rel="stylesheet" href="../../tax-module/stepver/stepver.css">	
+	
+</head>
+ 
+<body>
+<div style="width: 100%; text-align: center; margin: 20px;">
+    <button data-method="bsrysfxz" data-type="auto" class="layui-btn layui-btn-normal">事项进度跟踪</button>
+</div>		
+
+	
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+layui.use('code', function(){
+  
+  layui.code({
+	   title: '演示代码'
+	  ,encode: true //是否转义html标签。
+	  ,about: false
+  }); 
+	
+});
+	
+layui.use('layer', function(){ //独立版的layer无需执行这一句
+  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+  
+  //触发事件
+  var active = {
+    bsrysfxz: function(othis){
+      var type = othis.data('type')
+      ,text = othis.text();
+      
+      layer.open({
+        type: 1
+		,area: ['660px']
+		,title:['事项进度跟踪']  
+		,scrollbar: false
+        ,bsrysfxz: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+        ,id: 'layerDemo'+type //防止重复弹出
+        ,content: $("#user01")
+      
+        ,btnAlign: 'c' //按钮居中
+        
+        ,yes: function(){
+          layer.closeAll();
+        }
+      });
+    }	    	  
+  };
+  
+  $('.layui-btn').on('click', function(){	  
+    var othis = $(this), method = othis.data('method');
+    active[method] ? active[method].call(this, othis) : '';
+  }); 
+});	
+</script>
+	
+<div class="win-center" id="sxjdgz" style="display: none;">
+  <div class="sfxz-box">
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 0px;">
+  <legend>您申请的事项正在办理中，请耐心等待。</legend>
+</fieldset> 
+<ul class="layui-timeline">
+  <li class="layui-timeline-item">
+    <i class="icon iconfont fsicon-finish fsicon-icon-active"></i>
+    <div class="layui-timeline-content layui-text">
+      <div class="layui-timeline-title text-stepver-over">2018-09-14 09:30:56 税务人员受理中，请耐心等待！</div>
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="icon iconfont fsicon-finish fsicon-icon-over"></i>
+    <div class="layui-timeline-content layui-text">
+      <div class="layui-timeline-title">2018-09-12 10:23:28 资料已提交，请等待税务人员受理。您还可以修改！</div>
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="icon iconfont fsicon-finish fsicon-icon-over"></i>
+    <div class="layui-timeline-content layui-text">
+      <div class="layui-timeline-title">2018-09-10 09:53:35 资料已保存，请您及时提交！</div>
+    </div>
+  </li>
+</ul>
+    
+  </div>
+</div>	
+	
+
+		
+	
+	
+</body>
+
+</html>

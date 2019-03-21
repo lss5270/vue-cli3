@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+<title></title>
+<link rel="stylesheet" href="../layui/css/layui.css">
+<link rel="stylesheet" href="../tax-css/index.css">
+<SCRIPT src="../tax-js/jquery-1.9.1.min.js"></SCRIPT>
+	
+ <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../tax-js/ie8/html5.min.js"></script>
+  <script src="../tax-js/ie8/respond.min.js"></script>
+<![endif]-->
+	
+<script>
+	
+$(document).ready(function(){
+	
+ 
+$(window).resize(function() {
+   setIe()
+});
+
+function setIe(){
+	 
+	var ieWidth=$(window).width()
+    $(".topbg img").width(ieWidth)  
+	
+	if(ieWidth<1200){
+		$("body").width(1200)
+	}else{
+		$("body").width(ieWidth)
+		
+	}
+}	
+ setIe()
+	
+})
+</script>	
+</head>
+
+	<body class="index_body">
+		<div class="">
+			<div class="indextop ">
+				<div class="layui-row">
+					<div class="layui-col-xs7 logo">
+						<img src="../tax-images/logo/logo_bj.png">
+					</div>
+					<div class="layui-col-xs5 rcon">
+						<div class="list">
+							<a href="#"><img src="../tax-images/login/top_icon01.png">环境检测</a>
+							<a href="#"><img src="../tax-images/login/top_icon02.png">下载</a>
+							<a href="#"><img src="../tax-images/login/top_icon03.png">帮助</a>
+						
+						</div>
+						<div class="dlbox">
+							<a href="login.html" class="loginico">
+								<img src="../tax-images/login/loginimg.png">
+								<h4>登录</h4>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bigbox">
+					<ul>
+						<li>
+							<img src="../tax-images/login/index_bigico1.png" class="icon">
+							<h3><img src="../tax-images/login/wddb.png"></h3>
+						</li>
+						<li>
+							<img src="../tax-images/login/index_bigico2.png" class="icon">
+							<h3><img src="../tax-images/login/wyyy.png"></h3>
+						</li>
+						<li>
+							<img src="../tax-images/login/index_bigico3.png" class="icon">
+							<h3><img src="../tax-images/login/gxfw.png"></h3>
+						</li>
+						<li>
+							<img src="../tax-images/login/index_bigico4.png" class="icon">
+							<h3><img src="../tax-images/login/tzgg.png"></h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+	         
+			<div class="topbg"><img src="../tax-images/login/bg02.jpg"></div>
+			<div class="indexbom">
+				<ul>
+				<a href="#" class="bg1">
+					<img src="../tax-images/login/index_ico1.png">我的信息
+				</a>
+				<a href="#" class="bg2">
+					<img src="../tax-images/login/index_ico2.png">我要办税
+				</a>
+				<a href="#" class="bg3">
+					<img src="../tax-images/login/index_ico3.png">我要查询
+				</a>
+				<a href="#" class="bg4">
+					<img src="../tax-images/login/index_ico4.png">互动中心
+				</a>
+				<a href="#" class="bg5">
+					<img src="../tax-images/login/index_ico5.png">公众服务
+				</a>
+				</ul>	
+			</div>
+			<div class="footbom">
+				<img src="../tax-images/login/foot.png">
+				<p>版权所有：国家税务总局广东省税务局<br>ICP备案序号 粤ICP备10025337号-2</p> 
+			</div>
+			</div>
+
+	</body>
+
+</html>

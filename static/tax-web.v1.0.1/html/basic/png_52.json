@@ -1,0 +1,697 @@
+{
+ "item":[{
+  "icon":"办税地图" 
+  ,"src":"bsdt.png"	 
+}
+,{
+  "icon":"办税服务"
+ ,"src":"bsfw.png"
+}
+,{
+  "icon":"办税进度及结果信息查询"
+  ,"src":"bsjdjjgxxcx.png"
+}
+,{
+  "icon":"办税日历"
+ ,"src":"bsrl.png"
+}		 
+,{
+  "icon":"办税指南"
+ ,"src":"bszn.png"
+}
+,{
+  "icon":"办税中心"
+ ,"src":"bszx.png"
+}
+,{
+  "icon":"办税专题"
+ ,"src":"bszt.png"
+}
+,{
+  "icon":"办税桌面"
+ ,"src":"bszm.png"	
+}
+,{
+  "icon":"表证单书"
+ ,"src":"bzds.png"
+}
+,{
+  "icon":"财务报表查询及打印"
+ ,"src":"cwbbcxjdy.png"
+}
+,{
+  "icon":"查询中心"
+	,"src":"cxzx.png"
+}
+,{
+  "icon":"出口退（免）税申报"
+	,"src":"cktmssb.png"
+}
+,{
+  "icon":"出口退税管理"
+	,"src":"cktsgl.png"
+}
+,{
+  "icon":"创意空间"
+	,"src":"cykj.png"
+}
+,{
+  "icon":"存量房销售信息采集"
+	,"src":"clfxsxxcj.png"
+}
+,{
+  "icon":"待办提醒"
+	,"src":"dbtx.png"
+}
+,{
+  "icon":"单位首次办税信息确认"
+	,"src":"dwscbsxxqr.png"
+}
+,{
+  "icon":"电子资料"
+	,"src":"dzzl.png"
+}
+,{
+  "icon":"订阅管理"
+	,"src":"dygl.png"
+}
+,{
+  "icon":"发票查验"
+	,"src":"fpcy.png"
+}
+,{
+  "icon":"发票代开.png"
+	,"src":"fpdk.png"
+}
+,{
+  "icon":"发票管理"
+	,"src":"fpgl.png"
+}
+,{
+  "icon":"发票领用"
+	,"src":"fply.png"
+}
+,{
+  "icon":"发票认证"
+	,"src":"fprz.png"
+}
+,{
+  "icon":"发票使用"
+	,"src":"fpsy.png"
+}
+,{
+  "icon":"发票信息查询"
+	,"src":"fpxxcx.png"
+}
+,{
+  "icon":"发票验旧"
+	,"src":"fpyj.png"
+}
+,{
+  "icon":"法律追责与救济事项"
+	,"src":"flzzyjjsx.png"
+}
+,{
+  "icon":"个人所得税代扣代缴申报"
+	,"src":"grsdsdkdjsb.png"
+}
+,{
+  "icon":"个人所得税生产经营所得纳税申报表A表"
+	,"src":"grsdsscjysdnssbbab.png"
+}
+,{
+  "icon":"个人所得税生产经营所得纳税申报表B表"
+	,"src":"grsdsscjysdnssbbbb.png"
+}
+,{
+  "icon":"个人所得税生产经营所得纳税申报表C表"
+	,"src":"grsssscjysdnssbbcb.png"
+}
+
+
+,{
+  "icon":"个体工商户核定定额信息查询"
+	,"src":"gtgshdddexxcx.png"
+}
+,{
+  "icon":"个体工商户首次登记信息采集"
+	,"src":"gtgshscdjxxcj.png"
+}
+,{
+  "icon":"个性化办税"
+	,"src":"gxhbs.png"
+}
+,{
+  "icon":"更正申报"
+	,"src":"gzsb.png"
+}
+,{
+  "icon":"公共查询"
+	,"src":"ggcx.png"
+}
+,{
+  "icon":"公众查询"
+	,"src":"gzcx.png"
+}
+,{
+  "icon":"公众服务"
+	,"src":"gzfw.png"
+}
+,{
+  "icon":"广东法宝"
+	,"src":"gdfb.png"
+}
+,{
+  "icon":"海关稽核"
+	,"src":"hgjc.png"
+}
+,{
+  "icon":"核定管理"
+	,"src":"hdgl.png"
+}
+,{
+  "icon":"互动中心"
+	,"src":"hdzx.png"
+}
+,{
+  "icon":"回收站"
+	,"src":"hsz.png"
+}
+,{
+  "icon":"稽查检查"
+	,"src":"jcjc.png"
+}
+,{
+  "icon":"缴款查询及打印"
+	,"src":"jkcxjdy.png"
+}
+,{
+  "icon":"缴款信息查询"
+	,"src":"jckxcx.png"
+}
+,{
+  "icon":"扣缴义务人登记"
+	,"src":"kjywrdj.png"
+}
+,{
+  "icon":"历史办税操作查询"
+	,"src":"lsbsczcx.png"
+}
+,{
+  "icon":"临时税务登记纳税人登记"
+	,"src":"lsssdjnsrdj.png"
+}
+,{
+  "icon":"纳税计算器"
+	,"src":"nsjsq.png"
+}
+,{
+  "icon":"纳税人满意度调查.png"
+	,"src":"nsrmyddc.png"
+}
+,{
+  "icon":"纳税人信息"
+	,"src":"nsrxx.png"
+}
+,{
+  "icon":"纳税人需求"
+	,"src":"nsrxq.png"
+}
+,{
+  "icon":"纳税信用"
+	,"src":"nsxx.png"
+}
+,{
+  "icon":"纳税信用状态信息查询"
+	,"src":"nsxxztxxcx.png"
+}
+,{
+  "icon":"年所得12万以上自行申报"
+	,"src":"nsd12wyszxsb.png"
+}
+,{
+  "icon":"评价调查"
+	,"src":"pjdc.png"
+}
+,{
+  "icon":"其它服务事项"
+	,"src":"qtfwsx.png"
+}
+,{
+  "icon":"欠税信息查询"
+	,"src":"qsxxcx.png"
+}
+,{
+  "icon":"清缴税款"
+	,"src":"qjsk.png"
+}
+,{
+  "icon":"热点问题"
+	,"src":"rdwt.png"
+}
+,{
+  "icon":"社保费个人信息查询"
+	,"src":"sbfgrxxcx.png"
+}
+,{
+  "icon":"社保费管理"
+	,"src":"sbfgl.png"
+}
+,{
+  "icon":"社保费缴费明细查询.png"
+	,"src":"sbfjfxxcx.png"
+}
+,{
+  "icon":"涉税查询"
+	,"src":"sscx.png"
+}
+,{
+  "icon":"涉税事项办理"
+	,"src":"sssxbl.png"
+}
+,{
+  "icon":"涉税文书查签"
+	,"src":"sswscq.png"
+}
+,{
+  "icon":"涉税中介机构信息查询"
+	,"src":"sszjjgxxcx.png"
+}
+,{
+  "icon":"涉税专业服务机构管理"
+	,"src":"sszyfwjggl.png"
+}
+,{
+  "icon":"申报查询（电厅）"
+	,"src":"sbcxdt.png"
+}
+,{
+  "icon":"申报查询（个人）"
+	,"src":"sbcxgr.png"
+}
+,{
+  "icon":"申报查询及打印"
+	,"src":"sbcxjdy.png"
+}
+,{
+  "icon":"申报缴税"
+	,"src":"sbjs.png"
+}
+
+,{
+  "icon":"申报清册"
+	,"src":"sbqc.png"
+}
+,{
+  "icon":"申报信息查询"
+	,"src":"sbxxcx.png"
+}
+,{
+  "icon":"申报状态处理"
+	,"src":"sbztcl.png"
+}
+,{
+  "icon":"申报作废（电厅）"
+	,"src":"sbzfdt.png"
+}
+,{
+  "icon":"申报作废（个税）"
+	,"src":"sbzfgs.png"
+}
+,{
+  "icon":"申报作废"
+	,"src":"sbzf.png"
+}
+,{
+  "icon":"事项办理"
+	,"src":"sxbl.png"
+}
+,{
+  "icon":"事项进度办理"
+	,"src":"sxjdbl.png"
+}
+,{
+  "icon":"税费申报及缴纳"
+	,"src":"sfsbjjn.png"
+}
+,{
+  "icon":"税收减免"
+	,"src":"ssjm.png"
+}
+,{
+  "icon":"税务行政许可"
+	,"src":"swxzxk.png"
+}
+,{
+  "icon":"提醒服务定制"
+	,"src":"txfwdz.png"
+}
+,{
+  "icon":"通知公告"
+	,"src":"tzgg.png"
+}
+,{
+  "icon":"投诉检举"
+	,"src":"tsjj.png"
+}
+,{
+  "icon":"违法违章信息查询类"
+	,"src":"wfwzxxcxl.png"
+}
+,{
+  "icon":"我的待办"
+	,"src":"wddb.png"
+}
+,{
+  "icon":"我的订阅"
+	,"src":"wddy.png"
+}
+,{
+  "icon":"我的提醒"
+	,"src":"wdtx.png"
+}
+,{
+  "icon":"我的提醒服务定制"
+	,"src":"wdtxfwdz.png"
+}
+,{
+  "icon":"我的通知"
+	,"src":"wdtz.png"
+}
+,{
+  "icon":"我的消息"
+	,"src":"wdxx.png"
+}
+,{
+  "icon":"我的资料库"
+	,"src":"wdzlk.png"
+}
+,{
+  "icon":"我要登记"
+	,"src":"wydj.png"
+}
+,{
+  "icon":"下载专区"
+	,"src":"xzzq.png"
+}
+,{
+  "icon":"信用登记查询"
+	,"src":"xyddcx.png"
+}
+,{
+  "icon":"信用登记查询-开具"
+	,"src":"xydjcxkj.png"
+}
+,{
+  "icon":"需求管理"
+	,"src":"xqgl.png"
+}
+,{
+  "icon":"一般退（抵）税管理"
+	,"src":"ybtdsgl.png"
+}
+,{
+  "icon":"一户式查询"
+	,"src":"yhscx.png"
+}
+,{
+  "icon":"银行端缴款凭证打印"
+	,"src":"yhdjkpzdy.png"
+}
+,{
+  "icon":"银税互动"
+	,"src":"yshd.png"
+}
+,{
+  "icon":"用户管理"
+	,"src":"yhgl.png"
+}
+,{
+  "icon":"用户中心"
+	,"src":"yhzx.png"
+}
+,{
+  "icon":"优惠信息查询"
+	,"src":"yhxxcx.png"
+}
+,{
+  "icon":"预缴税款"
+	,"src":"yjsk.png"
+}
+,{
+  "icon":"预约办税"
+	,"src":"yybs.png"
+}
+,{
+  "icon":"预约定价安排"
+	,"src":"yydjap.png"
+}
+,{
+  "icon":"预约服务"
+	,"src":"yyfw.png"
+}
+,{
+  "icon":"在线交互"
+	,"src":"zxjh.png"
+}
+,{
+  "icon":"增值税抵扣凭证管理"
+	,"src":"zzsdkpzgl.png"
+}
+,{
+  "icon":"征纳互动"
+	,"src":"nshd.png"
+}
+,{
+  "icon":"证明开具"
+	,"src":"zmkj.png"
+}
+,{
+  "icon":"证明信息查询（新增）"
+	,"src":"zmxxcx.png"
+}
+,{
+  "icon":"政策法规"
+	,"src":"zcfg.png"
+}
+,{
+  "icon":"主题办税"
+	,"src":"ztbs.png"
+}
+,{
+  "icon":"咨询服务"
+	,"src":"zxfw.png"
+}
+,{
+  "icon":"综合信息报告"
+	,"src":"zhxxbg.png"
+}
+		 
+,{
+  "icon":"车购税查询"
+	,"src":"cgscx.png"
+},{
+  "icon":"车购税申报"
+	,"src":"cgssb.png"
+},{
+  "icon":"代开普通发票申请"
+	,"src":"dkptfpsq.png"
+},{
+  "icon":"个人代开普票完税证明打印"
+	,"src":"grdkppwszmdy.png"
+},{
+  "icon":"个人所得税完税证明查询及打印"
+	,"src":"grsdswszmcxjdy.png"
+},{
+  "icon":"个人所得税自行申报A表"
+	,"src":"zxsbab.png"
+},{
+  "icon":"个人所得税自行申报B表"
+	,"src":"zxsbbb.png"
+},{
+  "icon":"社保费个人信息查询"
+	,"src":"sbfgrxxcx.png"
+},{
+  "icon":"社保费缴费明细查询"
+	,"src":"sbfjsmxcx.png"
+},{
+  "icon":"通过保险机构缴纳车船税的完税凭证查询及打印"
+	,"src":"ccswspzcxjdy.png"
+},{
+  "icon":"银行端缴款凭证打印"
+	,"src":"yhdjkpzdy.png"
+},{
+  "icon":"自然人登记"
+	,"src":"zrrdj.png"
+},{
+  "icon":"自然人登记信息查询"
+	,"src":"zrrdjxxcx.png"
+},{
+  "icon":"自然人信息补录"
+	,"src":"zrrxxpl.png"
+},{
+  "icon":"用户注销"
+	,"src":"zx.png"
+},{
+  "icon":"税务登记信息关联"
+	,"src":"swdjxxgl.png"
+},{
+  "icon":"申报征收查询"
+	,"src":"sbzscx.png"
+},{
+  "icon":"事项进度查询"
+	,"src":"sxjdcx.png"
+},{
+  "icon":"办税评价"
+	,"src":"bspj.png"
+},{
+  "icon":"操作规程"
+	,"src":"czgc.png"
+},{
+  "icon":"功能检索"
+	,"src":"gnjs.png"
+},{
+  "icon":"行政救济"
+	,"src":"xzjj.png"
+},{
+  "icon":"纳服投诉"
+	,"src":"nfts.png"
+},{
+  "icon":"税收政策及解读"
+	,"src":"sszcjjd.png"
+},{
+  "icon":"违法举报"
+	,"src":"wfjb.png"
+},{
+  "icon":"信用复评"
+	,"src":"xyfp.png"
+}
+		 
+,{
+  "icon":"重点专题"
+	,"src":"zdzt.png"
+}
+,{
+  "icon":"税务代保管资金收取"
+	,"src":"swdbgzjsq.png"
+}
+,{
+  "icon":"权益保护"
+	,"src":"qybh.png"
+}		 
+,{
+  "icon":"账户信息"
+	,"src":"zhxx.png"
+}		 
+,{
+  "icon":"纳税人授权申请"
+	,"src":"nsrsqsq.png"
+}
+,{
+  "icon":"个人授权管理"
+	,"src":"grsqgl.png"
+}
+,{
+  "icon":"企业信息"
+	,"src":"qyxx.png"
+}		 
+,{
+  "icon":"功能收藏管理"
+	,"src":"gnscgl.png"
+}	 
+,{
+  "icon":"查询打印"
+	,"src":"cxdy.png"
+}
+		 
+,{
+  "icon":"登记信息"
+	,"src":"djxx.png"
+}
+,{
+  "icon":"费款缴纳"
+	,"src":"skjn.png"
+}
+,{
+  "icon":"其他查询"
+	,"src":"qtcx.png"
+}
+,{
+  "icon":"社保申报"
+	,"src":"sbsb.png"
+}
+,{
+  "icon":"实名制信息查看"
+	,"src":"smzxxck.png"
+}
+,{
+  "icon":"城乡居民社保费申报"
+	,"src":"cxjmsbfsb.png"
+}	
+,{
+  "icon":"城乡居民虚拟户申报"
+	,"src":"cxjmxnhsb.png"
+}
+		 ,{
+  "icon":"单位社保费申报"
+	,"src":"dwsbfsb.png"
+}
+		 ,{
+  "icon":"登记信息查询"
+	,"src":"djxxcx.png"
+}
+		 ,{
+  "icon":"金财金融"
+	,"src":"jcjr.png"
+}
+		 ,{
+  "icon":"灵活就业个人社保费申报"
+	,"src":"lhjygrsbfsb.png"
+}
+		 ,{
+  "icon":"灵活就业人员缴费基数确认"
+	,"src":"lhjyrjfjsqr.png"
+}
+		 ,{
+  "icon":"社保费申报查询及打印"
+	,"src":"sbfsbcxjdy.png"
+}
+		 ,{
+  "icon":"社保费申报作废"
+	,"src":"sbfsbzf.png"
+}
+		 ,{
+  "icon":"一键申报"
+	,"src":"yjsb.png"
+}
+		 ,{
+  "icon":"电子文书查验"
+	,"src":"dzwscy.png"
+}
+		 ,{
+  "icon":"政策速递"
+	,"src":"zcsd.png"
+}
+		 ,{
+  "icon":"丢失、被盗税控专用设备备案"
+	,"src":"dsbdskzysbba.png"
+}
+		 ,{
+  "icon":"房产交易申报"
+	,"src":"fcjysb.png"
+}
+		 ,{
+  "icon":"非税收入通用申报表"
+	,"src":"fssrtysbb.png"
+}
+		 ,{
+  "icon":"个人所得税证明和清单查验"
+	,"src":"grsdszmhqdcy.png"
+}
+		 ,{
+  "icon":"限售股转让所得个人所得税清算申报表"
+	,"src":"xsgzrsdgrsdsqssbb.png"
+}
+		 
+]
+}

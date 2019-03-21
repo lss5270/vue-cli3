@@ -1,0 +1,213 @@
+@charset "utf-8";
+/*ui-css 电子税务局UI库专用 */
+*{ padding: 0px; margin: 0px; list-style: none;}
+.ui-css-left-menu{ position: absolute; width: 200px; color: #fff; background-color: #fff; background-image: url(../ui-images/left_bg.gif);background-repeat:repeat-y;border-right: 1px solid #e1e1e1; overflow: hidden; overflow-y: auto;}
+.ui-css-left-menu::-webkit-scrollbar {
+    display: none;
+}	
+.ui-css-right-main{ margin-left: 200px;  }
+
+.ui-left-menu-box .left-title{ font-size: 20px; height: 48px; line-height: 48px; padding-left: 20px;  color: #fff;  }
+.ui-left-menu-box .left-title .iconfont{ margin: 0 16px 0 18px;font-size: 18px;}
+.ui-left-menu-box .left-menu ul li{ }
+.ui-left-menu-box .left-menu ul li dl{display: none; }
+.ui-left-menu-box .left-menu ul li a{ display: block;color: #333333; height: 48px; line-height: 48px; padding-left: 20px;font-size: 16px;border-left: 3px solid #e1e1e1; }
+.ui-left-menu-box .left-menu ul li a:hover{color: #1579ce;}
+.ui-left-menu-box .left-menu ul li .iconfont{ font-size: 14px; position: absolute;right:20px; }
+.ui-left-menu-box .left-menu ul li .fsicon-tree-dot{ position:absolute;left:5px; color: #fff; padding-top: 20px; width: 30px;}
+
+.ui-left-menu-box .left-menu ul .left-menu-active .left-menu-child{ display: block;}
+.ui-left-menu-box .left-menu ul li dl dd a{ padding-left: 30px; font-weight: normal;font-size: 14px;border-left: 3px solid #e1e1e1; }
+.ui-left-menu-box .left-menu ul .left-menu-this {  color: #1579ce;border-right: 4px solid #53acf3; background-color: #ebf4ff; }
+.left-menu-active>a{ color: #1579ce; background-color: #f2f2f2;}
+
+
+#demo-iframe{overflow-y: auto;}
+.ui-code{ width: 100%; height: 200px; margin: 10px 0;resize:none;border: 1px solid #dfdfdf;font-size: 16px; line-height: 20px; color: #3776dd;}
+ 
+.margin20{ margin: 20px;}
+.marginR20{ margin-right: 20px;}
+
+.ui-item p{ margin: 32px 0;}
+.ui-item span{ display: inline-block; margin: 16px;}
+.ui-png-box ul{  overflow: hidden;}
+.ui-png-box ul li{  float: left; width:20%; margin-bottom: 20px; height: 80px;text-align: center; margin-top: 30px;}
+.ui-png-box ul li p{line-height: 20px;font-size:14px; margin-top: 10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ui-notice-box{ margin-top: 20px;}
+.ui-notice-box div{ margin-bottom: 10px;}
+/* 栅格系统*/
+.grid-demo{padding: 10px; line-height: 50px; text-align: center; background-color: #0885c6; color: #fff;}
+.grid-demo-bg1{background-color: #0994dc;}
+.grid-demo-bg2{background-color: #00bbf2;}
+.grid-demo-bg3{background-color: #38814A;}
+body .layui-layout-admin .site-demo{bottom: 60px; padding: 0;}
+body .site-demo-nav .layui-nav-item{line-height: 40px}
+.layui-nav-item .layui-icon{position: relative; font-size: 20px;}
+.layui-nav-item a cite{padding: 0 10px;}
+.site-demo .layui-main{margin: 15px; line-height: 22px;}
+.site-demo-editor{position: absolute; top: 0; bottom: 0; left: 0; width: 50%; }
+.site-demo-area{position: absolute; top: 0; bottom: 0; width: 100%;}
+.site-demo-editor textarea{position: absolute; width: 100%; height: 100%; padding: 10px; border: none; resize: none; background-color: #F7FBFF; background-color: #13151A; color: #999; font-family: Courier New; font-size: 12px; -webkit-box-sizing: border-box !important; -moz-box-sizing: border-box !important; box-sizing: border-box !important;}
+.site-demo-btn{position: absolute; bottom: 15px; right: 20px;}
+.site-demo-zanzhu{position: absolute; bottom: 0; left: 0; width: 100%; height: 90px; text-align: center; background-color: #e2e2e2; overflow: hidden;}
+.site-demo-zanzhu>*{position: relative; z-index: 1;}
+.site-demo-zanzhu:before{content: ""; position: absolute; z-index: 0; top: 50%; left: 50%; width: 120px; margin: -10px 0px 0px -60px; text-align: center; color: rgb(170, 170, 170); font-size: 18px; font-weight: 300; }
+.site-demo-result{position: absolute; right: 0; top: 0; bottom: 0; width: 50%;}
+.site-demo-result iframe{position: absolute; width: 100%; height: 100%;}
+.site-demo-button{margin-bottom: 30px;}
+.site-demo-button div{margin: 20px 30px 10px;}
+.site-demo-button .layui-btn+.layui-btn{margin-left: 0;}
+.site-demo-button .layui-btn{margin: 0 7px 10px 0; }
+.site-demo-text a{color: #01AAED;}
+.site-demo-laytpl{text-align: center;}
+.site-demo-laytpl textarea,
+.site-demo-laytpl div span{width: 40%;  padding: 15px; margin: 0 15px;}
+.site-demo-laytpl textarea{height: 300px; border: none; background-color: #3F3F3F; color: #E3CEAB; font-family: Courier New; resize: none;}
+.site-demo-laytpl div span{display: inline-block; text-align: center; background: #101010; color: #fff;}
+.site-demo-tplres{margin: 10px 0; text-align: center}
+.site-demo-tplres .site-demo-tplh2,
+.site-demo-tplres .site-demo-tplview{display: inline-block; width: 50%;}
+.site-demo-tplres h2{padding: 15px; background: #e2e2e2;}
+.site-demo-tplres h3{font-weight: 700;}
+.site-demo-tplres div{padding: 14px; border: 1px solid #e2e2e2; text-align: left;}
+.site-demo-upload,
+.site-demo-upload img{width: 200px; height: 200px; border-radius: 100%;}
+.site-demo-upload{position: relative; background: #e2e2e2;}
+.site-demo-upload .site-demo-upbar{position: absolute; top: 50%; left: 50%; margin: -18px 0 0 -56px;}
+.site-demo-upload .layui-upload-button{background-color: rgba(0,0,0,.2); color: rgba(255,255,255,1);}
+.site-demo-util{position: relative; width: 300px;}
+.site-demo-util img{width: 300px; border-radius: 100%;}
+.site-demo-util span{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #333; cursor: pointer;}
+.ui-tab-multiple p{ width: 200px; height:80px;border: 1px solid #ebebeb; background-color: #f7f7f7; color: #333; text-align: center; line-height: 80px;margin: 30px auto;}
+
+.ui-tax-center-box{border:1px solid #dcdee2;padding: 28px;}
+
+.ui-index-main{ margin: auto; width: 100%;}
+.ui-header{ height: 70px; background-color: #1d82d8;}
+.ui-header ul{ margin:auto; position: relative; margin: 0 20px;}
+.ui-header h1{ color: #fff; line-height: 70px;font-size: 28px; }
+.ui-header .download{ color: #fff; position: absolute;right:10px; color: #fff; top:27px;opacity: 0.7;}
+.ui-header .download:hover{ opacity: 1; text-decoration: underline;}
+.layui-elem-quote{ margin-top: 20px;}
+
+
+
+
+ .ui-icon_lists{
+  width: 100% !important;
+
+}
+
+.ui-icon_lists li{
+  float:left;
+  width: 100px;
+  height:180px;
+  text-align: center;
+  list-style: none !important;
+	padding: 10px;
+}
+.ui-icon_lists .icon{
+  font-size: 42px;
+  line-height: 100px;
+  margin: 10px 0;
+  color:#333;
+  -webkit-transition: font-size 0.25s ease-out 0s;
+  -moz-transition: font-size 0.25s ease-out 0s;
+  transition: font-size 0.25s ease-out 0s;
+
+}
+.ui-icon_lists .icon:hover{
+  font-size: 100px;
+}
+.ui-icon_lists .name{ font-size: 12px; }
+.ui-icon_lists .fontclass{ font-size: 12px; color: #666;}
+.ui-btn-box button{ margin-bottom: 6px; }
+.ui-iframe{}
+
+
+
+.ui-alert-box{ width: 300px;right:-300px; top:10px; opacity: 1; margin-left: 5px;}
+.ui-alert-box ul{ border-radius: 3px; font-size: 12px; position: relative;}
+.ui-alert-box ul .left-icon{width:32px; text-align: center; vertical-align:center;}
+.ui-alert-box ul .left-icon img{ display: inline-block;}
+.ui-alert-box ul .text{  padding: 8px 8px; line-height: 18px; }
+.ui-alert-box .colorOrange{background-color: #fff6e1;border: 1px solid #fce4c6;}
+.ui-alert-box .colorOrange .alert-icon{background-image: url(../tax-module/taxReturns/orange_left_icon.png);}
+.ui-alert-box .colorBlue .alert-icon{background-image: url(../tax-module/taxReturns/blue_left_icon.png);}
+.ui-alert-box .colorBlue{background-color: #eaf4ff;border: 1px solid #d2e7fb;}
+.ui-alert-box .alert-icon{ display: inline-block;  height: 20px; width: 20px;}
+
+
+.marginT4{margin-top: 4px;}
+.marginT8{margin-top: 8px;} 
+.marginT12{margin-top: 12px;} 
+.marginT16{margin-top: 16px;} 
+.marginT20{margin-top: 20px;} 
+.marginT24{margin-top: 24px;} 
+.marginT28{margin-top: 28px;}
+.marginT30{margin-top: 30px;}
+.marginT32{margin-top: 32px;}
+
+.marginB4{margin-bottom: 4px;}
+.marginB8{margin-bottom: 8px;} 
+.marginB12{margin-bottom: 12px;} 
+.marginB16{margin-bottom: 16px;} 
+.marginB20{margin-bottom: 20px;} 
+.marginB24{margin-bottom: 24px;} 
+.marginB28{margin-bottom: 28px;}
+.marginB30{margin-bottom: 30px;}
+.marginB32{margin-bottom: 32px;}
+
+.marginL4{margin-left: 4px;}
+.marginL8{margin-left: 8px;} 
+.marginL12{margin-left: 12px;} 
+.marginL16{margin-left: 16px;} 
+.marginL20{margin-left: 20px;} 
+.marginL24{margin-left: 24px;} 
+.marginL28{margin-left: 28px;}
+.marginL30{margin-left: 30px;}
+.marginL32{margin-left: 32px;}
+
+.marginR4{margin-right: 4px;}
+.marginR8{margin-right: 8px;} 
+.marginR12{margin-right: 12px;} 
+.marginR16{margin-right: 16px;} 
+.marginR20{margin-right: 20px;} 
+.marginR24{margin-right: 24px;} 
+.marginR28{margin-right: 28px;}
+.marginR30{margin-right: 30px;}
+.marginR32{margin-right: 32px;}
+.ui-logo-box li{ background-color: #1d82d8;display: inline-block; padding: 10px 10px;border-radius: 6px; margin: 5px 5px;}
+.ui-logo-box ul{}
+.site-text{  padding-bottom: 20px; }
+
+
+.site-doc-color{font-size: 0;}
+.site-doc-color li{display: inline-block; vertical-align: middle; width: 180px; margin-left: 20px; margin-bottom: 20px; padding: 20px 10px; color: #fff; text-align: center; border-radius: 2px; line-height: 22px; font-size: 14px;}
+.site-doc-color li p[tips]{opacity: 0.8; font-size: 12px;}
+
+.site-doc-necolor li{width: 108px; margin-top: 15px; margin-left: 0; border-radius: 0;}
+
+.site-doc-bgcolor li{padding: 10px;}
+
+.skin-color{ position: absolute; top:10px; right:20px;}
+.skin-color a{display: inline-block; height: 10px; width: 20px; border-radius: 2px;}
+.skin-color .blue{ background-color: #0994DC}
+.skin-color .orange{ background-color: #ff913a}
+.skin-color .brown{ background-color: #b4a074}
+.skin-color .green{ background-color: #1eb5ad}
+.skin-color .yellow{ background-color: #fbc666}
+
+
+.skin-color .this{border: 2px solid #fff;box-sizing: border-box;}
+
+.layui-container{ width: auto!important; margin: auto 30px!important;}
+.ui-demo ul{ padding: 20px 0; text-align: center;}
+.ui-demo li{ display: inline-block; border: 1px solid #E4E4E4; padding: 20px;border-radius: 3px; margin: 10px;}
+.ui-demo li p{ text-align: center;  padding-top: 20px;}
+.ui-demo li h4{ text-align: center; padding-bottom: 20px;}
+
+.ui-left-menu { width: 120px; position: absolute;}
+.ui-left-menu a{ display: block; line-height: 32px; cursor: pointer; padding-left: 10px; border-bottom: 1px solid #E4E4E4;}
+.tax-pagetabs-body .tax-tabsbody-item .pagestabs-iframe{ height: 600px;border: 1px solid #F6F6F6; }
+.ui-temp01{ background-image: url(../ui-images/temp.jpg); height:499px; background-repeat: no-repeat; background-position: center; position: relative;}

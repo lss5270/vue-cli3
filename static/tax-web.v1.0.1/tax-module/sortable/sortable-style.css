@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tax-sortable {  position: relative;}
+.tax-CommonSet-left{border: 1px solid #ebebeb;padding: 20px 0px 20px 20px; margin-right: 10px; }
+.tax-CommonSet-right{border: 1px solid #ebebeb; padding: 20px 0px 20px 20px; margin-left: 10px; }
+
+.tax-CommonSet-names ul{ height: 240px; overflow: hidden; overflow-y: auto; margin-right: 8px;}
+.tax-CommonSet-names ul li{ line-height: 48px; height: 48px; padding-left: 10px; position: relative;}
+.tax-CommonSet-names ul li:hover{ background-color: #edf6fc;}
+.tax-CommonSet-names ul li .action-btn{color: #fff; background-color: #53acf3; height: 28px; line-height: 28px; width: 28px;border-radius: 3px; text-align: center;font-size:18px; position: absolute;top:10px;right: 8px; cursor: pointer;}
+.tax-CommonSet-names ul .names-item span{ cursor: pointer;}
+.tax-sortable-CommonSet ul{height: 350px; overflow: hidden; overflow-y: auto; margin-right: 8px; position: relative; padding-right: 8px;}
+.tax-sortable-CommonSet ul li{ border: 1px solid #53acf3; height: 30px; line-height: 30px; position: relative; margin: 4px 0;border-radius: 2px; padding-left: 8px;}
+.tax-sortable-CommonSet ul li:hover{ background-color: #53acf3; color: #fff;}
+.tax-sortable-CommonSet ul li .action-btn{ position: absolute;right: 8px; cursor: pointer;}
+.tax-sortable-CommonSet ul li .action-btn:hover{ color: #fff;}
+.sortable-box .ui-state-highlight{background-color: #edf6fc;border:1px solid #edf6fc;}
+.tax-sortable .sortable-left{ width: 60%;  position: absolute;}
+.tax-sortable .sortable-right{ width: 40%;  margin-left: 60%;}

@@ -1,0 +1,91 @@
+{
+	"item": [{
+		"type": "node",
+		"t": "51",
+		"l": "57",
+		"w": "56",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-shenpi_faqishenpi",
+		"iconId": "3",
+		"name": "我要出国",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/demo/login.html",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "49",
+		"l": "378",
+		"w": "110",
+		"h": "98",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-fapiaodaikai",
+		"iconId": "17",
+		"name": "我要上牌",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "50",
+		"l": "542",
+		"w": "110",
+		"h": "98",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-fapiaolingyong",
+		"iconId": "15",
+		"name": "我要申报粤港澳机动车牌",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "50",
+		"l": "734",
+		"w": "98",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-wenjian",
+		"iconId": "23",
+		"name": "外籍个人税补贴",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"type": "node",
+		"t": "49",
+		"l": "217",
+		"w": "84",
+		"h": "80",
+		"bg": "step-icon",
+		"icon": "iconfont fsicon-shenbaoqingkuangchaxun",
+		"iconId": "9",
+		"name": "我要在限购地区购房",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}],
+	"box": [{
+		"height": 146
+	}],
+	"business": [{
+		"icon": "iconfont fsicon-default",
+		"iconId": "0",
+		"name": "转开税收完税证明",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"icon": "iconfont fsicon-shuihui",
+		"iconId": "8",
+		"name": "《资源税管理证明开具》",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"icon": "iconfont fsicon-zhengcefagui",
+		"iconId": "5",
+		"name": "丢失增值税专用发票已报税证明单开具",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}, {
+		"icon": "iconfont fsicon-gongzhongchaxun",
+		"iconId": "13",
+		"name": "非居民企业汇总申报企业所得税证明",
+		"href": "http://fsuil.foresee.com.cn/etax40ui/html/",
+		"description": ""
+	}]
+}

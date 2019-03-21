@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.code-left{ background-color:#F6F6F6;border-right: 1px solid #EBEBEB;position: absolute; width: 300px;}
+.code-left .layui-inline{ display: block; margin-top: 16px;}
+.code-left>ul{ margin: 10px;}
+
+.code-right{ margin-left: 300px;}
+.code-right-menu{background-color:#F6F6F6;border-bottom: 1px solid #EBEBEB; padding:5px 20px; text-align: right;}
+.code-edit-box{ overflow-y: auto;}
+.layui-form .layui-form-item:hover{ background-color: #EAF4FF}
+.layui-form .layui-form-item{  min-height: 32px;}
+.draggable-box01 { border: 1px solid #EBEBEB; box-sizing: border-box;}
+.draggable-box01:before{
+  content: 'Box01';font-size: 12px;
+}
+
+.draggable-box02 { border: 1px solid #EBEBEB;box-sizing: border-box;}
+
+.draggable-box02:before{
+  content: 'Box02';font-size: 12px;
+}
+.draggable-box03 { border: 1px solid #EBEBEB;box-sizing: border-box;}
+.draggable-box03:before{ display: block;font-size: 12px;
+  content: 'Box03';
+}
+.ui-state-highlight{ height: 32px;}

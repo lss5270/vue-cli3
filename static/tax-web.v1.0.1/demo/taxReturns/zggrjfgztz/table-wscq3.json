@@ -1,0 +1,81 @@
+{
+	"code": 0,
+	"msg": "",
+	"count": 31,
+	"limit":10,
+	"data": [
+		{
+			"id": "1",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button id='mingxi' class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "1",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "1",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "4",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "5",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "6",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "7",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "8",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "9",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		,{
+			"id": "10",
+			"sxmc": "注销扣缴税款登记",
+			"wsmc": "340B8FB6FFA8380122838B08E1213F21",
+			"sxny": "2018-03-01 11:00:41",
+			"cz": "<button class='layui-btn layui-btn-primary layui-btn-xs' type='button'>明细</button>" 
+		}
+		
+		
+		
+	]
+}

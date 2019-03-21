@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<meta charset="UTF-8">	
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../tax-module/sortable/jquery-ui.min.js"></script>
+<script src="../tax-module/sortable/tax-sortable.js"></script>
+<link rel="stylesheet" href="../tax-module/sortable/jquery-ui.min.css">	
+<link rel="stylesheet" href="../layui/css/layui.css">
+<link rel="stylesheet" href="../tax-css/common.css">
+<link rel="stylesheet" href="../tax-module/sortable/sortable-style.css">
+	
+<link rel="stylesheet" href="../tax-font-icon/iconfont.css">
+</head>
+ 
+<body class="tax-win-iframe" >
+<div class="layui-row tax-sortable">
+    <div class="layui-col-xs7">
+		<div class="tax-CommonSet-left">
+		    <div class=tax-title><i class=dot></i>业务功能选择</div>
+			<form class="layui-form marginT20" style="width: 500px;">
+			  <div class="layui-form-item">
+				<div class="layui-inline ">
+				  <label class="layui-form-label label-left" style="width:72px;">推荐方式：</label>
+				  <div class="layui-input-inline" style="width: 140px;">
+					<select name="modules" lay-verify="required" lay-search="" >
+					  <option value="">全局频率</option>
+					  <option value="1">业务功能</option>
+					  <option value="2">个人频率</option>
+					</select>
+				  </div>
+				</div>
+				<div class="layui-inline ">
+				  <label class="layui-form-label label-left" style="width:72px;">业务类型：</label>
+				  <div class="layui-input-inline" style="width: 160px;">
+					<select name="modules" lay-verify="required" lay-search="" >
+					  <option value="">全部</option>
+					    <option value="1">申报缴税</option>
+					    <option value="2">事项办理</option>
+						<option value="3">侍办提醒</option>
+						<option value="4">涉税查询</option>
+						<option value="5">发票管理</option>
+						<option value="6">办税服务</option>
+						<option value="7">征纳互动</option>
+						<option value="8">信息互动</option>
+					
+					</select>
+				  </div>
+				</div>  
+			  </div>
+			  <div class="layui-form-item">
+			   <div class="layui-inline">
+				  <label class="layui-form-label label-left" style="width:72px;">业务名称：</label>
+				  <div class="layui-input-inline" style="width:306px;">
+					  <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入关键字" class="layui-input">
+				  </div>
+				</div>
+				<div class="layui-inline">
+				  <button class="layui-btn layui-btn-primary">查询</button>
+				</div>
+			  </div>		
+            </form>
+			 
+			<div class="tax-CommonSet-names">
+			    <ul class="item-box">
+				   <li class="names-item"><span data-interface="data01">个人所得税代扣代缴申报</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data02">按期应申报</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data03">申报清缴税款</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data04">申报查询及打印</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data05">代扣代缴申报</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data06">按期应申报</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data07">申报清缴税款</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				   <li class="names-item"><span data-interface="data08">申报查询及打印</span><i class="action-btn iconfont fsicon-Set-arrow"></i></li>
+				</ul>
+			</div>
+		</div>	
+       
+    </div>
+    <div class="layui-col-xs5">
+		<div class="tax-CommonSet-right">
+            <div class="tax-title marginB8"><i class=dot></i>已选常用功能</div>
+			<div class="tax-sortable-CommonSet">
+			    <ul class="sortable-box">
+				   <li class="names-item"><span data-interface="data09">代开增值税专用发票</span><i class="action-btn iconfont fsicon-close"></i></li>
+				   <li class="names-item"><span data-interface="data10">发票领用</span><i class="action-btn iconfont fsicon-close"></i></li>
+				   <li class="names-item"><span data-interface="data11">增值税小规模纳税人申报</span><i class="action-btn iconfont fsicon-close"></i></li>
+				   <li class="names-item"><span data-interface="data12">财务报表转换</span><i class="action-btn iconfont fsicon-close"></i></li>
+				</ul>
+			</div>
+		</div>	
+    </div>
+  </div>	
+</div>
+	
+	
+		
+<script src="../layui/layui.js" charset="utf-8"></script> 
+<script>
+
+layui.use('form', function(){
+	
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});	
+
+	
+	
+</script>		
+		
+
+		
+	</body>
+
+</html>

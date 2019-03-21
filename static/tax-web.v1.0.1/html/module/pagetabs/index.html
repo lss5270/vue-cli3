@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">		
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../../ui-js/ui-js.js" dir="3" id="link"></script>	
+<script src="../../../tax-js/common.js"></script>
+<script src="../../../tax-module/questionnaire/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="../../../layui/css/layui.css">
+<link rel="stylesheet" href="../../../ui-css/ui-css.css">
+<link rel="stylesheet" href="../../../tax-css/common.css">
+<link rel="stylesheet" href="../../../tax-font-icon/iconfont.css">
+<script src="../../../tax-module/pagetabs/pagetabs.js" type="text/javascript"></script>
+<link href="../../../tax-module/pagetabs/pagetabs.css" type="text/css" rel="stylesheet">
+<link href="../../../tax-font-icon/iconfont.css" rel="stylesheet">
+<link href="../../../ui-css/ui-css.css" rel="stylesheet">
+<link href="../../../tax-css/common.css" rel="stylesheet">
+</head>
+ 
+<body>
+	
+	
+	
+<div class="layui-container marginT20" >
+  <blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend >iframe 打开新标签 </legend>
+  </fieldset>
+<blockquote class="layui-elem-quote layui-quote-nm">
+	独立模块图片、样式、js、等文件位置\tax-module\pagetabs</br>
+	轻量级iframe标签脚本,只需要在jQ下调用一个脚本即可。用到文件pagetabs.js | pagetabs.css 。
+</blockquote>		
+
+
+
+<div class="ui-tax-center-box">
+
+<div class="ui-left-menu"> 
+	<a tab-href="page_index.html" tab-text="桌面" class="link-strong">桌面</a> 
+	<a tab-href="page_01.html" tab-text="功能演示" class="link-strong">功能演示</a> 
+	<a tab-href="page_02.html" tab-text="栏目二" class="link-strong">栏目二</a> 
+	<a tab-href="page_03.html" tab-text="栏目三" class="link-strong">栏目三</a> 
+	<a tab-href="page_04.html" tab-text="栏目四" class="link-strong">栏目四</a>
+	<a tab-href="page_05.html" tab-text="栏目五" class="link-strong">栏目五</a>
+	<a tab-href="page_06.html" tab-text="栏目六" class="link-strong">栏目六</a>
+	<a tab-href="page_07.html" tab-text="栏目七" class="link-strong">栏目七</a>
+	<a tab-href="page_08.html" tab-text="栏目八" class="link-strong">栏目八</a>
+	<a tab-href="page_09.html" tab-text="栏目九" class="link-strong">栏目九</a>
+	<a tab-href="page_10.html" tab-text="栏目十" class="link-strong">栏目十</a>
+	<a tab-href="page_11.html" tab-text="栏目十一" class="link-strong">栏目十一</a>
+	<a tab-href="page_12.html" tab-text="栏目十二" class="link-strong">栏目十二</a>
+	<a tab-href="page_13.html" tab-text="栏目十三" class="link-strong">栏目十三</a>
+	<a tab-href="page_14.html" tab-text="栏目十四" class="link-strong">栏目十四</a>
+	<a tab-href="page_15.html" tab-text="栏目十五" class="link-strong">栏目十五</a>
+</div>
+<div style="margin-left: 140px;">
+  <div class="tax-pagetabs" id="tax-app-tabs" >
+    <div id="leftPage"><i class="iconfont fsicon-tabs-left"></i></div>
+    <div id="tax-tab">
+      <ul class="tax-tab-title">
+        <li tab-id="page_index.html" class="tab-this"><i class="iconfont fsicon-zhuye"></i><span>桌面</span></li>
+      </ul>
+    </div>
+    <div id="rightPage"><i class="iconfont fsicon-tabs-right"></i></div>
+    <div id="tab-menu">
+      <ul>
+        <i class="iconfont fsicon-xiangxia"></i>
+        <dl>
+          <dd id="closeOtherTabs">关闭其它标签</dd>
+          <dd id="closeAllTabs">关闭所有标签</dd>
+        </dl>
+      </ul>
+    </div>
+  </div>
+  <div class="tax-pagetabs-body" id="tax-app-body">
+    <div class="tax-tabsbody-item tax-show">
+      <iframe src="page_index.html" frameborder="0" class="pagestabs-iframe" ></iframe>
+    </div>
+  </div>
+</div>
+  
+	
+</div>
+
+	
+</div>
+	
+	
+	
+	
+	
+
+
+
+
+		
+		
+</body>
+
+ 		
+	
+	
+	
+</html>

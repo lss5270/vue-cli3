@@ -1,0 +1,31 @@
+
+body{ background-color: #f6f6f6; font-size: 17px; color: #333;}
+*{padding: 0px; margin: 0px;}
+.box-container{ padding: 0 10px;}
+.form-item{font-size: 0; position: relative;border-bottom: 1px solid #e5e5e5;}
+.form-item .item-inline{ display: inline-block; height: 44px; line-height:44px;font-size: 17px;}
+.app-input{ height: 44px; line-height: 44px;border-style: none; padding: 0px; margin: 0px;display:block;outline:none;font-size: 17px; width: 100%;}
+.app-btn-item{ color: #333; text-decoration: none; text-align: center; width: 100%; border-left: 1px solid #e5e5e5;height: 44px; line-height: 44px;display: inline-block;}
+.white-bg{ background-color: #fff;}
+.notice-primary{ background-color: #fef7da;padding: 10px 10px;font-size: 14px; color: #fcb711; position: relative;border: 1px solid #f9ebaa;}
+.notice-primary i{font-size: 24px; position: absolute;}
+.notice-primary p{ margin-left: 30px;}
+.app-btn{display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 18px;
+	background-color: #53acf3;
+	color: #fff;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 17px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;text-decoration: none;}
+.foot-btn-box{ margin-top: 20px;}
+.photo-pic{ padding: 20px 0; text-align: center;}
+.photo-pic img{ width: 133px; }
+.form-item .item-label{font-size: 17px; position: absolute;padding:13px 0; padding-left: 10px; color: #666666;}
+.form-item .item-value{font-size: 17px; margin-left:100px;text-align: left; padding:13px 0; padding-right: 10px; }
+.form-item .item-inline label{ margin-left: 10px;}
+	

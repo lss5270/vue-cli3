@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../tax-js/common.js"></script>		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+	</head>
+ 
+	<body >
+	<div class="tax-center-box">
+    <h1 class="tax-page-title"><img src="../../tax-images/png_icon/sswscq.png" class="tax-page-icon">涉税文书查签</h1>
+    <form class="layui-form marginT20">
+      <div class="layui-form-item">
+        <div class="layui-inline marginB12">
+          <label class="layui-form-label label-left" style="width:72px;">签收标志：</label>
+          <div class="layui-input-inline" style="width: 120px;">
+            <select name="modules" lay-verify="required" lay-search="" >
+              <option value="">全部</option>
+              <option value="1">已签收</option>
+              <option value="2">未签收</option>
+            </select>
+          </div>
+        </div>
+        <div class="layui-inline marginB12">
+          <label class="layui-form-label label-left" style="width:100px;">审核日期起止：</label>
+          <div class="layui-input-inline" style="width: 120px;">
+            <input type="text" class="layui-input layui-date-input" id="test6" placeholder="">
+          </div>
+		<div class="layui-form-mid">-</div>
+		<div class="layui-input-inline" style="width: 120px;">
+            <input type="text" class="layui-input layui-date-input" id="test7" placeholder="">
+          </div>
+        </div>
+        <div class="layui-inline marginB12">
+          <button class="layui-btn layui-btn-primary">查询</button>
+        </div>
+      </div>
+    </form>
+    <table id="table-wsj" class="layui-hide" lay-filter="wsj"></table>
+
+  </div>
+
+		
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+ 
+	
+layui.use('table', function(){
+  var table = layui.table;
+ 	
+	table.render({
+    elem: '#table-wsj'
+    ,url: 'table-wsj.json'
+
+	,cols: [[ //表头
+       {field: 'id', title: '序号',align:'center',width:'8%' } 
+      ,{field: 'sxmc', title: '事项名称',width:'16%'}
+      ,{field: 'wsmc', title: '文书名称',width:'16%'}
+	  ,{field: 'wszzrq', title: '文书制作日期',align:'center',width:'14%'}
+ 	  ,{field: 'swjg', title: '文书制作税务机关',width:'16%'}
+	  ,{field: 'qsbz', title: '签收标志',align:'center',width:'16%'}
+	  ,{field: 'cz', title: '操作',align:'center'}
+
+    ]]
+	,text: {
+    none: '你在地税未做财报备案或本月非报送期，如未做财报备案,<br>请先报“财务会计制度及核算软件备案报告” <a href="#" class="link-strong">现在去备案</a> 若无需财务备案,请点击此处 <a href="#" class="link-strong">立即填报</a>' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+  } 
+  });
+	
+ 
+ 
+});	
+	
+	
+layui.use('form', function(){
+	
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});	
+
+ 
+	
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+ //日期范围
+  laydate.render({
+    elem: '#test6'
+	 ,ready: function(){
+        taxlaydate()
+    },change: function(){
+      taxlaydate()
+  }  
+  
+  });
+  laydate.render({
+    elem: '#test7'
+	 ,ready: function(){
+        taxlaydate()
+    },change: function(){
+      taxlaydate()
+  }  
+  
+  });
+
+});
+	
+ setTimeout("window.parent.setHeight()",20);	
+	
+</script>		
+		
+
+		
+	</body>
+
+</html>

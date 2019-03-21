@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" http-equiv="nocache" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../tax-js/common.js"></script>
+
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+</head>
+
+<body >
+<div class="tax-center-box">
+  <h1 class="tax-page-title"><img src="../../tax-images/png_icon/fpdk.png" class="tax-page-icon">新办企业套餐</h1>
+  <div class="layui-row marginT20">
+    <form class="layui-form ">
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 160px; ">统一社会信用代码：</label>
+        <div class="layui-input-block" style="margin-left: 180px;width: 300px;">
+		<input type="text"  placeholder="请输入18位数字或大写英文字母" class="layui-input">
+         
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 160px; ">法定代表人身份证号码：</label>
+        <div class="layui-input-block" style="margin-left: 180px;width: 300px;">
+          <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 160px; ">统一社会信用代码：</label>
+        <div class="layui-input-block" style="margin-left: 180px;width: 300px;">
+         <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 160px; ">统一社会信用代码：</label>
+        <div class="layui-input-block" style="margin-left: 180px;width: 300px;">
+			 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入11位手机号码用于接收短信提醒" class="layui-input">
+          
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 160px; ">统一社会信用代码：</label>
+        <div class="layui-input-block" style="margin-left: 180px;width: 300px;">
+			 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入4位短息验证码" class="layui-input">
+        
+        </div>
+      </div>
+  
+    </form>
+  </div>
+	
+	<div class="tax-text-primary">
+  <h5>用户须知</h5>
+  <ul class="text-center">
+<li>事项进度管理可以进行查看、修改、删除和跟踪事项申请记录，便于纳税人跟进税务机关的受理进度</li>
+<li>可进行<span class="font-blue">修改</span>操作的办理状态有：“资料已保存” “资料已提交，带受理（可修改）” “受理不通过，待补齐补正” “预审不通过，待受理（可修改）”</li>
+<li>可进行<span class="font-blue">删除</span>操作的办理状态有：“资料已保存” “资料已提交，带受理（可修改）”  “预审不通过，待受理（可修改）”</li>
+  </ul>
+</div>
+	<div class="marginB32 marginT32" style="text-align: center;">
+	      <button class="layui-btn marginR12"  type="button"  id="modify">我已阅读用户须知</button><button class="layui-btn layui-btn-primary marginL12"  type="button"  id="modify">已办理套餐，我要查询进度</button>
+	</div>
+</div>
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+ 
+ 
+	
+	
+layui.use('form', function(){
+	
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+	
+ 
+});	
+	
+	
+ 
+
+
+ 
+	
+ setTimeout("window.parent.setHeight()",20);	
+	
+</script>
+</body>
+</html>

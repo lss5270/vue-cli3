@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电子税务局UI库</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="../../tax-js/jquery-1.9.1.min.js"></script>
+<script src="../../ui-js/ui-js.js" dir="2" id="link"></script>	
+<script src="../../tax-js/common.js"></script>		
+<link rel="stylesheet" href="../../layui/css/layui.css">
+<link rel="stylesheet" href="../../tax-css/common.css">
+<link rel="stylesheet" href="../../tax-module/sortable/sortable-style.css">	
+<link rel="stylesheet" href="../../ui-css/ui-css.css">
+<link rel="stylesheet" href="../../tax-font-icon/iconfont.css">
+<link href="../../tax-module/taxReturns/table.css" rel="stylesheet" />	
+</head>
+
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 --> 
+<!--[if lt IE 9]>
+  <script src="../../tax-js/ie8/html5.min.js"></script>
+  <script src="../../tax-js/ie8/respond.min.js"></script>
+<![endif]-->
+<div class="layui-container" >
+  <blockquote class="layui-elem-quote">注意：以下内容为电子税务局系统控件示例规范，各省局可以此为模板制定视觉规范。</blockquote>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend >表单样式（非Layui）<a class="link-strong font-s14" href="../../demo/taxReturns/index.html" target="_blank">查看应用案例</a> </legend>
+  </fieldset>
+<blockquote class="layui-elem-quote layui-quote-nm">
+  独立模块图片、样式、js、等文件位置\tax-module\
+</blockquote>		
+<div class="ui-tax-center-box">
+   
+   <div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsJlsb.xfssb3.sbbhead">
+     <h1>酒类应税消费品消费税纳税申报表</h1>
+     <li class="dateTxt">税款所属期:
+	     <input class="topInput" type="text"  readonly ng-model="sbbhead.skssqq" style="width: 100px;" />
+		  至
+		 <input class="topInput" type="text"  readonly ng-model="sbbhead.skssqz" style="width: 100px;" />
+	 </li>
+</div>
+
+<div class="NewTableTop" ng-jprefix="xfssbSbbdxxVO.xfsJlsb.xfssb3.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：
+    	<span class="textline" ng-bind="sbbhead.nsrmc"></span>
+    </td>
+    <td align="right">纳税人识别号：<input type="text" class="topInput" ng-datatype="string" value="" ng-model="sbbhead.nsrsbh" readonly> </td>
+  </tr>
+  <tr>
+    <td>填表日期：
+	    <span class="dateTxt">
+	    	<input class="topInput" type="text" style="width: 100px;" readonly ng-model="sbbhead.sbrq1" />
+	    </span>
+    </td>
+    <td align="right">金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+<table width="100%" border="0" cellspacing="1" cellpadding="0" ng-jprefix="xfssbSbbdxxVO.xfsJlsb.xfssb3.sbsjxxGrid3">
+  <tr fixed="true">
+    <td rowspan="2" align="center" class="title01"><strong>应税消费品名称</strong></td>
+    <td colspan="2" align="center" class="title01"><strong>适用税率</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>销售数量</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>销售额</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>应纳税额</strong></td>
+  </tr>
+  <tr fixed="true">
+    <td align="center" class="title01" >定额税率</td>
+    <td align="center" class="title01">比例税率</td>
+  </tr>
+  <tr>
+    <td class="title01">粮食白酒 </td>
+    <td class="read mid"><input type="text" value="0.5元/斤" readonly></td>
+    <td class="read mid"><input type="text" value="20%" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[1].xssl" type="text" ></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[0].xse" type="text" value="0.00" ></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.jlynse0" type="text" readonly ></td>
+  </tr>
+  <tr>
+    <td class="title01">薯类白酒</td>
+    <td class="read mid"><input type="text" value="0.5元/斤" readonly></td>
+    <td class="read mid"><input type="text" value="20%" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[3].xssl" type="text" ></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[2].xse" type="text" value="0.00" ></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.jlynsehj1" type="text" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">啤酒（3000元/吨以上）</td>
+    <td class="read mid"><input type="text" value="250元/吨" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[4].xssl" type="text" value="0.00" ></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[4].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">啤酒（3000元/吨以下）</td>
+    <td class="read mid"><input type="text" value="220元/吨" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[5].xssl" type="text" value="0.00" ></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[5].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">黄酒</td>
+    <td class="read mid"><input type="text" value="240元/吨" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[6].xssl" type="text" value="0.00" ></td>
+    <td  class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[6].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">其他酒</td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="10%" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[7].xse" type="text" value="0.00" ></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.sbsjxxGridlb[7].ynse" type="text" value="0.00" readonly ></td>
+    </tr>
+  <tr>
+    <td class="title01">合计</td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read mid"><input type="text" value="--" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="sbsjxxGrid3.jlynsehj" type="text" readonly></td>
+    </tr>
+   </table>
+</div>
+
+<div class="NewTableFoot">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr ng-render-finish="">
+    <td align="center">受理人（签章）：  <input class="topInput" type="text"
+					style="text-align:center;width: 100px;" readonly  />  &nbsp; &nbsp;  受理日期： <input type="text" class="topInput"
+					style="text-align:center;width: 40px;" readonly  /> 年  <input type="text" class="topInput"
+					style="text-align:center;width: 20px;" readonly  /> 月<input type="text" class="topInput"
+					style="text-align:center;width: 20px;" readonly  />日       &nbsp; &nbsp;  受理税务机关（章）：<input class="topInput" type="text"
+					style="text-align:center;width: 100px;" readonly  /> </td>
+  </tr>
+</table>
+</div>
+
+	
+
+</div>	  
+ 	
+
+  
+	
+
+
+	
+</div>	
+<script src="../../layui/layui.js" charset="utf-8"></script> 
+<script>
+layui.use('code', function(){
+  
+  layui.code({
+	   title: '演示代码'
+	  ,encode: true //是否转义html标签。
+	  ,about: false
+  }); 
+	
+});
+layui.use('form',function(){});<!--加载form模块-->
+	
+</script>
+</body>
+</html>
