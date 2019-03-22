@@ -16,9 +16,10 @@ const request = axios.create({
   params: {
     appId: 10002032,
     requestId: getRandom(),
-    token: 'f2dca5bb80844b08a231942110cfebb5000101cf22bd663530a88d',
-    timestamp: null,
+    /*token: 'f2dca5bb80844b08a231942110cfebb5000101cf22bd663530a88d',
+    timestamp: null,*/
   },
+  timeout: 8000,
   /*proxy: {
     host: '127.0.0.1',
     port: 9000,

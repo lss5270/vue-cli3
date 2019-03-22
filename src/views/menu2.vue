@@ -1,5 +1,5 @@
 <template>
-  <div class="menu1">
+  <div class="menu2">
     <p>菜单2内容^……</p>
     <p>&nbsp;</p>
     <p><button @click="ajaxTest">点击请求ajax</button></p>
@@ -12,7 +12,7 @@
 <script>
   import request from '../util/request'
   export default {
-    name: 'HelloWorld',
+    name: 'menu2',
     data () {
       return {
         ajaxRes: null

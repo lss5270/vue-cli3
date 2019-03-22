@@ -6,7 +6,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://58.62.207.50:1756/', //H5代理地址
+        target: 'http://58.62.207.50:1756/', //代理地址
         changeOrigin: true,
         /*ws: true,
         pathRewrite: {

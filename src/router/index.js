@@ -10,7 +10,15 @@ import Menu2 from '../views/menu2.vue'
 
 Vue.use(Router)
 
+/*router.beforeEach((to, from, next) => {
+  console.log('开始页面切换');
+  console.log(to.fullPath)
+  
+  next();
+});*/
+
 export default new Router({
+  //mode: 'history',  //去掉url中的#
   routes: [
     /*{
       path: '/login',
